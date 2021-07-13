@@ -41,14 +41,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    deviceDeviceAddInput := *openapiclient.NewDeviceDeviceAddInput() // DeviceDeviceAddInput |  (optional)
+    deviceDeviceAddInput := *sdsclient.NewDeviceDeviceAddInput() // DeviceDeviceAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceDeviceAdd(context.Background()).DeviceDeviceAddInput(deviceDeviceAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceDeviceAdd``: %v\n", err)
@@ -107,15 +107,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceDeviceCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceDeviceCount``: %v\n", err)
@@ -175,7 +175,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -183,8 +183,8 @@ func main() {
     deviceName := "deviceName_example" // string | The name of the Device Manager device. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceDeviceDelete(context.Background()).DeviceId(deviceId).DeviceName(deviceName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceDeviceDelete``: %v\n", err)
@@ -245,14 +245,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    deviceDeviceEditInput := *openapiclient.NewDeviceDeviceEditInput() // DeviceDeviceEditInput |  (optional)
+    deviceDeviceEditInput := *sdsclient.NewDeviceDeviceEditInput() // DeviceDeviceEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceDeviceEdit(context.Background()).DeviceDeviceEditInput(deviceDeviceEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceDeviceEdit``: %v\n", err)
@@ -311,14 +311,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     deviceId := int32(56) // int32 | The database identifier (ID) of the Device Manager device, a unique numeric key value automatically incremented when you add a device. Use the ID to specify the device of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceDeviceInfo(context.Background()).DeviceId(deviceId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceDeviceInfo``: %v\n", err)
@@ -377,7 +377,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -387,8 +387,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceDeviceList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceDeviceList``: %v\n", err)
@@ -451,14 +451,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    deviceInterfaceAddInput := *openapiclient.NewDeviceInterfaceAddInput() // DeviceInterfaceAddInput |  (optional)
+    deviceInterfaceAddInput := *sdsclient.NewDeviceInterfaceAddInput() // DeviceInterfaceAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceInterfaceAdd(context.Background()).DeviceInterfaceAddInput(deviceInterfaceAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceInterfaceAdd``: %v\n", err)
@@ -517,15 +517,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceInterfaceCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceInterfaceCount``: %v\n", err)
@@ -585,7 +585,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -595,8 +595,8 @@ func main() {
     interfaceName := "interfaceName_example" // string | The name of the Device Manager port or interface. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceInterfaceDelete(context.Background()).DeviceId(deviceId).DeviceName(deviceName).InterfaceId(interfaceId).InterfaceName(interfaceName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceInterfaceDelete``: %v\n", err)
@@ -659,14 +659,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    deviceInterfaceEditInput := *openapiclient.NewDeviceInterfaceEditInput() // DeviceInterfaceEditInput |  (optional)
+    deviceInterfaceEditInput := *sdsclient.NewDeviceInterfaceEditInput() // DeviceInterfaceEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceInterfaceEdit(context.Background()).DeviceInterfaceEditInput(deviceInterfaceEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceInterfaceEdit``: %v\n", err)
@@ -725,14 +725,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     interfaceId := int32(56) // int32 | The database identifier (ID) of the Device Manager port or interface, a unique numeric key value automatically incremented when you add a port or interface. Use the ID to specify the port or interface of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceInterfaceInfo(context.Background()).InterfaceId(interfaceId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceInterfaceInfo``: %v\n", err)
@@ -791,7 +791,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -801,8 +801,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceInterfaceList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceInterfaceList``: %v\n", err)
@@ -865,14 +865,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    deviceLinkAddInput := *openapiclient.NewDeviceLinkAddInput() // DeviceLinkAddInput |  (optional)
+    deviceLinkAddInput := *sdsclient.NewDeviceLinkAddInput() // DeviceLinkAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceLinkAdd(context.Background()).DeviceLinkAddInput(deviceLinkAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceLinkAdd``: %v\n", err)
@@ -931,15 +931,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     interfaceId := int32(56) // int32 | The database identifier (ID) of the Device Manager port or interface, a unique numeric key value automatically incremented when you add a port or interface. Use the ID to specify the port or interface of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceLinkCount(context.Background()).Where(where).InterfaceId(interfaceId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceLinkCount``: %v\n", err)
@@ -999,7 +999,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1013,8 +1013,8 @@ func main() {
     linkAutoLink := int32(56) // int32 | A way to determine if the link between two Device Manager devices is set automatically (<b>1</b>) or manually (<b>0</b>). (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceLinkDelete(context.Background()).Device1Name(device1Name).Device2Name(device2Name).Interface1Id(interface1Id).Interface1Name(interface1Name).Interface2Id(interface2Id).Interface2Name(interface2Name).LinkId(linkId).LinkAutoLink(linkAutoLink).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceLinkDelete``: %v\n", err)
@@ -1081,14 +1081,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    deviceLinkEditInput := *openapiclient.NewDeviceLinkEditInput() // DeviceLinkEditInput |  (optional)
+    deviceLinkEditInput := *sdsclient.NewDeviceLinkEditInput() // DeviceLinkEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceLinkEdit(context.Background()).DeviceLinkEditInput(deviceLinkEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceLinkEdit``: %v\n", err)
@@ -1147,7 +1147,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1157,8 +1157,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     interfaceId := int32(56) // int32 | The database identifier (ID) of the Device Manager port or interface, a unique numeric key value automatically incremented when you add a port or interface. Use the ID to specify the port or interface of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DeviceApi.DeviceLinkList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).InterfaceId(interfaceId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DeviceApi.DeviceLinkList``: %v\n", err)

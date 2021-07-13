@@ -42,14 +42,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    vlanDomainAddInput := *openapiclient.NewVlanDomainAddInput() // VlanDomainAddInput |  (optional)
+    vlanDomainAddInput := *sdsclient.NewVlanDomainAddInput() // VlanDomainAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanDomainAdd(context.Background()).VlanDomainAddInput(vlanDomainAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanDomainAdd``: %v\n", err)
@@ -108,15 +108,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanDomainCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanDomainCount``: %v\n", err)
@@ -176,7 +176,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -184,8 +184,8 @@ func main() {
     domainName := "domainName_example" // string | The name of the VLAN domain. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanDomainDelete(context.Background()).DomainId(domainId).DomainName(domainName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanDomainDelete``: %v\n", err)
@@ -246,14 +246,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    vlanDomainEditInput := *openapiclient.NewVlanDomainEditInput() // VlanDomainEditInput |  (optional)
+    vlanDomainEditInput := *sdsclient.NewVlanDomainEditInput() // VlanDomainEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanDomainEdit(context.Background()).VlanDomainEditInput(vlanDomainEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanDomainEdit``: %v\n", err)
@@ -312,14 +312,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     domainId := int32(56) // int32 | The database identifier (ID) of the VLAN domain, a unique numeric key value automatically incremented when you add a VLAN domain. Use the ID to specify the VLAN domain of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanDomainInfo(context.Background()).DomainId(domainId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanDomainInfo``: %v\n", err)
@@ -378,7 +378,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -388,8 +388,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanDomainList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanDomainList``: %v\n", err)
@@ -452,14 +452,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    vlanRangeAddInput := *openapiclient.NewVlanRangeAddInput() // VlanRangeAddInput |  (optional)
+    vlanRangeAddInput := *sdsclient.NewVlanRangeAddInput() // VlanRangeAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanRangeAdd(context.Background()).VlanRangeAddInput(vlanRangeAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanRangeAdd``: %v\n", err)
@@ -518,15 +518,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanRangeCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanRangeCount``: %v\n", err)
@@ -586,7 +586,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -596,8 +596,8 @@ func main() {
     rangeName := "rangeName_example" // string | The name of the VLAN range. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanRangeDelete(context.Background()).DomainId(domainId).DomainName(domainName).RangeId(rangeId).RangeName(rangeName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanRangeDelete``: %v\n", err)
@@ -660,14 +660,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    vlanRangeEditInput := *openapiclient.NewVlanRangeEditInput() // VlanRangeEditInput |  (optional)
+    vlanRangeEditInput := *sdsclient.NewVlanRangeEditInput() // VlanRangeEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanRangeEdit(context.Background()).VlanRangeEditInput(vlanRangeEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanRangeEdit``: %v\n", err)
@@ -726,14 +726,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     rangeId := int32(56) // int32 | The database identifier (ID) of the VLAN range, a unique numeric key value automatically incremented when you add a VLAN range. Use the ID to specify the VLAN range of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanRangeInfo(context.Background()).RangeId(rangeId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanRangeInfo``: %v\n", err)
@@ -792,7 +792,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -802,8 +802,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanRangeList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanRangeList``: %v\n", err)
@@ -866,14 +866,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    vlanVlanAddInput := *openapiclient.NewVlanVlanAddInput() // VlanVlanAddInput |  (optional)
+    vlanVlanAddInput := *sdsclient.NewVlanVlanAddInput() // VlanVlanAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanVlanAdd(context.Background()).VlanVlanAddInput(vlanVlanAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanVlanAdd``: %v\n", err)
@@ -932,15 +932,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanVlanCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanVlanCount``: %v\n", err)
@@ -1000,7 +1000,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1013,8 +1013,8 @@ func main() {
     vlanName := "vlanName_example" // string | The name of the VLAN. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanVlanDelete(context.Background()).DomainId(domainId).DomainName(domainName).VlanId(vlanId).VlanVlanId(vlanVlanId).RangeId(rangeId).RangeName(rangeName).VlanName(vlanName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanVlanDelete``: %v\n", err)
@@ -1080,14 +1080,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    vlanVlanEditInput := *openapiclient.NewVlanVlanEditInput() // VlanVlanEditInput |  (optional)
+    vlanVlanEditInput := *sdsclient.NewVlanVlanEditInput() // VlanVlanEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanVlanEdit(context.Background()).VlanVlanEditInput(vlanVlanEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanVlanEdit``: %v\n", err)
@@ -1146,14 +1146,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     vlanId := int32(56) // int32 | The database identifier (ID) of the VLAN, a unique numeric key value automatically incremented when you add a VLAN. Use the ID to specify the VLAN of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanVlanInfo(context.Background()).VlanId(vlanId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanVlanInfo``: %v\n", err)
@@ -1212,7 +1212,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1222,8 +1222,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.VlanApi.VlanVlanList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `VlanApi.VlanVlanList``: %v\n", err)

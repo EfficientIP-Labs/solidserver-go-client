@@ -105,14 +105,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | todo(here) :dhcp.acl6.count.input.where. :  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAcl6Count(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAcl6Count``: %v\n", err)
@@ -171,14 +171,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     acl6Id := int32(56) // int32 | todo(here) :dhcp.acl6.info.input.acl6_id. :  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAcl6Info(context.Background()).Acl6Id(acl6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAcl6Info``: %v\n", err)
@@ -237,7 +237,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -246,8 +246,8 @@ func main() {
     limit := int32(56) // int32 | todo(here) :dhcp.acl6.list.input.limit. :  (optional)
     offset := int32(56) // int32 | todo(here) :dhcp.acl6.list.input.offset. :  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAcl6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAcl6List``: %v\n", err)
@@ -309,14 +309,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclCount``: %v\n", err)
@@ -375,14 +375,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     aclId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 ACL, a unique numeric key value automatically incremented when you add a DHCPv4 ACL. Use the ID to specify the DHCPv4 ACL of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclInfo(context.Background()).AclId(aclId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclInfo``: %v\n", err)
@@ -441,7 +441,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -450,8 +450,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclList``: %v\n", err)
@@ -513,14 +513,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | todo(here) :dhcp.aclentry6.count.input.where. :  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclentry6Count(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclentry6Count``: %v\n", err)
@@ -579,14 +579,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     aclentry6Id := int32(56) // int32 | todo(here) :dhcp.aclentry6.info.input.aclentry6_id. :  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclentry6Info(context.Background()).Aclentry6Id(aclentry6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclentry6Info``: %v\n", err)
@@ -645,7 +645,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -654,8 +654,8 @@ func main() {
     limit := int32(56) // int32 | todo(here) :dhcp.aclentry6.list.input.limit. :  (optional)
     offset := int32(56) // int32 | todo(here) :dhcp.aclentry6.list.input.offset. :  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclentry6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclentry6List``: %v\n", err)
@@ -717,14 +717,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclentryCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclentryCount``: %v\n", err)
@@ -783,14 +783,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     aclentryId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 ACL entry, a unique numeric key value automatically incremented when you add a DHCPv4 ACL entry. Use the ID to specify the DHCPv4 ACL entry of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclentryInfo(context.Background()).AclentryId(aclentryId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclentryInfo``: %v\n", err)
@@ -849,7 +849,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -858,8 +858,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpAclentryList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpAclentryList``: %v\n", err)
@@ -921,14 +921,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpFailoverCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpFailoverCount``: %v\n", err)
@@ -987,14 +987,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     failoverId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 failover channel, a unique numeric key value automatically incremented when you add a DHCPv4 failover channel. Use the ID to specify the DHCPv4 failover channel of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpFailoverInfo(context.Background()).FailoverId(failoverId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpFailoverInfo``: %v\n", err)
@@ -1053,7 +1053,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1062,8 +1062,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpFailoverList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpFailoverList``: %v\n", err)
@@ -1125,7 +1125,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1135,8 +1135,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpGroup6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpGroup6List``: %v\n", err)
@@ -1199,14 +1199,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpGroupAddInput := *openapiclient.NewDhcpGroupAddInput() // DhcpGroupAddInput |  (optional)
+    dhcpGroupAddInput := *sdsclient.NewDhcpGroupAddInput() // DhcpGroupAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpGroupAdd(context.Background()).DhcpGroupAddInput(dhcpGroupAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpGroupAdd``: %v\n", err)
@@ -1265,15 +1265,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpGroupCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpGroupCount``: %v\n", err)
@@ -1333,7 +1333,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1344,8 +1344,8 @@ func main() {
     serverHostaddr := "serverHostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpGroupDelete(context.Background()).ServerId(serverId).ServerName(serverName).GroupId(groupId).GroupName(groupName).ServerHostaddr(serverHostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpGroupDelete``: %v\n", err)
@@ -1409,14 +1409,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpGroupEditInput := *openapiclient.NewDhcpGroupEditInput() // DhcpGroupEditInput |  (optional)
+    dhcpGroupEditInput := *sdsclient.NewDhcpGroupEditInput() // DhcpGroupEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpGroupEdit(context.Background()).DhcpGroupEditInput(dhcpGroupEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpGroupEdit``: %v\n", err)
@@ -1475,14 +1475,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     groupId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 group, a unique numeric key value automatically incremented when you add a DHCPv4 group. Use the ID to specify the DHCPv4 group of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpGroupInfo(context.Background()).GroupId(groupId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpGroupInfo``: %v\n", err)
@@ -1541,7 +1541,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1551,8 +1551,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpGroupList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpGroupList``: %v\n", err)
@@ -1615,15 +1615,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpLease6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpLease6Count``: %v\n", err)
@@ -1683,7 +1683,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1693,8 +1693,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpLease6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpLease6List``: %v\n", err)
@@ -1757,15 +1757,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpLeaseCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpLeaseCount``: %v\n", err)
@@ -1825,14 +1825,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     leaseId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 lease, a unique numeric key value automatically incremented when you add a DHCPv4 lease. Use the ID to specify the DHCPv4 lease of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpLeaseInfo(context.Background()).LeaseId(leaseId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpLeaseInfo``: %v\n", err)
@@ -1891,7 +1891,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1901,8 +1901,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpLeaseList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpLeaseList``: %v\n", err)
@@ -1965,14 +1965,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpRange6AddInput := *openapiclient.NewDhcpRange6AddInput() // DhcpRange6AddInput |  (optional)
+    dhcpRange6AddInput := *sdsclient.NewDhcpRange6AddInput() // DhcpRange6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRange6Add(context.Background()).DhcpRange6AddInput(dhcpRange6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRange6Add``: %v\n", err)
@@ -2031,15 +2031,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRange6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRange6Count``: %v\n", err)
@@ -2099,7 +2099,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2112,8 +2112,8 @@ func main() {
     server6Hostaddr := "server6Hostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRange6Delete(context.Background()).Server6Id(server6Id).Server6Name(server6Name).Range6EndAddr(range6EndAddr).Range6Id(range6Id).Range6StartAddr(range6StartAddr).Scope6Id(scope6Id).Server6Hostaddr(server6Hostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRange6Delete``: %v\n", err)
@@ -2179,14 +2179,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpRange6EditInput := *openapiclient.NewDhcpRange6EditInput() // DhcpRange6EditInput |  (optional)
+    dhcpRange6EditInput := *sdsclient.NewDhcpRange6EditInput() // DhcpRange6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRange6Edit(context.Background()).DhcpRange6EditInput(dhcpRange6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRange6Edit``: %v\n", err)
@@ -2245,14 +2245,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     range6Id := int32(56) // int32 | The database identifier (ID) of the DHCPv6 range, a unique numeric key value automatically incremented when you add a DHCPv6 range. Use the ID to specify the DHCPv6 of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRange6Info(context.Background()).Range6Id(range6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRange6Info``: %v\n", err)
@@ -2311,7 +2311,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2321,8 +2321,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRange6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRange6List``: %v\n", err)
@@ -2385,14 +2385,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpRangeAddInput := *openapiclient.NewDhcpRangeAddInput() // DhcpRangeAddInput |  (optional)
+    dhcpRangeAddInput := *sdsclient.NewDhcpRangeAddInput() // DhcpRangeAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRangeAdd(context.Background()).DhcpRangeAddInput(dhcpRangeAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRangeAdd``: %v\n", err)
@@ -2451,15 +2451,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRangeCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRangeCount``: %v\n", err)
@@ -2519,7 +2519,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2533,8 +2533,8 @@ func main() {
     serverHostaddr := "serverHostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRangeDelete(context.Background()).ServerId(serverId).ServerName(serverName).RangeEndAddr(rangeEndAddr).RangeId(rangeId).RangeName(rangeName).RangeStartAddr(rangeStartAddr).ScopeId(scopeId).ServerHostaddr(serverHostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRangeDelete``: %v\n", err)
@@ -2601,14 +2601,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpRangeEditInput := *openapiclient.NewDhcpRangeEditInput() // DhcpRangeEditInput |  (optional)
+    dhcpRangeEditInput := *sdsclient.NewDhcpRangeEditInput() // DhcpRangeEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRangeEdit(context.Background()).DhcpRangeEditInput(dhcpRangeEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRangeEdit``: %v\n", err)
@@ -2667,14 +2667,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     rangeId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 range, a unique numeric key value automatically incremented when you add a DHCPv4 range. Use the ID to specify the DHCPv4 range of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRangeInfo(context.Background()).RangeId(rangeId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRangeInfo``: %v\n", err)
@@ -2733,7 +2733,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2743,8 +2743,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpRangeList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpRangeList``: %v\n", err)
@@ -2807,14 +2807,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpScope6AddInput := *openapiclient.NewDhcpScope6AddInput() // DhcpScope6AddInput |  (optional)
+    dhcpScope6AddInput := *sdsclient.NewDhcpScope6AddInput() // DhcpScope6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScope6Add(context.Background()).DhcpScope6AddInput(dhcpScope6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScope6Add``: %v\n", err)
@@ -2873,15 +2873,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScope6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScope6Count``: %v\n", err)
@@ -2941,7 +2941,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2952,8 +2952,8 @@ func main() {
     server6Hostaddr := "server6Hostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScope6Delete(context.Background()).Server6Id(server6Id).Server6Name(server6Name).Scope6Id(scope6Id).Scope6StartAddr(scope6StartAddr).Server6Hostaddr(server6Hostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScope6Delete``: %v\n", err)
@@ -3017,14 +3017,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpScope6EditInput := *openapiclient.NewDhcpScope6EditInput() // DhcpScope6EditInput |  (optional)
+    dhcpScope6EditInput := *sdsclient.NewDhcpScope6EditInput() // DhcpScope6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScope6Edit(context.Background()).DhcpScope6EditInput(dhcpScope6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScope6Edit``: %v\n", err)
@@ -3083,14 +3083,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     scope6Id := int32(56) // int32 | The database identifier (ID) of the DHCPv6 scope, a unique numeric key value automatically incremented when you add a DHCPv6 scope. Use the ID to specify the DHCPv6 scope of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScope6Info(context.Background()).Scope6Id(scope6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScope6Info``: %v\n", err)
@@ -3149,7 +3149,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3159,8 +3159,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScope6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScope6List``: %v\n", err)
@@ -3223,14 +3223,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpScopeAddInput := *openapiclient.NewDhcpScopeAddInput() // DhcpScopeAddInput |  (optional)
+    dhcpScopeAddInput := *sdsclient.NewDhcpScopeAddInput() // DhcpScopeAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScopeAdd(context.Background()).DhcpScopeAddInput(dhcpScopeAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScopeAdd``: %v\n", err)
@@ -3289,15 +3289,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScopeCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScopeCount``: %v\n", err)
@@ -3357,7 +3357,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3368,8 +3368,8 @@ func main() {
     serverHostaddr := "serverHostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScopeDelete(context.Background()).ServerId(serverId).ServerName(serverName).ScopeId(scopeId).ScopeNetAddr(scopeNetAddr).ServerHostaddr(serverHostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScopeDelete``: %v\n", err)
@@ -3433,14 +3433,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpScopeEditInput := *openapiclient.NewDhcpScopeEditInput() // DhcpScopeEditInput |  (optional)
+    dhcpScopeEditInput := *sdsclient.NewDhcpScopeEditInput() // DhcpScopeEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScopeEdit(context.Background()).DhcpScopeEditInput(dhcpScopeEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScopeEdit``: %v\n", err)
@@ -3499,14 +3499,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     scopeId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 scope, a unique numeric key value automatically incremented when you add a DHCPv4 scope. Use the ID to specify the DHCPv4 scope of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScopeInfo(context.Background()).ScopeId(scopeId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScopeInfo``: %v\n", err)
@@ -3565,7 +3565,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3575,8 +3575,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpScopeList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpScopeList``: %v\n", err)
@@ -3639,15 +3639,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpServer6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpServer6Count``: %v\n", err)
@@ -3707,14 +3707,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     server6Id := int32(56) // int32 | The database identifier (ID) of the DHCPv6 server, a unique numeric key value automatically incremented when you add a DHCPv6 server. Use the ID to specify the DHCPv6 server of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpServer6Info(context.Background()).Server6Id(server6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpServer6Info``: %v\n", err)
@@ -3773,7 +3773,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3783,8 +3783,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpServer6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpServer6List``: %v\n", err)
@@ -3847,15 +3847,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpServerCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpServerCount``: %v\n", err)
@@ -3915,14 +3915,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     serverId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 server, a unique numeric key value automatically incremented when you add a DHCPv4 server. Use the ID to specify the DHCPv4 server of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpServerInfo(context.Background()).ServerId(serverId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpServerInfo``: %v\n", err)
@@ -3981,7 +3981,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3991,8 +3991,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpServerList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpServerList``: %v\n", err)
@@ -4055,14 +4055,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpSharednetwork6AddInput := *openapiclient.NewDhcpSharednetwork6AddInput() // DhcpSharednetwork6AddInput |  (optional)
+    dhcpSharednetwork6AddInput := *sdsclient.NewDhcpSharednetwork6AddInput() // DhcpSharednetwork6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetwork6Add(context.Background()).DhcpSharednetwork6AddInput(dhcpSharednetwork6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetwork6Add``: %v\n", err)
@@ -4121,14 +4121,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetwork6Count(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetwork6Count``: %v\n", err)
@@ -4187,7 +4187,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -4198,8 +4198,8 @@ func main() {
     server6Hostaddr := "server6Hostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetwork6Delete(context.Background()).Server6Id(server6Id).Server6Name(server6Name).Sharednetwork6Id(sharednetwork6Id).Sharednetwork6Name(sharednetwork6Name).Server6Hostaddr(server6Hostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetwork6Delete``: %v\n", err)
@@ -4263,14 +4263,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpSharednetwork6EditInput := *openapiclient.NewDhcpSharednetwork6EditInput() // DhcpSharednetwork6EditInput |  (optional)
+    dhcpSharednetwork6EditInput := *sdsclient.NewDhcpSharednetwork6EditInput() // DhcpSharednetwork6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetwork6Edit(context.Background()).DhcpSharednetwork6EditInput(dhcpSharednetwork6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetwork6Edit``: %v\n", err)
@@ -4329,14 +4329,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     sharednetwork6Id := int32(56) // int32 | The database identifier (ID) of the DHCPv6 shared network, a unique numeric key value automatically incremented when you add a DHCPv6 shared network. Use the ID to specify the DHCPv6 shared network of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetwork6Info(context.Background()).Sharednetwork6Id(sharednetwork6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetwork6Info``: %v\n", err)
@@ -4395,7 +4395,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -4404,8 +4404,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetwork6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetwork6List``: %v\n", err)
@@ -4467,14 +4467,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpSharednetworkAddInput := *openapiclient.NewDhcpSharednetworkAddInput() // DhcpSharednetworkAddInput |  (optional)
+    dhcpSharednetworkAddInput := *sdsclient.NewDhcpSharednetworkAddInput() // DhcpSharednetworkAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetworkAdd(context.Background()).DhcpSharednetworkAddInput(dhcpSharednetworkAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetworkAdd``: %v\n", err)
@@ -4533,14 +4533,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetworkCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetworkCount``: %v\n", err)
@@ -4599,7 +4599,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -4610,8 +4610,8 @@ func main() {
     serverHostaddr := "serverHostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetworkDelete(context.Background()).ServerId(serverId).ServerName(serverName).SharednetworkId(sharednetworkId).SharednetworkName(sharednetworkName).ServerHostaddr(serverHostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetworkDelete``: %v\n", err)
@@ -4675,14 +4675,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpSharednetworkEditInput := *openapiclient.NewDhcpSharednetworkEditInput() // DhcpSharednetworkEditInput |  (optional)
+    dhcpSharednetworkEditInput := *sdsclient.NewDhcpSharednetworkEditInput() // DhcpSharednetworkEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetworkEdit(context.Background()).DhcpSharednetworkEditInput(dhcpSharednetworkEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetworkEdit``: %v\n", err)
@@ -4741,14 +4741,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     sharednetworkId := int32(56) // int32 | The database identifier (ID) of the DHCPv4 shared network, a unique numeric key value automatically incremented when you add a DHCPv4 shared network. Use the ID to specify the DHCPv4 shared network of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetworkInfo(context.Background()).SharednetworkId(sharednetworkId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetworkInfo``: %v\n", err)
@@ -4807,7 +4807,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -4816,8 +4816,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpSharednetworkList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpSharednetworkList``: %v\n", err)
@@ -4879,14 +4879,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpStatic6AddInput := *openapiclient.NewDhcpStatic6AddInput() // DhcpStatic6AddInput |  (optional)
+    dhcpStatic6AddInput := *sdsclient.NewDhcpStatic6AddInput() // DhcpStatic6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStatic6Add(context.Background()).DhcpStatic6AddInput(dhcpStatic6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStatic6Add``: %v\n", err)
@@ -4945,15 +4945,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStatic6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStatic6Count``: %v\n", err)
@@ -5013,7 +5013,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -5026,8 +5026,8 @@ func main() {
     server6Hostaddr := "server6Hostaddr_example" // string | The IP address of the DHCP server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStatic6Delete(context.Background()).Server6Id(server6Id).Server6Name(server6Name).Static6Addr(static6Addr).Static6Id(static6Id).Static6Name(static6Name).Scope6Id(scope6Id).Server6Hostaddr(server6Hostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStatic6Delete``: %v\n", err)
@@ -5093,14 +5093,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpStatic6EditInput := *openapiclient.NewDhcpStatic6EditInput() // DhcpStatic6EditInput |  (optional)
+    dhcpStatic6EditInput := *sdsclient.NewDhcpStatic6EditInput() // DhcpStatic6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStatic6Edit(context.Background()).DhcpStatic6EditInput(dhcpStatic6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStatic6Edit``: %v\n", err)
@@ -5159,14 +5159,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     static6Id := int32(56) // int32 | The database identifier (ID) of the DHCP static, a unique numeric key value automatically incremented when you add a DHCP static. Use the ID to specify the DHCP static of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStatic6Info(context.Background()).Static6Id(static6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStatic6Info``: %v\n", err)
@@ -5225,7 +5225,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -5235,8 +5235,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStatic6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStatic6List``: %v\n", err)
@@ -5299,14 +5299,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpStaticAddInput := *openapiclient.NewDhcpStaticAddInput() // DhcpStaticAddInput |  (optional)
+    dhcpStaticAddInput := *sdsclient.NewDhcpStaticAddInput() // DhcpStaticAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStaticAdd(context.Background()).DhcpStaticAddInput(dhcpStaticAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStaticAdd``: %v\n", err)
@@ -5365,15 +5365,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStaticCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStaticCount``: %v\n", err)
@@ -5433,7 +5433,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -5448,8 +5448,8 @@ func main() {
     staticName := "staticName_example" // string | The name of the DHCPv4 static. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStaticDelete(context.Background()).ServerId(serverId).ServerName(serverName).StaticAddr(staticAddr).StaticId(staticId).StaticIdentifier(staticIdentifier).ScopeId(scopeId).ServerHostaddr(serverHostaddr).StaticMacAddr(staticMacAddr).StaticName(staticName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStaticDelete``: %v\n", err)
@@ -5517,14 +5517,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dhcpStaticEditInput := *openapiclient.NewDhcpStaticEditInput() // DhcpStaticEditInput |  (optional)
+    dhcpStaticEditInput := *sdsclient.NewDhcpStaticEditInput() // DhcpStaticEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStaticEdit(context.Background()).DhcpStaticEditInput(dhcpStaticEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStaticEdit``: %v\n", err)
@@ -5583,14 +5583,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     staticId := int32(56) // int32 | The database identifier (ID) of the DHCP static, a unique numeric key value automatically incremented when you add a DHCP sttestatic. Use the ID to specify the DHCP static of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStaticInfo(context.Background()).StaticId(staticId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStaticInfo``: %v\n", err)
@@ -5649,7 +5649,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -5659,8 +5659,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DhcpApi.DhcpStaticList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DhcpApi.DhcpStaticList``: %v\n", err)

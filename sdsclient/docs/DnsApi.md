@@ -63,14 +63,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsAclAddInput := *openapiclient.NewDnsAclAddInput() // DnsAclAddInput |  (optional)
+    dnsAclAddInput := *sdsclient.NewDnsAclAddInput() // DnsAclAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsAclAdd(context.Background()).DnsAclAddInput(dnsAclAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsAclAdd``: %v\n", err)
@@ -129,14 +129,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsAclCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsAclCount``: %v\n", err)
@@ -195,7 +195,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -206,8 +206,8 @@ func main() {
     serverHostaddr := "serverHostaddr_example" // string | The IP address of the DNS server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsAclDelete(context.Background()).AclId(aclId).ServerId(serverId).ServerName(serverName).AclName(aclName).ServerHostaddr(serverHostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsAclDelete``: %v\n", err)
@@ -271,14 +271,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsAclEditInput := *openapiclient.NewDnsAclEditInput() // DnsAclEditInput |  (optional)
+    dnsAclEditInput := *sdsclient.NewDnsAclEditInput() // DnsAclEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsAclEdit(context.Background()).DnsAclEditInput(dnsAclEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsAclEdit``: %v\n", err)
@@ -337,14 +337,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     aclId := int32(56) // int32 | The database identifier (ID) of the DNS ACL, a unique numeric key value automatically incremented when you add a DNS ACL. Use the ID to specify the DNS ACL of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsAclInfo(context.Background()).AclId(aclId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsAclInfo``: %v\n", err)
@@ -403,7 +403,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -412,8 +412,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsAclList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsAclList``: %v\n", err)
@@ -475,14 +475,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsRrAddInput := *openapiclient.NewDnsRrAddInput() // DnsRrAddInput |  (optional)
+    dnsRrAddInput := *sdsclient.NewDnsRrAddInput() // DnsRrAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsRrAdd(context.Background()).DnsRrAddInput(dnsRrAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsRrAdd``: %v\n", err)
@@ -541,15 +541,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsRrCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsRrCount``: %v\n", err)
@@ -609,7 +609,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -633,8 +633,8 @@ func main() {
     rrValue7 := "rrValue7_example" // string | The seventh value of the DNS resource record, depending on its type, as detailed in the service description (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsRrDelete(context.Background()).ServerId(serverId).ServerName(serverName).ZoneId(zoneId).ZoneName(zoneName).ServerHostaddr(serverHostaddr).RrId(rrId).RrName(rrName).ViewId(viewId).ViewName(viewName).ZoneSpaceId(zoneSpaceId).RrType(rrType).RrValue1(rrValue1).RrValue2(rrValue2).RrValue3(rrValue3).RrValue4(rrValue4).RrValue5(rrValue5).RrValue6(rrValue6).RrValue7(rrValue7).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsRrDelete``: %v\n", err)
@@ -711,14 +711,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsRrEditInput := *openapiclient.NewDnsRrEditInput() // DnsRrEditInput |  (optional)
+    dnsRrEditInput := *sdsclient.NewDnsRrEditInput() // DnsRrEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsRrEdit(context.Background()).DnsRrEditInput(dnsRrEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsRrEdit``: %v\n", err)
@@ -777,14 +777,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     rrId := int32(56) // int32 | The database identifier (ID) of the DNS resource record, a unique numeric key value automatically incremented when you add a DNS RR. Use the ID to specify the DNS RR of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsRrInfo(context.Background()).RrId(rrId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsRrInfo``: %v\n", err)
@@ -843,7 +843,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -853,8 +853,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsRrList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsRrList``: %v\n", err)
@@ -917,15 +917,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsServerCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsServerCount``: %v\n", err)
@@ -985,14 +985,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     serverId := int32(56) // int32 | The database identifier (ID) of the DNS server, a unique numeric key value automatically incremented when you add a DNS server. Use the ID to specify the DNS server of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsServerInfo(context.Background()).ServerId(serverId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsServerInfo``: %v\n", err)
@@ -1051,7 +1051,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1061,8 +1061,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsServerList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsServerList``: %v\n", err)
@@ -1125,14 +1125,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsViewAddInput := *openapiclient.NewDnsViewAddInput() // DnsViewAddInput |  (optional)
+    dnsViewAddInput := *sdsclient.NewDnsViewAddInput() // DnsViewAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewAdd(context.Background()).DnsViewAddInput(dnsViewAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewAdd``: %v\n", err)
@@ -1191,15 +1191,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewCount``: %v\n", err)
@@ -1259,7 +1259,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1270,8 +1270,8 @@ func main() {
     serverHostaddr := "serverHostaddr_example" // string | The IP address of the DNS server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewDelete(context.Background()).ServerId(serverId).ServerName(serverName).ViewId(viewId).ViewName(viewName).ServerHostaddr(serverHostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewDelete``: %v\n", err)
@@ -1335,14 +1335,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsViewEditInput := *openapiclient.NewDnsViewEditInput() // DnsViewEditInput |  (optional)
+    dnsViewEditInput := *sdsclient.NewDnsViewEditInput() // DnsViewEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewEdit(context.Background()).DnsViewEditInput(dnsViewEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewEdit``: %v\n", err)
@@ -1401,14 +1401,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     viewId := int32(56) // int32 | The database identifier (ID) of the DNS view. Use the ID to specify the DNS view of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewInfo(context.Background()).ViewId(viewId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewInfo``: %v\n", err)
@@ -1467,7 +1467,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1477,8 +1477,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewList``: %v\n", err)
@@ -1541,14 +1541,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsViewparamAddInput := *openapiclient.NewDnsViewparamAddInput() // DnsViewparamAddInput |  (optional)
+    dnsViewparamAddInput := *sdsclient.NewDnsViewparamAddInput() // DnsViewparamAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewparamAdd(context.Background()).DnsViewparamAddInput(dnsViewparamAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewparamAdd``: %v\n", err)
@@ -1607,14 +1607,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewparamCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewparamCount``: %v\n", err)
@@ -1673,15 +1673,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     viewId := int32(56) // int32 | The database identifier (ID) of the DNS view. Use the ID to specify the DNS view of your choice. (optional)
     viewparamKey := "viewparamKey_example" // string | The name of the DNS option that you want to remove from the view: <b>param_key=&lt;option-name&gt;</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewparamDelete(context.Background()).ViewId(viewId).ViewparamKey(viewparamKey).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewparamDelete``: %v\n", err)
@@ -1741,14 +1741,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsViewparamEditInput := *openapiclient.NewDnsViewparamEditInput() // DnsViewparamEditInput |  (optional)
+    dnsViewparamEditInput := *sdsclient.NewDnsViewparamEditInput() // DnsViewparamEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewparamEdit(context.Background()).DnsViewparamEditInput(dnsViewparamEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewparamEdit``: %v\n", err)
@@ -1807,14 +1807,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     viewId := int32(56) // int32 | The database identifier (ID) of the DNS view. Use the ID to specify the DNS view of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewparamInfo(context.Background()).ViewId(viewId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewparamInfo``: %v\n", err)
@@ -1873,7 +1873,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1882,8 +1882,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsViewparamList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsViewparamList``: %v\n", err)
@@ -1945,14 +1945,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsZoneAddInput := *openapiclient.NewDnsZoneAddInput() // DnsZoneAddInput |  (optional)
+    dnsZoneAddInput := *sdsclient.NewDnsZoneAddInput() // DnsZoneAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneAdd(context.Background()).DnsZoneAddInput(dnsZoneAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneAdd``: %v\n", err)
@@ -2011,15 +2011,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneCount``: %v\n", err)
@@ -2079,7 +2079,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2092,8 +2092,8 @@ func main() {
     serverHostaddr := "serverHostaddr_example" // string | The IP address of the DNS server. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneDelete(context.Background()).ServerId(serverId).ServerName(serverName).ViewId(viewId).ViewName(viewName).ZoneId(zoneId).ZoneName(zoneName).ServerHostaddr(serverHostaddr).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneDelete``: %v\n", err)
@@ -2159,14 +2159,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsZoneEditInput := *openapiclient.NewDnsZoneEditInput() // DnsZoneEditInput |  (optional)
+    dnsZoneEditInput := *sdsclient.NewDnsZoneEditInput() // DnsZoneEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneEdit(context.Background()).DnsZoneEditInput(dnsZoneEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneEdit``: %v\n", err)
@@ -2225,14 +2225,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     zoneId := int32(56) // int32 | The database identifier (ID) of the DNS zone, a unique numeric key value automatically incremented when you add a DNS zone. Use the ID to specify the DNS zone of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneInfo(context.Background()).ZoneId(zoneId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneInfo``: %v\n", err)
@@ -2291,7 +2291,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2301,8 +2301,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneList``: %v\n", err)
@@ -2365,14 +2365,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsZoneparamAddInput := *openapiclient.NewDnsZoneparamAddInput() // DnsZoneparamAddInput |  (optional)
+    dnsZoneparamAddInput := *sdsclient.NewDnsZoneparamAddInput() // DnsZoneparamAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneparamAdd(context.Background()).DnsZoneparamAddInput(dnsZoneparamAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneparamAdd``: %v\n", err)
@@ -2431,14 +2431,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneparamCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneparamCount``: %v\n", err)
@@ -2497,15 +2497,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     zoneId := int32(56) // int32 | The database identifier (ID) of the DNS zone, a unique numeric key value automatically incremented when you add a DNS zone. Use the ID to specify the DNS zone of your choice. (optional)
     zoneparamKey := "zoneparamKey_example" // string | The name of the DNS option that you want to remove from the zone: <b>param_key=&lt;option-name&gt;</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneparamDelete(context.Background()).ZoneId(zoneId).ZoneparamKey(zoneparamKey).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneparamDelete``: %v\n", err)
@@ -2565,14 +2565,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    dnsZoneparamEditInput := *openapiclient.NewDnsZoneparamEditInput() // DnsZoneparamEditInput |  (optional)
+    dnsZoneparamEditInput := *sdsclient.NewDnsZoneparamEditInput() // DnsZoneparamEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneparamEdit(context.Background()).DnsZoneparamEditInput(dnsZoneparamEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneparamEdit``: %v\n", err)
@@ -2631,14 +2631,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     zoneId := int32(56) // int32 | The database identifier (ID) of the DNS zone, a unique numeric key value automatically incremented when you add a DNS zone. Use the ID to specify the DNS zone of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneparamInfo(context.Background()).ZoneId(zoneId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneparamInfo``: %v\n", err)
@@ -2697,7 +2697,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2706,8 +2706,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.DnsApi.DnsZoneparamList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `DnsApi.DnsZoneparamList``: %v\n", err)

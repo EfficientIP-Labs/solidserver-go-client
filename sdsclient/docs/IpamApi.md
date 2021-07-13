@@ -76,14 +76,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAddress6AddInput := *openapiclient.NewIpamAddress6AddInput() // IpamAddress6AddInput |  (optional)
+    ipamAddress6AddInput := *sdsclient.NewIpamAddress6AddInput() // IpamAddress6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddress6Add(context.Background()).IpamAddress6AddInput(ipamAddress6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddress6Add``: %v\n", err)
@@ -142,15 +142,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddress6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddress6Count``: %v\n", err)
@@ -210,7 +210,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -221,8 +221,8 @@ func main() {
     address6Name := "address6Name_example" // string | The name of the IPv6 address. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddress6Delete(context.Background()).Address6Hostaddr(address6Hostaddr).Address6Id(address6Id).SpaceId(spaceId).SpaceName(spaceName).Address6Name(address6Name).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddress6Delete``: %v\n", err)
@@ -286,14 +286,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAddress6EditInput := *openapiclient.NewIpamAddress6EditInput() // IpamAddress6EditInput |  (optional)
+    ipamAddress6EditInput := *sdsclient.NewIpamAddress6EditInput() // IpamAddress6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddress6Edit(context.Background()).IpamAddress6EditInput(ipamAddress6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddress6Edit``: %v\n", err)
@@ -352,14 +352,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     address6Id := int32(56) // int32 | The database identifier (ID) of the IPv6 address, a unique numeric key value automatically incremented when you add an IPv6 address. Use the ID to specify the IPv6 address of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddress6Info(context.Background()).Address6Id(address6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddress6Info``: %v\n", err)
@@ -418,7 +418,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -428,8 +428,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddress6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddress6List``: %v\n", err)
@@ -492,14 +492,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAddressAddInput := *openapiclient.NewIpamAddressAddInput() // IpamAddressAddInput |  (optional)
+    ipamAddressAddInput := *sdsclient.NewIpamAddressAddInput() // IpamAddressAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddressAdd(context.Background()).IpamAddressAddInput(ipamAddressAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddressAdd``: %v\n", err)
@@ -558,15 +558,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddressCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddressCount``: %v\n", err)
@@ -626,7 +626,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -637,8 +637,8 @@ func main() {
     addressName := "addressName_example" // string | The name of the IPv4 address. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddressDelete(context.Background()).AddressHostaddr(addressHostaddr).AddressId(addressId).SpaceId(spaceId).SpaceName(spaceName).AddressName(addressName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddressDelete``: %v\n", err)
@@ -702,14 +702,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAddressEditInput := *openapiclient.NewIpamAddressEditInput() // IpamAddressEditInput |  (optional)
+    ipamAddressEditInput := *sdsclient.NewIpamAddressEditInput() // IpamAddressEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddressEdit(context.Background()).IpamAddressEditInput(ipamAddressEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddressEdit``: %v\n", err)
@@ -768,14 +768,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     addressId := int32(56) // int32 | The database identifier (ID) of the IPv4 address, a unique numeric key value automatically incremented when you add an IPv4 address. Use the ID to specify the IPv4 address of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddressInfo(context.Background()).AddressId(addressId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddressInfo``: %v\n", err)
@@ -834,7 +834,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -844,8 +844,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAddressList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAddressList``: %v\n", err)
@@ -908,14 +908,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAlias6AddInput := *openapiclient.NewIpamAlias6AddInput() // IpamAlias6AddInput |  (optional)
+    ipamAlias6AddInput := *sdsclient.NewIpamAlias6AddInput() // IpamAlias6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAlias6Add(context.Background()).IpamAlias6AddInput(ipamAlias6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAlias6Add``: %v\n", err)
@@ -974,7 +974,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -982,8 +982,8 @@ func main() {
     address6Id := int32(56) // int32 | The database identifier (ID) of the IPv6 address, a unique numeric key value automatically incremented when you add an IPv6 address. Use the ID to specify the IPv6 address of your choice. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAlias6Count(context.Background()).Where(where).Address6Id(address6Id).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAlias6Count``: %v\n", err)
@@ -1044,7 +1044,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1057,8 +1057,8 @@ func main() {
     alias6Type := "alias6Type_example" // string | The type of the alias. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAlias6Delete(context.Background()).Address6Hostaddr(address6Hostaddr).Address6Id(address6Id).Alias6Name(alias6Name).Alias6Id(alias6Id).SpaceId(spaceId).SpaceName(spaceName).Alias6Type(alias6Type).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAlias6Delete``: %v\n", err)
@@ -1124,14 +1124,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAlias6EditInput := *openapiclient.NewIpamAlias6EditInput() // IpamAlias6EditInput |  (optional)
+    ipamAlias6EditInput := *sdsclient.NewIpamAlias6EditInput() // IpamAlias6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAlias6Edit(context.Background()).IpamAlias6EditInput(ipamAlias6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAlias6Edit``: %v\n", err)
@@ -1190,7 +1190,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1201,8 +1201,8 @@ func main() {
     address6Id := int32(56) // int32 | The database identifier (ID) of the IPv6 address, a unique numeric key value automatically incremented when you add an IPv6 address. Use the ID to specify the IPv6 address of your choice. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAlias6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Address6Id(address6Id).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAlias6List``: %v\n", err)
@@ -1266,14 +1266,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAliasAddInput := *openapiclient.NewIpamAliasAddInput() // IpamAliasAddInput |  (optional)
+    ipamAliasAddInput := *sdsclient.NewIpamAliasAddInput() // IpamAliasAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAliasAdd(context.Background()).IpamAliasAddInput(ipamAliasAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAliasAdd``: %v\n", err)
@@ -1332,7 +1332,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1340,8 +1340,8 @@ func main() {
     addressId := int32(56) // int32 | The database identifier (ID) of the IPv4 address, a unique numeric key value automatically incremented when you add an IPv4 address. Use the ID to specify the IPv4 address of your choice. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAliasCount(context.Background()).Where(where).AddressId(addressId).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAliasCount``: %v\n", err)
@@ -1402,7 +1402,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1415,8 +1415,8 @@ func main() {
     aliasType := "aliasType_example" // string | The type of the alias. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAliasDelete(context.Background()).AddressHostaddr(addressHostaddr).AddressId(addressId).AliasName(aliasName).AliasId(aliasId).SpaceId(spaceId).SpaceName(spaceName).AliasType(aliasType).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAliasDelete``: %v\n", err)
@@ -1482,14 +1482,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamAliasEditInput := *openapiclient.NewIpamAliasEditInput() // IpamAliasEditInput |  (optional)
+    ipamAliasEditInput := *sdsclient.NewIpamAliasEditInput() // IpamAliasEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAliasEdit(context.Background()).IpamAliasEditInput(ipamAliasEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAliasEdit``: %v\n", err)
@@ -1548,7 +1548,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1559,8 +1559,8 @@ func main() {
     addressId := int32(56) // int32 | The database identifier (ID) of the IPv4 address, a unique numeric key value automatically incremented when you add an IPv4 address. Use the ID to specify the IPv4 address of your choice. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamAliasList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).AddressId(addressId).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamAliasList``: %v\n", err)
@@ -1624,14 +1624,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamNetwork6AddInput := *openapiclient.NewIpamNetwork6AddInput() // IpamNetwork6AddInput |  (optional)
+    ipamNetwork6AddInput := *sdsclient.NewIpamNetwork6AddInput() // IpamNetwork6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetwork6Add(context.Background()).IpamNetwork6AddInput(ipamNetwork6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetwork6Add``: %v\n", err)
@@ -1690,15 +1690,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetwork6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetwork6Count``: %v\n", err)
@@ -1758,7 +1758,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1775,8 +1775,8 @@ func main() {
     useReversedRelativePosition := int32(56) // int32 | A way to determine if the calculation of the parameter <b>relative_position</b> should start from the top (<b>0</b>) or the bottom (<b>1</b>) of the VLSM organization. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetwork6Delete(context.Background()).ParentNetwork6Id(parentNetwork6Id).SpaceId(spaceId).SpaceName(spaceName).Network6Addr(network6Addr).Network6EndAddr(network6EndAddr).Network6Id(network6Id).Network6Prefix(network6Prefix).RelativePosition(relativePosition).Network6Name(network6Name).NetworkLevel(networkLevel).UseReversedRelativePosition(useReversedRelativePosition).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetwork6Delete``: %v\n", err)
@@ -1846,14 +1846,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamNetwork6EditInput := *openapiclient.NewIpamNetwork6EditInput() // IpamNetwork6EditInput |  (optional)
+    ipamNetwork6EditInput := *sdsclient.NewIpamNetwork6EditInput() // IpamNetwork6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetwork6Edit(context.Background()).IpamNetwork6EditInput(ipamNetwork6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetwork6Edit``: %v\n", err)
@@ -1912,14 +1912,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     network6Id := int32(56) // int32 | The database identifier (ID) of the IPv6 network, a unique numeric key value automatically incremented when you add an IPv6 network. Use the ID to specify the IPv6 network of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetwork6Info(context.Background()).Network6Id(network6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetwork6Info``: %v\n", err)
@@ -1978,7 +1978,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1988,8 +1988,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetwork6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetwork6List``: %v\n", err)
@@ -2052,14 +2052,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamNetworkAddInput := *openapiclient.NewIpamNetworkAddInput() // IpamNetworkAddInput |  (optional)
+    ipamNetworkAddInput := *sdsclient.NewIpamNetworkAddInput() // IpamNetworkAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetworkAdd(context.Background()).IpamNetworkAddInput(ipamNetworkAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetworkAdd``: %v\n", err)
@@ -2118,15 +2118,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetworkCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetworkCount``: %v\n", err)
@@ -2186,7 +2186,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2205,8 +2205,8 @@ func main() {
     useReversedRelativePosition := int32(56) // int32 | A way to determine if the calculation of the parameter <b>relative_position</b> should start from the top (<b>0</b>) or the bottom (<b>1</b>) of the VLSM organization. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetworkDelete(context.Background()).ParentNetworkId(parentNetworkId).SpaceId(spaceId).SpaceName(spaceName).NetworkAddr(networkAddr).NetworkEndAddr(networkEndAddr).NetworkId(networkId).NetworkMask(networkMask).NetworkPrefix(networkPrefix).NetworkSize(networkSize).RelativePosition(relativePosition).NetworkLevel(networkLevel).NetworkName(networkName).UseReversedRelativePosition(useReversedRelativePosition).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetworkDelete``: %v\n", err)
@@ -2278,14 +2278,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamNetworkEditInput := *openapiclient.NewIpamNetworkEditInput() // IpamNetworkEditInput |  (optional)
+    ipamNetworkEditInput := *sdsclient.NewIpamNetworkEditInput() // IpamNetworkEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetworkEdit(context.Background()).IpamNetworkEditInput(ipamNetworkEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetworkEdit``: %v\n", err)
@@ -2344,14 +2344,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     networkId := int32(56) // int32 | The database identifier (ID) of the IPv4 network, a unique numeric key value automatically incremented when you add an IPv4 network. Use the ID to specify the IPv4 network of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetworkInfo(context.Background()).NetworkId(networkId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetworkInfo``: %v\n", err)
@@ -2410,7 +2410,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2420,8 +2420,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamNetworkList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamNetworkList``: %v\n", err)
@@ -2484,14 +2484,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamPool6AddInput := *openapiclient.NewIpamPool6AddInput() // IpamPool6AddInput |  (optional)
+    ipamPool6AddInput := *sdsclient.NewIpamPool6AddInput() // IpamPool6AddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPool6Add(context.Background()).IpamPool6AddInput(ipamPool6AddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPool6Add``: %v\n", err)
@@ -2550,15 +2550,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPool6Count(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPool6Count``: %v\n", err)
@@ -2618,7 +2618,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2630,8 +2630,8 @@ func main() {
     network6Id := int32(56) // int32 | The database identifier (ID) of the IPv6 network, a unique numeric key value automatically incremented when you add an IPv6 network. Use the ID to specify the IPv6 network of your choice. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPool6Delete(context.Background()).Pool6EndIpAddr(pool6EndIpAddr).Pool6Id(pool6Id).SpaceId(spaceId).SpaceName(spaceName).Pool6StartIpAddr(pool6StartIpAddr).Network6Id(network6Id).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPool6Delete``: %v\n", err)
@@ -2696,14 +2696,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamPool6EditInput := *openapiclient.NewIpamPool6EditInput() // IpamPool6EditInput |  (optional)
+    ipamPool6EditInput := *sdsclient.NewIpamPool6EditInput() // IpamPool6EditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPool6Edit(context.Background()).IpamPool6EditInput(ipamPool6EditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPool6Edit``: %v\n", err)
@@ -2762,14 +2762,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     pool6Id := int32(56) // int32 | The database identifier (ID) of the IPv6 pool, a unique numeric key value automatically incremented when you add an IPv6 pool. Use the ID to specify the IPv6 pool of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPool6Info(context.Background()).Pool6Id(pool6Id).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPool6Info``: %v\n", err)
@@ -2828,7 +2828,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -2838,8 +2838,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPool6List(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPool6List``: %v\n", err)
@@ -2902,14 +2902,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamPoolAddInput := *openapiclient.NewIpamPoolAddInput() // IpamPoolAddInput |  (optional)
+    ipamPoolAddInput := *sdsclient.NewIpamPoolAddInput() // IpamPoolAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPoolAdd(context.Background()).IpamPoolAddInput(ipamPoolAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPoolAdd``: %v\n", err)
@@ -2968,15 +2968,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPoolCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPoolCount``: %v\n", err)
@@ -3036,7 +3036,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3049,8 +3049,8 @@ func main() {
     networkId := int32(56) // int32 | The database identifier (ID) of the IPv4 network, a unique numeric key value automatically incremented when you add an IPv4 network. Use the ID to specify the IPv4 network of your choice. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPoolDelete(context.Background()).PoolEndIpAddr(poolEndIpAddr).PoolId(poolId).PoolSize(poolSize).SpaceId(spaceId).SpaceName(spaceName).PoolStartIpAddr(poolStartIpAddr).NetworkId(networkId).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPoolDelete``: %v\n", err)
@@ -3116,14 +3116,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamPoolEditInput := *openapiclient.NewIpamPoolEditInput() // IpamPoolEditInput |  (optional)
+    ipamPoolEditInput := *sdsclient.NewIpamPoolEditInput() // IpamPoolEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPoolEdit(context.Background()).IpamPoolEditInput(ipamPoolEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPoolEdit``: %v\n", err)
@@ -3182,14 +3182,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     poolId := int32(56) // int32 | The database identifier (ID) of the IPv4 pool, a unique numeric key value automatically incremented when you add an IPv4 pool. Use the ID to specify the IPv4 pool of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPoolInfo(context.Background()).PoolId(poolId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPoolInfo``: %v\n", err)
@@ -3248,7 +3248,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3258,8 +3258,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamPoolList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamPoolList``: %v\n", err)
@@ -3322,14 +3322,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamSpaceAddInput := *openapiclient.NewIpamSpaceAddInput() // IpamSpaceAddInput |  (optional)
+    ipamSpaceAddInput := *sdsclient.NewIpamSpaceAddInput() // IpamSpaceAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamSpaceAdd(context.Background()).IpamSpaceAddInput(ipamSpaceAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamSpaceAdd``: %v\n", err)
@@ -3388,15 +3388,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamSpaceCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamSpaceCount``: %v\n", err)
@@ -3456,7 +3456,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3464,8 +3464,8 @@ func main() {
     spaceName := "spaceName_example" // string | The name of the space. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamSpaceDelete(context.Background()).SpaceId(spaceId).SpaceName(spaceName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamSpaceDelete``: %v\n", err)
@@ -3526,14 +3526,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    ipamSpaceEditInput := *openapiclient.NewIpamSpaceEditInput() // IpamSpaceEditInput |  (optional)
+    ipamSpaceEditInput := *sdsclient.NewIpamSpaceEditInput() // IpamSpaceEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamSpaceEdit(context.Background()).IpamSpaceEditInput(ipamSpaceEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamSpaceEdit``: %v\n", err)
@@ -3592,14 +3592,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     spaceId := int32(56) // int32 | The database identifier (ID) of the space, a unique numeric key value automatically incremented when you add a space. Use the ID to specify the space of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamSpaceInfo(context.Background()).SpaceId(spaceId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamSpaceInfo``: %v\n", err)
@@ -3658,7 +3658,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -3668,8 +3668,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.IpamApi.IpamSpaceList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `IpamApi.IpamSpaceList``: %v\n", err)

@@ -30,14 +30,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    guardianPolicyAddInput := *openapiclient.NewGuardianPolicyAddInput() // GuardianPolicyAddInput |  (optional)
+    guardianPolicyAddInput := *sdsclient.NewGuardianPolicyAddInput() // GuardianPolicyAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.GuardianApi.GuardianPolicyAdd(context.Background()).GuardianPolicyAddInput(guardianPolicyAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `GuardianApi.GuardianPolicyAdd``: %v\n", err)
@@ -96,14 +96,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.GuardianApi.GuardianPolicyCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `GuardianApi.GuardianPolicyCount``: %v\n", err)
@@ -162,7 +162,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -172,8 +172,8 @@ func main() {
     policyName := "policyName_example" // string | The name of the policy. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.GuardianApi.GuardianPolicyDelete(context.Background()).ServerId(serverId).ServerName(serverName).PolicyId(policyId).PolicyName(policyName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `GuardianApi.GuardianPolicyDelete``: %v\n", err)
@@ -236,14 +236,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    guardianPolicyEditInput := *openapiclient.NewGuardianPolicyEditInput() // GuardianPolicyEditInput |  (optional)
+    guardianPolicyEditInput := *sdsclient.NewGuardianPolicyEditInput() // GuardianPolicyEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.GuardianApi.GuardianPolicyEdit(context.Background()).GuardianPolicyEditInput(guardianPolicyEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `GuardianApi.GuardianPolicyEdit``: %v\n", err)
@@ -302,14 +302,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     policyId := int32(56) // int32 | The database identifier (ID) of the policy, a unique identifier automatically incremented when you add the policy. Use it to identify the policy of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.GuardianApi.GuardianPolicyInfo(context.Background()).PolicyId(policyId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `GuardianApi.GuardianPolicyInfo``: %v\n", err)
@@ -368,7 +368,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -377,8 +377,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.GuardianApi.GuardianPolicyList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `GuardianApi.GuardianPolicyList``: %v\n", err)

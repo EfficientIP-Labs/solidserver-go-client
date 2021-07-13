@@ -42,14 +42,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    appApplicationAddInput := *openapiclient.NewAppApplicationAddInput() // AppApplicationAddInput |  (optional)
+    appApplicationAddInput := *sdsclient.NewAppApplicationAddInput() // AppApplicationAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppApplicationAdd(context.Background()).AppApplicationAddInput(appApplicationAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppApplicationAdd``: %v\n", err)
@@ -108,15 +108,15 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppApplicationCount(context.Background()).Where(where).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppApplicationCount``: %v\n", err)
@@ -176,7 +176,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -187,8 +187,8 @@ func main() {
     gslbserverName := "gslbserverName_example" // string | The name of the GSLB server associated with the application. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppApplicationDelete(context.Background()).ApplicationId(applicationId).ApplicationFqdn(applicationFqdn).ApplicationName(applicationName).GslbserverId(gslbserverId).GslbserverName(gslbserverName).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppApplicationDelete``: %v\n", err)
@@ -252,14 +252,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    appApplicationEditInput := *openapiclient.NewAppApplicationEditInput() // AppApplicationEditInput |  (optional)
+    appApplicationEditInput := *sdsclient.NewAppApplicationEditInput() // AppApplicationEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppApplicationEdit(context.Background()).AppApplicationEditInput(appApplicationEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppApplicationEdit``: %v\n", err)
@@ -318,14 +318,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     applicationId := int32(56) // int32 | The database identifier (ID) of the application, a unique numeric key value automatically incremented when you add an application. Use the ID to specify the application of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppApplicationInfo(context.Background()).ApplicationId(applicationId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppApplicationInfo``: %v\n", err)
@@ -384,7 +384,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -394,8 +394,8 @@ func main() {
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
     tags := "tags_example" // string | The list of class parameters to tag in the call, separated by a comma. Each parameter must be specified following the format <object-type>.<parameter>, e.g. site.decription . (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppApplicationList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Tags(tags).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppApplicationList``: %v\n", err)
@@ -458,14 +458,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    appNodeAddInput := *openapiclient.NewAppNodeAddInput() // AppNodeAddInput |  (optional)
+    appNodeAddInput := *sdsclient.NewAppNodeAddInput() // AppNodeAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppNodeAdd(context.Background()).AppNodeAddInput(appNodeAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppNodeAdd``: %v\n", err)
@@ -524,14 +524,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppNodeCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppNodeCount``: %v\n", err)
@@ -590,7 +590,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -604,8 +604,8 @@ func main() {
     gslbserverId := int32(56) // int32 | The database identifier (ID) of the GSLB server associated with the application, a unique identifier automatically incremented when you add the server. Use it to identify the GSLB server of your choice. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppNodeDelete(context.Background()).ApplicationFqdn(applicationFqdn).ApplicationId(applicationId).ApplicationName(applicationName).NodeId(nodeId).PoolId(poolId).PoolName(poolName).NodeName(nodeName).GslbserverId(gslbserverId).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppNodeDelete``: %v\n", err)
@@ -672,14 +672,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    appNodeEditInput := *openapiclient.NewAppNodeEditInput() // AppNodeEditInput |  (optional)
+    appNodeEditInput := *sdsclient.NewAppNodeEditInput() // AppNodeEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppNodeEdit(context.Background()).AppNodeEditInput(appNodeEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppNodeEdit``: %v\n", err)
@@ -738,14 +738,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     nodeId := int32(56) // int32 | The database identifier (ID) of the node, a unique numeric key value automatically incremented when you add a node. Use the ID to specify the node of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppNodeInfo(context.Background()).NodeId(nodeId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppNodeInfo``: %v\n", err)
@@ -804,7 +804,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -813,8 +813,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppNodeList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppNodeList``: %v\n", err)
@@ -876,14 +876,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    appPoolAddInput := *openapiclient.NewAppPoolAddInput() // AppPoolAddInput |  (optional)
+    appPoolAddInput := *sdsclient.NewAppPoolAddInput() // AppPoolAddInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppPoolAdd(context.Background()).AppPoolAddInput(appPoolAddInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppPoolAdd``: %v\n", err)
@@ -942,14 +942,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     where := "where_example" // string | A clause that allows to filter the result. You can include any output parameter of the service <b>*_list</b> of the object in this clause, except class parameters.To filter the result using class parameters, you must tag them first<i>                                            It is no longer possible to use the structure <b>&lt;object-name&gt;_class_parameters like &lt;value&gt;</b> directly in the clause <b>WHERE</b>.<br/>                                        </i>. For more details, refer to the section .The parameters and their value must be specified following the operators and syntax of the SQL standard, as in the following examples : <b>&lt;parameter&gt;='&lt;value&gt;'</b> or <b>&lt;parameter&gt; IS NOT NULL</b>. The clause must be encoded in URL format. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppPoolCount(context.Background()).Where(where).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppPoolCount``: %v\n", err)
@@ -1008,7 +1008,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1020,8 +1020,8 @@ func main() {
     gslbserverId := int32(56) // int32 | The database identifier (ID) of the GSLB server associated with the application, a unique identifier automatically incremented when you add the server. Use it to identify the GSLB server of your choice. (optional)
     warnings := "warnings_example" // string | A way to bypass <b>(accept) </b>any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppPoolDelete(context.Background()).ApplicationFqdn(applicationFqdn).ApplicationId(applicationId).ApplicationName(applicationName).PoolId(poolId).PoolName(poolName).GslbserverId(gslbserverId).Warnings(warnings).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppPoolDelete``: %v\n", err)
@@ -1086,14 +1086,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
-    appPoolEditInput := *openapiclient.NewAppPoolEditInput() // AppPoolEditInput |  (optional)
+    appPoolEditInput := *sdsclient.NewAppPoolEditInput() // AppPoolEditInput |  (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppPoolEdit(context.Background()).AppPoolEditInput(appPoolEditInput).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppPoolEdit``: %v\n", err)
@@ -1152,14 +1152,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
     poolId := int32(56) // int32 | The database identifier (ID) of the pool, a unique numeric key value automatically incremented when you add a pool. Use the ID to specify the pool of your choice. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppPoolInfo(context.Background()).PoolId(poolId).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppPoolInfo``: %v\n", err)
@@ -1218,7 +1218,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "./openapi"
+    "github.com/efficientip-labs/solidserver-go-client/sdsclient"
 )
 
 func main() {
@@ -1227,8 +1227,8 @@ func main() {
     limit := int32(56) // int32 | The maximum number of results to be returned. Depending on the user resources and the database content, it can return less results than the value you have specified.The input parameter <b>limit</b> must be specified in <b>lowercase</b>. (optional)
     offset := int32(56) // int32 | The number of rows to skip in the service output.The input parameter <b>offset</b> must be specified in <b>lowercase</b>. (optional)
 
-    configuration := openapiclient.NewConfiguration()
-    api_client := openapiclient.NewAPIClient(configuration)
+    configuration := sdsclient.NewConfiguration()
+    api_client := sdsclient.NewAPIClient(configuration)
     resp, r, err := api_client.AppApi.AppPoolList(context.Background()).Orderby(orderby).Where(where).Limit(limit).Offset(offset).Execute()
     if err.Error() != "" {
         fmt.Fprintf(os.Stderr, "Error when calling `AppApi.AppPoolList``: %v\n", err)
