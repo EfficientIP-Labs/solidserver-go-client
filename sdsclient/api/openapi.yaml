@@ -21,7 +21,7 @@ servers:
 - url: https://{your_solidserver_fqdn}:{port}/api/v2.0
   variables:
     your_solidserver_fqdn:
-      default: vmdev-ct-fb11
+      default: SDS-URL
       description: server ip or server fqdn
     port:
       default: "443"

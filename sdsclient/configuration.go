@@ -111,7 +111,7 @@ func NewConfiguration() *Configuration {
 				Variables: map[string]ServerVariable{
 					"your_solidserver_fqdn": ServerVariable{
 						Description: "server ip or server fqdn",
-						DefaultValue: "vmdev-ct-fb11",
+						DefaultValue: "SDS-URL",
 					},
 					"port": ServerVariable{
 						Description: "No description provided",

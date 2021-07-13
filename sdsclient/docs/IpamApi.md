@@ -1,6 +1,6 @@
 # \IpamApi
 
-All URIs are relative to *https://vmdev-ct-fb11:443/api/v2.0*
+All URIs are relative to *https://SDS-URL:443/api/v2.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
