@@ -1,0 +1,108 @@
+# DhcpStaticEditSuccess
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
+**Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
+**Data** | Pointer to [**[]DhcpStaticEditSuccessData**](DhcpStaticEditSuccessData.md) |  | [optional] 
+
+## Methods
+
+### NewDhcpStaticEditSuccess
+
+`func NewDhcpStaticEditSuccess() *DhcpStaticEditSuccess`
+
+NewDhcpStaticEditSuccess instantiates a new DhcpStaticEditSuccess object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewDhcpStaticEditSuccessWithDefaults
+
+`func NewDhcpStaticEditSuccessWithDefaults() *DhcpStaticEditSuccess`
+
+NewDhcpStaticEditSuccessWithDefaults instantiates a new DhcpStaticEditSuccess object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetSuccess
+
+`func (o *DhcpStaticEditSuccess) GetSuccess() bool`
+
+GetSuccess returns the Success field if non-nil, zero value otherwise.
+
+### GetSuccessOk
+
+`func (o *DhcpStaticEditSuccess) GetSuccessOk() (*bool, bool)`
+
+GetSuccessOk returns a tuple with the Success field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSuccess
+
+`func (o *DhcpStaticEditSuccess) SetSuccess(v bool)`
+
+SetSuccess sets Success field to given value.
+
+### HasSuccess
+
+`func (o *DhcpStaticEditSuccess) HasSuccess() bool`
+
+HasSuccess returns a boolean if a field has been set.
+
+### GetMessages
+
+`func (o *DhcpStaticEditSuccess) GetMessages() []ApiMessageEntry`
+
+GetMessages returns the Messages field if non-nil, zero value otherwise.
+
+### GetMessagesOk
+
+`func (o *DhcpStaticEditSuccess) GetMessagesOk() (*[]ApiMessageEntry, bool)`
+
+GetMessagesOk returns a tuple with the Messages field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMessages
+
+`func (o *DhcpStaticEditSuccess) SetMessages(v []ApiMessageEntry)`
+
+SetMessages sets Messages field to given value.
+
+### HasMessages
+
+`func (o *DhcpStaticEditSuccess) HasMessages() bool`
+
+HasMessages returns a boolean if a field has been set.
+
+### GetData
+
+`func (o *DhcpStaticEditSuccess) GetData() []DhcpStaticEditSuccessData`
+
+GetData returns the Data field if non-nil, zero value otherwise.
+
+### GetDataOk
+
+`func (o *DhcpStaticEditSuccess) GetDataOk() (*[]DhcpStaticEditSuccessData, bool)`
+
+GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetData
+
+`func (o *DhcpStaticEditSuccess) SetData(v []DhcpStaticEditSuccessData)`
+
+SetData sets Data field to given value.
+
+### HasData
+
+`func (o *DhcpStaticEditSuccess) HasData() bool`
+
+HasData returns a boolean if a field has been set.
+
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
