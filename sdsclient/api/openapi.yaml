@@ -18,9 +18,9 @@ info:
   title: SOLIDserver API
   version: "2.0"
 servers:
-- url: https://{your_solidserver_fqdn}:{port}/api/v2.0
+- url: https://{host}:{port}/api/v2.0
   variables:
-    your_solidserver_fqdn:
+    host:
       default: SDS-URL
       description: server ip or server fqdn
     port:

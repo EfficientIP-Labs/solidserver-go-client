@@ -106,10 +106,10 @@ func NewConfiguration() *Configuration {
 		Debug:            false,
 		Servers:          ServerConfigurations{
 			{
-				URL: "https://{your_solidserver_fqdn}:{port}/api/v2.0",
+				URL: "https://{host}:{port}/api/v2.0",
 				Description: "No description provided",
 				Variables: map[string]ServerVariable{
-					"your_solidserver_fqdn": ServerVariable{
+					"host": ServerVariable{
 						Description: "server ip or server fqdn",
 						DefaultValue: "SDS-URL",
 					},
