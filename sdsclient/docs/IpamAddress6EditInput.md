@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Address6Hostaddr** | Pointer to **string** | The IP address. | [optional] 
-**Address6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 address, a unique numeric key value automatically incremented when you add an IPv6 address. Use the ID to specify which IPv6 address to edit. | [optional] 
+**Address6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 address, a unique numeric key value automatically incremented when you add an IPv6 address. Use the ID to specify the IPv6 address of your choice. | [optional] 
 **SpaceId** | Pointer to **int32** | The database identifier (ID) of the space, a unique numeric key value automatically incremented when you add a space. Use the ID to specify the space of your choice. | [optional] 
 **SpaceName** | Pointer to **string** | The name of the space. | [optional] 
 **DeviceId** | Pointer to **int32** | The database identifier (ID) of the Device Manager device you want to associate with the IP address. | [optional] 

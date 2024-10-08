@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DhcpRangeEditSuccessData**](DhcpRangeEditSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerVlanRangeEditSuccess**](DataInnerVlanRangeEditSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *VlanRangeEditSuccess) GetData() []DhcpRangeEditSuccessData`
+`func (o *VlanRangeEditSuccess) GetData() []DataInnerVlanRangeEditSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *VlanRangeEditSuccess) GetDataOk() (*[]DhcpRangeEditSuccessData, bool)`
+`func (o *VlanRangeEditSuccess) GetDataOk() (*[]DataInnerVlanRangeEditSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *VlanRangeEditSuccess) SetData(v []DhcpRangeEditSuccessData)`
+`func (o *VlanRangeEditSuccess) SetData(v []DataInnerVlanRangeEditSuccess)`
 
 SetData sets Data field to given value.
 

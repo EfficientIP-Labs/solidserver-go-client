@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ServerId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 server, a unique numeric key value automatically incremented when you add a DHCPv4 server. Use the ID to specify the DHCPv4 server of your choice. | [optional] 
 **ServerName** | Pointer to **string** | The name of the DHCPv4 server. | [optional] 
-**SharednetworkId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 shared network, a unique numeric key value automatically incremented when you add a DHCPv4 shared network. Use the ID to specify which DHCPv4 shared network to edit. | [optional] 
+**SharednetworkId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 shared network, a unique numeric key value automatically incremented when you add a DHCPv4 shared network. Use the ID to specify the DHCPv4 shared network of your choice. | [optional] 
 **SharednetworkName** | Pointer to **string** | The name of the DHCPv4 shared network, each DHCPv4 shared network must have a unique name. | [optional] 
 **ServerHostaddr** | Pointer to **string** | The IP address of the DHCP server. | [optional] 
 **Warnings** | Pointer to **string** | A way to bypass &lt;b&gt;(accept) &lt;/b&gt;any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. | [optional] 

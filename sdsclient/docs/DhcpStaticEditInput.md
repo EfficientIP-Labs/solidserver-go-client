@@ -6,13 +6,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ServerId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 server, a unique numeric key value automatically incremented when you add a DHCPv4 server. Use the ID to specify the DHCPv4 server of your choice. | [optional] 
 **ServerName** | Pointer to **string** | The name of the DHCPv4 server. | [optional] 
-**StaticId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 static, a unique numeric key value automatically incremented when you add a DHCPv4 static. Use the ID to specify which DHCPv4 static to edit. | [optional] 
-**StaticIdentifier** | Pointer to **string** | TODO:dhcp_static_add.input.static_identifier | [optional] 
-**StaticMacAddr** | Pointer to **string** | The MAC address you want to associate with the IPv4 static, it must include the MAC address type. The address has 7 sections, &lt;b&gt;00:11:22:33:44:55:66&lt;/b&gt; , where &lt;b&gt;00&lt;/b&gt; indicates the type. For Ethernet, specify &lt;b&gt;01&lt;/b&gt;. | [optional] 
+**StaticAddr** | Pointer to **string** | The IP address associated with the DHCPv4 static. | [optional] 
+**StaticId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 static, a unique numeric key value automatically incremented when you add a DHCPv4 static. Use the ID to specify the DHCPv4 static of your choice. | [optional] 
+**StaticIdentifier** | Pointer to **string** | The host identifier you want to associate with the IPv4 static. An option and value to look for to identify clients and assign them the static, specified as follows: &lt;b&gt;option &amp;lt;option-name&amp;gt; expected value&lt;/b&gt;. | [optional] 
+**StaticMacAddr** | Pointer to **string** | The MAC address you want to associate with the IPv4 static, it must include the MAC address type. The address has 7 sections, &lt;b&gt;00:11:22:33:44:55:66&lt;/b&gt; , where &lt;b&gt;00&lt;/b&gt; indicates the type. For Ethernet, type in &lt;b&gt;01&lt;/b&gt;. | [optional] 
 **ServerHostaddr** | Pointer to **string** | The IP address of the DHCP server. | [optional] 
 **GroupId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 group, a unique numeric key value automatically incremented when you add a DHCPv4 group. Use the ID to specify the DHCPv4 group of your choice. | [optional] 
 **GroupName** | Pointer to **string** | The name of the DHCPv4 group. | [optional] 
-**StaticAddr** | Pointer to **string** | The IP address associated with the DHCPv4 static. | [optional] 
 **StaticName** | Pointer to **string** | The name of the DHCPv4 static, each DHCPv4 static must have a unique name. | [optional] 
 **ClassParametersToDelete** | Pointer to **[]string** | class parameters you want to delete from the object | [optional] 
 **StaticClassName** | Pointer to **string** | The name of the class to apply to the object you are editing. You must specify the class file directory, e.g. &lt;b&gt;my_directory/my_class.class&lt;/b&gt; . You cannot use the classes &lt;b&gt;global&lt;/b&gt; and &lt;b&gt;default&lt;/b&gt;, they are reserved by the system. | [optional] 
@@ -87,6 +87,31 @@ SetServerName sets ServerName field to given value.
 `func (o *DhcpStaticEditInput) HasServerName() bool`
 
 HasServerName returns a boolean if a field has been set.
+
+### GetStaticAddr
+
+`func (o *DhcpStaticEditInput) GetStaticAddr() string`
+
+GetStaticAddr returns the StaticAddr field if non-nil, zero value otherwise.
+
+### GetStaticAddrOk
+
+`func (o *DhcpStaticEditInput) GetStaticAddrOk() (*string, bool)`
+
+GetStaticAddrOk returns a tuple with the StaticAddr field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStaticAddr
+
+`func (o *DhcpStaticEditInput) SetStaticAddr(v string)`
+
+SetStaticAddr sets StaticAddr field to given value.
+
+### HasStaticAddr
+
+`func (o *DhcpStaticEditInput) HasStaticAddr() bool`
+
+HasStaticAddr returns a boolean if a field has been set.
 
 ### GetStaticId
 
@@ -237,31 +262,6 @@ SetGroupName sets GroupName field to given value.
 `func (o *DhcpStaticEditInput) HasGroupName() bool`
 
 HasGroupName returns a boolean if a field has been set.
-
-### GetStaticAddr
-
-`func (o *DhcpStaticEditInput) GetStaticAddr() string`
-
-GetStaticAddr returns the StaticAddr field if non-nil, zero value otherwise.
-
-### GetStaticAddrOk
-
-`func (o *DhcpStaticEditInput) GetStaticAddrOk() (*string, bool)`
-
-GetStaticAddrOk returns a tuple with the StaticAddr field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetStaticAddr
-
-`func (o *DhcpStaticEditInput) SetStaticAddr(v string)`
-
-SetStaticAddr sets StaticAddr field to given value.
-
-### HasStaticAddr
-
-`func (o *DhcpStaticEditInput) HasStaticAddr() bool`
-
-HasStaticAddr returns a boolean if a field has been set.
 
 ### GetStaticName
 

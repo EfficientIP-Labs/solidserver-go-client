@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **ScopeId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 scope, a unique numeric key value automatically incremented when you add a DHCPv4 scope. Use the ID to specify the DHCPv4 scope of your choice. | [optional] 
 **ServerHostaddr** | Pointer to **string** | The IP address of the DHCP server. | [optional] 
 **RangeAcl** | Pointer to **string** | The list of ACLs associated with the DHCPv4 range, as follows: &lt;b&gt;&amp;lt;ACL_name&amp;gt;;&amp;lt;ACL_name&amp;gt;;&lt;/b&gt;... . | [optional] 
-**RangeName** | Pointer to **string** | The name of the DHCPv4 range, each DHCPv4 range must have a unique name. | [optional] 
+**RangeName** | Pointer to **string** | The start and end IP address of the DHCPv4 range, as follows: &lt;b&gt;&amp;lt;start-ip&amp;gt;-&amp;lt;end-ip&amp;gt;&lt;/b&gt;. | [optional] 
 **ScopeName** | Pointer to **string** | The name of the DHCPv4 scope. | [optional] 
 **ClassParametersToDelete** | Pointer to **[]string** | class parameters you want to delete from the object | [optional] 
 **RangeClassName** | Pointer to **string** | The name of the class to apply to the object you are adding. You must specify the class file directory, e.g. &lt;b&gt;my_directory/my_class.class&lt;/b&gt; . You cannot use the classes &lt;b&gt;global&lt;/b&gt; and &lt;b&gt;default&lt;/b&gt;, they are reserved by the system. | [optional] 

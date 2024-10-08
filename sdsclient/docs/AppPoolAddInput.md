@@ -10,10 +10,10 @@ Name | Type | Description | Notes
 **PoolLbMode** | Pointer to **string** | The load-balancing mode of the pool. | [optional] 
 **PoolName** | Pointer to **string** | The name of the pool. | [optional] 
 **PoolType** | Pointer to **string** | The type of the pool. | [optional] 
-**PoolAffinitySessionTime** | Pointer to **int32** | The session duration, in seconds. You only need to set it if the parameter &lt;b&gt;affinity_state&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt;. | [optional] 
+**PoolAffinitySessionTime** | Pointer to **int32** | The session duration, in seconds. You only need to set it if the parameter &lt;b&gt;pool_affinity_state&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt;. | [optional] 
 **PoolAffinityState** | Pointer to **int32** | The session affinity activation status. | [optional] 
-**GslbserverId** | Pointer to **int32** | The database identifier (ID) of the GSLB server associated with the application, a unique identifier automatically incremented when you add the server. Use it to identify the GSLB server of your choice. | [optional] 
-**PoolBestActiveNodes** | Pointer to **int32** | The maximum number of active nodes with the lowest latency that must answer the queries made to the application FQDN. You only need to set it if you set the &lt;b&gt;lb_mode&lt;/b&gt; to &lt;b&gt;latency&lt;/b&gt;. | [optional] 
+**GslbserverId** | Pointer to **int32** | The database identifier (ID) of the GSLB server associated with the application, a unique numeric key value automatically incremented when you add the server. Use it to identify the GSLB server of your choice. | [optional] 
+**PoolBestActiveNodes** | Pointer to **int32** | The maximum number of active nodes with the lowest latency that must answer the queries made to the application FQDN. You only need to set it if you set the &lt;b&gt;pool_lb_mode&lt;/b&gt; to &lt;b&gt;latency&lt;/b&gt;. | [optional] 
 **Warnings** | Pointer to **string** | A way to bypass &lt;b&gt;(accept) &lt;/b&gt;any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. | [optional] 
 
 ## Methods

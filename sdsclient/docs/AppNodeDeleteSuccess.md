@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]AppNodeDeleteSuccessData**](AppNodeDeleteSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerAppNodeDeleteSuccess**](DataInnerAppNodeDeleteSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *AppNodeDeleteSuccess) GetData() []AppNodeDeleteSuccessData`
+`func (o *AppNodeDeleteSuccess) GetData() []DataInnerAppNodeDeleteSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *AppNodeDeleteSuccess) GetDataOk() (*[]AppNodeDeleteSuccessData, bool)`
+`func (o *AppNodeDeleteSuccess) GetDataOk() (*[]DataInnerAppNodeDeleteSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *AppNodeDeleteSuccess) SetData(v []AppNodeDeleteSuccessData)`
+`func (o *AppNodeDeleteSuccess) SetData(v []DataInnerAppNodeDeleteSuccess)`
 
 SetData sets Data field to given value.
 

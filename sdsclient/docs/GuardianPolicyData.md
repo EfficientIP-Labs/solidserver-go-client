@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]GuardianPolicyDataData**](GuardianPolicyDataData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerGuardianPolicyData**](DataInnerGuardianPolicyData.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *GuardianPolicyData) GetData() []GuardianPolicyDataData`
+`func (o *GuardianPolicyData) GetData() []DataInnerGuardianPolicyData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *GuardianPolicyData) GetDataOk() (*[]GuardianPolicyDataData, bool)`
+`func (o *GuardianPolicyData) GetDataOk() (*[]DataInnerGuardianPolicyData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *GuardianPolicyData) SetData(v []GuardianPolicyDataData)`
+`func (o *GuardianPolicyData) SetData(v []DataInnerGuardianPolicyData)`
 
 SetData sets Data field to given value.
 

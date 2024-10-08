@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DnsZoneDataData**](DnsZoneDataData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerDnsZoneData**](DataInnerDnsZoneData.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DnsZoneData) GetData() []DnsZoneDataData`
+`func (o *DnsZoneData) GetData() []DataInnerDnsZoneData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DnsZoneData) GetDataOk() (*[]DnsZoneDataData, bool)`
+`func (o *DnsZoneData) GetDataOk() (*[]DataInnerDnsZoneData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DnsZoneData) SetData(v []DnsZoneDataData)`
+`func (o *DnsZoneData) SetData(v []DataInnerDnsZoneData)`
 
 SetData sets Data field to given value.
 

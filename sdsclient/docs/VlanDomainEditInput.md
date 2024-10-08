@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**DomainId** | Pointer to **int32** | The database identifier (ID) of the VLAN domain, a unique numeric key value automatically incremented when you add a VLAN domain. Use the ID to specify which VLAN domain to edit. | [optional] 
+**DomainId** | Pointer to **int32** | The database identifier (ID) of the VLAN domain, a unique numeric key value automatically incremented when you add a VLAN domain. Use the ID to specify the VLAN domain of your choice. | [optional] 
 **DomainName** | Pointer to **string** | The name of the VLAN domain, each VLAN domain must have a unique name. | [optional] 
 **DomainSupportVxlan** | Pointer to **int32** | The type of virtual network used by the domain. Set it to &lt;b&gt;1&lt;/b&gt; to use VXLAN or &lt;b&gt;0&lt;/b&gt; to use VLAN. | [optional] 
 **DomainDescription** | Pointer to **string** | The description of the VLAN domain. | [optional] 

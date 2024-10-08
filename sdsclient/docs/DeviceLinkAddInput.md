@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Device1Name** | Pointer to **string** | The name of the device to which belongs the DM port or interface you want to link with &lt;b&gt;hostiface2_id&lt;/b&gt;. | [optional] 
-**Device2Name** | Pointer to **string** | The name of the device to which belongs the DM port or interface you want to link with &lt;b&gt;hostiface1_id&lt;/b&gt;. | [optional] 
-**Interface1Id** | Pointer to **int32** | The database identifier (ID) of the DM port or interface you want to link with &lt;b&gt;hostiface2_id&lt;/b&gt;. | [optional] 
-**Interface1Name** | Pointer to **string** | The name of the DM port or interface you want to link with &lt;b&gt;hostiface2_id&lt;/b&gt;. | [optional] 
-**Interface2Id** | Pointer to **int32** | The database identifier (ID) of the DM port or interface you want to link with &lt;b&gt;hostiface1_id&lt;/b&gt;. | [optional] 
-**Interface2Name** | Pointer to **string** | The name of the DM port or interface you want to link with &lt;b&gt;hostiface1_id&lt;/b&gt;. | [optional] 
-**LinkId** | Pointer to **int32** | The database identifier (ID) of the Device Manager port or interface link, a unique numeric key value automatically incremented when you add a link between a device and a port or interface. Use the ID to specify which port or interface link to edit. | [optional] 
+**Device1Name** | Pointer to **string** | The name of the device to which belongs the DM port or interface you want to link with &lt;b&gt;interface2_id&lt;/b&gt;. | [optional] 
+**Device2Name** | Pointer to **string** | The name of the device to which belongs the DM port or interface you want to link with &lt;b&gt;interface1_id&lt;/b&gt;. | [optional] 
+**Interface1Id** | Pointer to **int32** | The database identifier (ID) of the DM port or interface you want to link with &lt;b&gt;interface2_id&lt;/b&gt;. | [optional] 
+**Interface1Name** | Pointer to **string** | The name of the DM port or interface you want to link with &lt;b&gt;interface2_id&lt;/b&gt;. | [optional] 
+**Interface2Id** | Pointer to **int32** | The database identifier (ID) of the DM port or interface you want to link with &lt;b&gt;interface1_id&lt;/b&gt;. | [optional] 
+**Interface2Name** | Pointer to **string** | The name of the DM port or interface you want to link with &lt;b&gt;interface1_id&lt;/b&gt;. | [optional] 
+**LinkId** | Pointer to **int32** | The database identifier (ID) of the Device Manager port or interface link, a unique numeric key value automatically incremented when you add a link between a device and a port or interface. Use the ID to specify the port or interface link of your choice. | [optional] 
 **LinkAutoLink** | Pointer to **int32** | A way to determine if the link between two Device Manager devices is set automatically (&lt;b&gt;1&lt;/b&gt;) or manually (&lt;b&gt;0&lt;/b&gt;). | [optional] 
 **Warnings** | Pointer to **string** | A way to bypass &lt;b&gt;(accept) &lt;/b&gt;any enabled rule that would return warning messages. If the service returns an error message, you cannot bypass the enabled rules. | [optional] 
 

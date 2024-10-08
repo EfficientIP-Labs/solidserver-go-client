@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]ApiCountResponseSuccessData**](ApiCountResponseSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]ApiCountResponseSuccessDataInner**](ApiCountResponseSuccessDataInner.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *ApiCountResponseSuccess) GetData() []ApiCountResponseSuccessData`
+`func (o *ApiCountResponseSuccess) GetData() []ApiCountResponseSuccessDataInner`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *ApiCountResponseSuccess) GetDataOk() (*[]ApiCountResponseSuccessData, bool)`
+`func (o *ApiCountResponseSuccess) GetDataOk() (*[]ApiCountResponseSuccessDataInner, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *ApiCountResponseSuccess) SetData(v []ApiCountResponseSuccessData)`
+`func (o *ApiCountResponseSuccess) SetData(v []ApiCountResponseSuccessDataInner)`
 
 SetData sets Data field to given value.
 

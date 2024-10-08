@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]IpamSpaceDataData**](IpamSpaceDataData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerIpamSpaceData**](DataInnerIpamSpaceData.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *IpamSpaceData) GetData() []IpamSpaceDataData`
+`func (o *IpamSpaceData) GetData() []DataInnerIpamSpaceData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *IpamSpaceData) GetDataOk() (*[]IpamSpaceDataData, bool)`
+`func (o *IpamSpaceData) GetDataOk() (*[]DataInnerIpamSpaceData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *IpamSpaceData) SetData(v []IpamSpaceDataData)`
+`func (o *IpamSpaceData) SetData(v []DataInnerIpamSpaceData)`
 
 SetData sets Data field to given value.
 

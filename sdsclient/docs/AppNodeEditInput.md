@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **NodeHostaddr** | Pointer to **string** | The IPv4 or IPv6 address of the node. | [optional] 
 **NodeName** | Pointer to **string** | The name of the node. | [optional] 
 **AdminStatus** | Pointer to **int32** | The administrative status of the node, managed (1) or unmanaged (0). | [optional] 
-**GslbserverId** | Pointer to **int32** | The database identifier (ID) of the GSLB server associated with the application, a unique identifier automatically incremented when you add the server. Use it to identify the GSLB server of your choice. | [optional] 
+**GslbserverId** | Pointer to **int32** | The database identifier (ID) of the GSLB server associated with the application, a unique numeric key value automatically incremented when you add the server. Use it to identify the GSLB server of your choice. | [optional] 
 **HealthcheckName** | Pointer to **string** | The type of health check of the node. | [optional] 
 **NodeStatus** | Pointer to **string** | Internal use. Not documented. | [optional] 
 **NodeWeight** | Pointer to **string** | The weight of the node, it sets which node is used first within the pool. It must be an integer between 0 and 255, where 0 sets a node as backup. | [optional] 

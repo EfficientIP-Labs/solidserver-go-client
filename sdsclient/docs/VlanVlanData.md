@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]VlanVlanDataData**](VlanVlanDataData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerVlanVlanData**](DataInnerVlanVlanData.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *VlanVlanData) GetData() []VlanVlanDataData`
+`func (o *VlanVlanData) GetData() []DataInnerVlanVlanData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *VlanVlanData) GetDataOk() (*[]VlanVlanDataData, bool)`
+`func (o *VlanVlanData) GetDataOk() (*[]DataInnerVlanVlanData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *VlanVlanData) SetData(v []VlanVlanDataData)`
+`func (o *VlanVlanData) SetData(v []DataInnerVlanVlanData)`
 
 SetData sets Data field to given value.
 

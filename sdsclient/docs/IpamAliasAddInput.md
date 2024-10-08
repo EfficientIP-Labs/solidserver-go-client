@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AddressHostaddr** | Pointer to **string** | todo(here) :ipam.alias.add.input.address_hostaddr. : IPv4 address | [optional] 
+**AddressHostaddr** | Pointer to **string** | The IP address. | [optional] 
 **AddressId** | Pointer to **int32** | The database identifier (ID) of the IPv4 address, a unique numeric key value automatically incremented when you add an IPv4 address. Use the ID to specify the IPv4 address of your choice. | [optional] 
-**AliasName** | Pointer to **string** | todo(here) :ipam.alias.add.input.alias_name. : String | [optional] 
+**AliasName** | Pointer to **string** | The name of the IPv4 alias. | [optional] 
 **SpaceId** | Pointer to **int32** | The database identifier (ID) of the space, a unique numeric key value automatically incremented when you add a space. Use the ID to specify the space of your choice. | [optional] 
 **SpaceName** | Pointer to **string** | The name of the space. | [optional] 
 **AliasType** | Pointer to **string** | The type of the alias. | [optional] 

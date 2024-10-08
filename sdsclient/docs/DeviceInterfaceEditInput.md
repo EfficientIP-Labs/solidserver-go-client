@@ -7,14 +7,14 @@ Name | Type | Description | Notes
 **DeviceId** | Pointer to **int32** | The database identifier (ID) of the Device Manager device, a unique numeric key value automatically incremented when you add a device. Use the ID to specify the device of your choice. | [optional] 
 **DeviceName** | Pointer to **string** | The name of the Device Manager device. | [optional] 
 **InterfaceAddr** | Pointer to **string** | The IP addresses you want to associate with the Device Manager port or interface, as follows &lt;b&gt;&amp;lt;ip4_list&amp;gt;,&amp;lt;ip6_list&amp;gt;&lt;/b&gt;. | [optional] 
-**InterfaceId** | Pointer to **int32** | The database identifier (ID) of the Device Manager port or interface, a unique numeric key value automatically incremented when you add a port or interface. Use the ID to specify which port or interface to edit. | [optional] 
+**InterfaceId** | Pointer to **int32** | The database identifier (ID) of the Device Manager port or interface, a unique numeric key value automatically incremented when you add a port or interface. Use the ID to specify the port or interface of your choice. | [optional] 
 **InterfaceMac** | Pointer to **string** | The MAC address you want to associate with the Device Manager port or interface. | [optional] 
 **InterfaceName** | Pointer to **string** | The name of the Device Manager port or interface, each port or interface must have a unique name. | [optional] 
 **InterfaceType** | Pointer to **string** | A way to indicate if the object is either a &lt;b&gt;port&lt;/b&gt; or an &lt;b&gt;interface&lt;/b&gt;. | [optional] 
 **InterfaceIp4List** | Pointer to **string** | The list of IPv4 addresses you want to associate to the Device Manager port or interface, in hexadecimal format, as follows: &lt;b&gt;&amp;lt;ip_address&amp;gt;, &amp;lt;ip_address&amp;gt;,...&lt;/b&gt; | [optional] 
-**InterfaceAddress6List** | Pointer to **string** | todo(here) :device.interface.edit.input.interface_address6_list. : List of strings | [optional] 
+**InterfaceIp6List** | Pointer to **string** | The list of IPv6 addresses you want to associate to the Device Manager port or interface, in hexadecimal format, as follows: &lt;b&gt;&amp;lt;ip_address&amp;gt;, &amp;lt;ip_address&amp;gt;,...&lt;/b&gt; | [optional] 
 **PortId** | Pointer to **int32** | The database identifier (ID) of a NetChange port you want to associate with the Device Manager port or interface. | [optional] 
-**RowState** | Pointer to **int32** | The object activation status.&lt;ul class&#x3D;dashed &gt;&lt;li&gt;                                                If set to &lt;b&gt;0&lt;/b&gt;, the object is present in the database but ignored, i.e. it cannot be managed, counted or listed. This status is applied on objects deleted from the GUI.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;                                                If set to &lt;b&gt;1&lt;/b&gt;, the object is enabled and managed.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;                                                If set to &lt;b&gt;2&lt;/b&gt;, the object is unmanaged, disabled or both depending on the context.&lt;br/&gt;                                            &lt;/li&gt;&lt;/ul&gt;By default, &lt;b&gt;row_enabled&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt; when an object is created. | [optional] 
+**RowState** | Pointer to **int32** | The object activation status.&lt;ul&gt;&lt;li&gt; If set to &lt;b&gt;0&lt;/b&gt;, the object is present in the database but ignored, i.e. it cannot be managed, counted or listed. This status is applied on objects deleted from the GUI.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; If set to &lt;b&gt;1&lt;/b&gt;, the object is enabled and managed.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; If set to &lt;b&gt;2&lt;/b&gt;, the object is unmanaged, disabled or both depending on the context.&lt;br/&gt;&lt;/li&gt;&lt;/ul&gt;By default, &lt;b&gt;row_state&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt; when an object is created. | [optional] 
 **SpaceId** | Pointer to **int32** | The database identifier (ID) of a space you want to associate with the Device Manager port or interface. | [optional] 
 **ClassParametersToDelete** | Pointer to **[]string** | class parameters you want to delete from the object | [optional] 
 **InterfaceClassName** | Pointer to **string** | The name of the class to apply to the object you are editing. You must specify the class file directory, e.g. &lt;b&gt;my_directory/my_class.class&lt;/b&gt; . You cannot use the classes &lt;b&gt;global&lt;/b&gt; and &lt;b&gt;default&lt;/b&gt;, they are reserved by the system. | [optional] 
@@ -240,30 +240,30 @@ SetInterfaceIp4List sets InterfaceIp4List field to given value.
 
 HasInterfaceIp4List returns a boolean if a field has been set.
 
-### GetInterfaceAddress6List
+### GetInterfaceIp6List
 
-`func (o *DeviceInterfaceEditInput) GetInterfaceAddress6List() string`
+`func (o *DeviceInterfaceEditInput) GetInterfaceIp6List() string`
 
-GetInterfaceAddress6List returns the InterfaceAddress6List field if non-nil, zero value otherwise.
+GetInterfaceIp6List returns the InterfaceIp6List field if non-nil, zero value otherwise.
 
-### GetInterfaceAddress6ListOk
+### GetInterfaceIp6ListOk
 
-`func (o *DeviceInterfaceEditInput) GetInterfaceAddress6ListOk() (*string, bool)`
+`func (o *DeviceInterfaceEditInput) GetInterfaceIp6ListOk() (*string, bool)`
 
-GetInterfaceAddress6ListOk returns a tuple with the InterfaceAddress6List field if it's non-nil, zero value otherwise
+GetInterfaceIp6ListOk returns a tuple with the InterfaceIp6List field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetInterfaceAddress6List
+### SetInterfaceIp6List
 
-`func (o *DeviceInterfaceEditInput) SetInterfaceAddress6List(v string)`
+`func (o *DeviceInterfaceEditInput) SetInterfaceIp6List(v string)`
 
-SetInterfaceAddress6List sets InterfaceAddress6List field to given value.
+SetInterfaceIp6List sets InterfaceIp6List field to given value.
 
-### HasInterfaceAddress6List
+### HasInterfaceIp6List
 
-`func (o *DeviceInterfaceEditInput) HasInterfaceAddress6List() bool`
+`func (o *DeviceInterfaceEditInput) HasInterfaceIp6List() bool`
 
-HasInterfaceAddress6List returns a boolean if a field has been set.
+HasInterfaceIp6List returns a boolean if a field has been set.
 
 ### GetPortId
 
