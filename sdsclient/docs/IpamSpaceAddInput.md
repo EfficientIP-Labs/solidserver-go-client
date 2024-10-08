@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **ParentSpaceId** | Pointer to **int32** | The database identifier (ID) of an existing space you want to set as the VLSM parent of the space you are adding. This sets up a space-based VLSM organization. | [optional] 
 **ParentSpaceName** | Pointer to **string** | The name of an existing space you want to set as the VLSM parent of the space you are adding. This sets up a space-based VLSM organization. | [optional] 
 **SpaceDescription** | Pointer to **string** | The description of the space. | [optional] 
-**SpaceIsTemplate** | Pointer to **int32** | The template status of the space you are adding. If the space is used as template (&lt;b&gt;1&lt;/b&gt;), all the IPv4 networks, pools and IP addresses it contains are also used as template. You can only set this parameter once, you cannot edit its value. | [optional] 
 **ClassParametersToDelete** | Pointer to **[]string** | class parameters you want to delete from the object | [optional] 
 **SpaceClassName** | Pointer to **string** | The name of the class to apply to the object you are adding. You must specify the class file directory, e.g. &lt;b&gt;my_directory/my_class.class&lt;/b&gt; . You cannot use the classes &lt;b&gt;global&lt;/b&gt; and &lt;b&gt;default&lt;/b&gt;, they are reserved by the system. | [optional] 
 **SpaceClassParameters** | Pointer to [**[]ApiClassParameterInputEntry**](ApiClassParameterInputEntry.md) | class parameters in json format | [optional] 
@@ -132,31 +131,6 @@ SetSpaceDescription sets SpaceDescription field to given value.
 `func (o *IpamSpaceAddInput) HasSpaceDescription() bool`
 
 HasSpaceDescription returns a boolean if a field has been set.
-
-### GetSpaceIsTemplate
-
-`func (o *IpamSpaceAddInput) GetSpaceIsTemplate() int32`
-
-GetSpaceIsTemplate returns the SpaceIsTemplate field if non-nil, zero value otherwise.
-
-### GetSpaceIsTemplateOk
-
-`func (o *IpamSpaceAddInput) GetSpaceIsTemplateOk() (*int32, bool)`
-
-GetSpaceIsTemplateOk returns a tuple with the SpaceIsTemplate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSpaceIsTemplate
-
-`func (o *IpamSpaceAddInput) SetSpaceIsTemplate(v int32)`
-
-SetSpaceIsTemplate sets SpaceIsTemplate field to given value.
-
-### HasSpaceIsTemplate
-
-`func (o *IpamSpaceAddInput) HasSpaceIsTemplate() bool`
-
-HasSpaceIsTemplate returns a boolean if a field has been set.
 
 ### GetClassParametersToDelete
 

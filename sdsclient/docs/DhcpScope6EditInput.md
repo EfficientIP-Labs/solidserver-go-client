@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Server6Id** | Pointer to **int32** | The database identifier (ID) of the DHCPv6 server, a unique numeric key value automatically incremented when you add a DHCPv6 server. Use the ID to specify the DHCPv6 server of your choice. | [optional] 
 **Server6Name** | Pointer to **string** | The name of the DHCPv6 server. | [optional] 
 **Scope6EndAddr** | Pointer to **string** | The last IP address of the DHCPv6 scope. | [optional] 
-**Scope6Id** | Pointer to **int32** | The database identifier (ID) of the DHCPv6 scope, a unique numeric key value automatically incremented when you add a DHCPv6 scope. Use the ID to specify which DHCPv6 scope to edit. | [optional] 
+**Scope6Id** | Pointer to **int32** | The database identifier (ID) of the DHCPv6 scope, a unique numeric key value automatically incremented when you add a DHCPv6 scope. Use the ID to specify the DHCPv6 scope of your choice. | [optional] 
 **Scope6Prefix** | Pointer to **string** | The prefix of the DHCPv6 scope, an integer that defines the number of address the scope contains. | [optional] 
 **Scope6StartAddr** | Pointer to **string** | The first IP address of the DHCPv6 scope. | [optional] 
 **Server6Hostaddr** | Pointer to **string** | The IP address of the DHCP server. | [optional] 

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DhcpScopeAddSuccessData**](DhcpScopeAddSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerDhcpScopeAddSuccess**](DataInnerDhcpScopeAddSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DhcpScopeAddSuccess) GetData() []DhcpScopeAddSuccessData`
+`func (o *DhcpScopeAddSuccess) GetData() []DataInnerDhcpScopeAddSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DhcpScopeAddSuccess) GetDataOk() (*[]DhcpScopeAddSuccessData, bool)`
+`func (o *DhcpScopeAddSuccess) GetDataOk() (*[]DataInnerDhcpScopeAddSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DhcpScopeAddSuccess) SetData(v []DhcpScopeAddSuccessData)`
+`func (o *DhcpScopeAddSuccess) SetData(v []DataInnerDhcpScopeAddSuccess)`
 
 SetData sets Data field to given value.
 

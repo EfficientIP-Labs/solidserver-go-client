@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PolicyId** | Pointer to **int32** | The database identifier (ID) of the policy, a unique identifier automatically incremented when you add the policy. Use it to identify the policy of your choice. | [optional] 
+**PolicyId** | Pointer to **int32** | The database identifier (ID) of the policy, a unique numeric key value automatically incremented when you add the policy. Use it to identify the policy of your choice. | [optional] 
 **PolicyName** | Pointer to **string** | The name of the policy. | [optional] 
 **Description** | Pointer to **string** | The description of the policy. | [optional] 
 **ServerList** | Pointer to **string** | The name of all the Guardian servers associated with the policy. You can specify one or more names. | [optional] 

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DhcpSharednetworkEditSuccessData**](DhcpSharednetworkEditSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerDhcpSharednetworkEditSuccess**](DataInnerDhcpSharednetworkEditSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DhcpSharednetworkEditSuccess) GetData() []DhcpSharednetworkEditSuccessData`
+`func (o *DhcpSharednetworkEditSuccess) GetData() []DataInnerDhcpSharednetworkEditSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DhcpSharednetworkEditSuccess) GetDataOk() (*[]DhcpSharednetworkEditSuccessData, bool)`
+`func (o *DhcpSharednetworkEditSuccess) GetDataOk() (*[]DataInnerDhcpSharednetworkEditSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DhcpSharednetworkEditSuccess) SetData(v []DhcpSharednetworkEditSuccessData)`
+`func (o *DhcpSharednetworkEditSuccess) SetData(v []DataInnerDhcpSharednetworkEditSuccess)`
 
 SetData sets Data field to given value.
 

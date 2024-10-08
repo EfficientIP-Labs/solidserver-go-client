@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ServerId** | Pointer to **int32** | The database identifier (ID) of the DNS server, a unique numeric key value automatically incremented when you add a DNS server. Use the ID to specify the DNS server of your choice. | [optional] 
 **ServerName** | Pointer to **string** | The name of the DNS server. | [optional] 
-**AclId** | Pointer to **int32** | The database identifier (ID) of the DNS ACL, a unique numeric key value automatically incremented when you add a DNS ACL. Use the ID to specify which DNS ACL to edit. | [optional] 
+**AclId** | Pointer to **int32** | The database identifier (ID) of the DNS ACL, a unique numeric key value automatically incremented when you add a DNS ACL. Use the ID to specify the DNS ACL of your choice. | [optional] 
 **AclName** | Pointer to **string** | The name of the DNS ACL, each DNS ACL must have a unique name. | [optional] 
 **AclValue** | Pointer to **string** | The values of the DNS ACL in order of priority, as follows: &amp;lt;value_1&amp;gt;;&amp;lt;value_2&amp;gt;... . | [optional] 
 **ServerHostaddr** | Pointer to **string** | The IP address of the DNS server. | [optional] 

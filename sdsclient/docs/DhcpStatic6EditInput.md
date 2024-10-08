@@ -7,13 +7,16 @@ Name | Type | Description | Notes
 **Server6Id** | Pointer to **int32** | The database identifier (ID) of the DHCPv6 server, a unique numeric key value automatically incremented when you add a DHCPv6 server. Use the ID to specify the DHCPv6 server of your choice. | [optional] 
 **Server6Name** | Pointer to **string** | The name of the DHCPv6 server. | [optional] 
 **Static6ClientDuid** | Pointer to **string** | The client DHCP Unique Identifier (DUID) associated with the DHCPv6 static. | [optional] 
-**Static6Id** | Pointer to **int32** | The database identifier (ID) of the DHCPv6 static, a unique numeric key value automatically incremented when you add a DHCPv6 static. Use the ID to specify which DHCPv6 static to edit. | [optional] 
+**Static6Id** | Pointer to **int32** | The database identifier (ID) of the DHCPv6 static, a unique numeric key value automatically incremented when you add a DHCPv6 static. Use the ID to specify the DHCPv6 static of your choice. | [optional] 
 **Static6MacAddr** | Pointer to **string** | The MAC address you want to associate with the IPv6 static. | [optional] 
 **Static6Name** | Pointer to **string** | The name of the DHCPv6 static, each DHCPv6 static must have a unique name. | [optional] 
 **Server6Hostaddr** | Pointer to **string** | The IP address of the DHCP server. | [optional] 
 **Group6Id** | Pointer to **int32** | The database identifier (ID) of the DHCPv6 group, a unique numeric key value automatically incremented when you add a DHCPv6 group. Use the ID to specify the DHCPv6 group of your choice. | [optional] 
 **Group6Name** | Pointer to **string** | The name of the DHCPv6 group. | [optional] 
 **Static6Addr** | Pointer to **string** | The IP address associated with the DHCPv6 static. | [optional] 
+**Static6Prefix6** | Pointer to **string** | The IP address of the delegated prefix of the DHCPv6 static. | [optional] 
+**Static6Prefix6Addr** | Pointer to **string** | The prefix of the delegated prefix of the DHCPv6 static. | [optional] 
+**Static6Prefix6Prefix** | Pointer to **int32** | The IP address and prefix of the delegated prefix of the DHCPv6 static. You must specify them as follows: &lt;b&gt;&amp;lt;IPv6-address&amp;gt;/&amp;lt;prefix&amp;gt;&lt;/b&gt;. | [optional] 
 **ClassParametersToDelete** | Pointer to **[]string** | class parameters you want to delete from the object | [optional] 
 **Static6ClassName** | Pointer to **string** | The name of the class to apply to the object you are editing. You must specify the class file directory, e.g. &lt;b&gt;my_directory/my_class.class&lt;/b&gt; . You cannot use the classes &lt;b&gt;global&lt;/b&gt; and &lt;b&gt;default&lt;/b&gt;, they are reserved by the system. | [optional] 
 **Static6ClassParameters** | Pointer to [**[]ApiClassParameterInputEntry**](ApiClassParameterInputEntry.md) | class parameters in json format | [optional] 
@@ -287,6 +290,81 @@ SetStatic6Addr sets Static6Addr field to given value.
 `func (o *DhcpStatic6EditInput) HasStatic6Addr() bool`
 
 HasStatic6Addr returns a boolean if a field has been set.
+
+### GetStatic6Prefix6
+
+`func (o *DhcpStatic6EditInput) GetStatic6Prefix6() string`
+
+GetStatic6Prefix6 returns the Static6Prefix6 field if non-nil, zero value otherwise.
+
+### GetStatic6Prefix6Ok
+
+`func (o *DhcpStatic6EditInput) GetStatic6Prefix6Ok() (*string, bool)`
+
+GetStatic6Prefix6Ok returns a tuple with the Static6Prefix6 field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStatic6Prefix6
+
+`func (o *DhcpStatic6EditInput) SetStatic6Prefix6(v string)`
+
+SetStatic6Prefix6 sets Static6Prefix6 field to given value.
+
+### HasStatic6Prefix6
+
+`func (o *DhcpStatic6EditInput) HasStatic6Prefix6() bool`
+
+HasStatic6Prefix6 returns a boolean if a field has been set.
+
+### GetStatic6Prefix6Addr
+
+`func (o *DhcpStatic6EditInput) GetStatic6Prefix6Addr() string`
+
+GetStatic6Prefix6Addr returns the Static6Prefix6Addr field if non-nil, zero value otherwise.
+
+### GetStatic6Prefix6AddrOk
+
+`func (o *DhcpStatic6EditInput) GetStatic6Prefix6AddrOk() (*string, bool)`
+
+GetStatic6Prefix6AddrOk returns a tuple with the Static6Prefix6Addr field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStatic6Prefix6Addr
+
+`func (o *DhcpStatic6EditInput) SetStatic6Prefix6Addr(v string)`
+
+SetStatic6Prefix6Addr sets Static6Prefix6Addr field to given value.
+
+### HasStatic6Prefix6Addr
+
+`func (o *DhcpStatic6EditInput) HasStatic6Prefix6Addr() bool`
+
+HasStatic6Prefix6Addr returns a boolean if a field has been set.
+
+### GetStatic6Prefix6Prefix
+
+`func (o *DhcpStatic6EditInput) GetStatic6Prefix6Prefix() int32`
+
+GetStatic6Prefix6Prefix returns the Static6Prefix6Prefix field if non-nil, zero value otherwise.
+
+### GetStatic6Prefix6PrefixOk
+
+`func (o *DhcpStatic6EditInput) GetStatic6Prefix6PrefixOk() (*int32, bool)`
+
+GetStatic6Prefix6PrefixOk returns a tuple with the Static6Prefix6Prefix field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStatic6Prefix6Prefix
+
+`func (o *DhcpStatic6EditInput) SetStatic6Prefix6Prefix(v int32)`
+
+SetStatic6Prefix6Prefix sets Static6Prefix6Prefix field to given value.
+
+### HasStatic6Prefix6Prefix
+
+`func (o *DhcpStatic6EditInput) HasStatic6Prefix6Prefix() bool`
+
+HasStatic6Prefix6Prefix returns a boolean if a field has been set.
 
 ### GetClassParametersToDelete
 

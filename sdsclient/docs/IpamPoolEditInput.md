@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PoolEndAddressAddr** | Pointer to **string** | todo(here) :ipam.pool.edit.input.pool_end_address_addr. : IPv4 address | [optional] 
-**PoolId** | Pointer to **int32** | The database identifier (ID) of the IPv4 pool, a unique numeric key value automatically incremented when you add an IPv4 pool. Use the ID to specify which IPv4 pool to edit. | [optional] 
+**PoolEndIpAddr** | Pointer to **string** | The last IP address of the pool. | [optional] 
+**PoolId** | Pointer to **int32** | The database identifier (ID) of the IPv4 pool, a unique numeric key value automatically incremented when you add an IPv4 pool. Use the ID to specify the IPv4 pool of your choice. | [optional] 
 **PoolSize** | Pointer to **int32** | The size of the pool, the number of IP addresses it contains. | [optional] 
 **SpaceId** | Pointer to **int32** | The database identifier (ID) of the space, a unique numeric key value automatically incremented when you add a space. Use the ID to specify the space of your choice. | [optional] 
 **SpaceName** | Pointer to **string** | The name of the space. | [optional] 
-**PoolStartAddressAddr** | Pointer to **string** | todo(here) :ipam.pool.edit.input.pool_start_address_addr. : IPv4 address | [optional] 
+**PoolStartIpAddr** | Pointer to **string** | The first IP address of the pool. | [optional] 
 **NetworkId** | Pointer to **int32** | The database identifier (ID) of the IPv4 network, a unique numeric key value automatically incremented when you add an IPv4 network. Use the ID to specify the IPv4 network of your choice. | [optional] 
 **PoolName** | Pointer to **string** | The name of the IPv4 pool, each IPv4 pool must have a unique name. | [optional] 
 **PoolReadOnly** | Pointer to **int32** | The reservation status of the IPv4 pool. If set 1, the IP addresses it contains cannot be assigned. | [optional] 
@@ -37,30 +37,30 @@ NewIpamPoolEditInputWithDefaults instantiates a new IpamPoolEditInput object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetPoolEndAddressAddr
+### GetPoolEndIpAddr
 
-`func (o *IpamPoolEditInput) GetPoolEndAddressAddr() string`
+`func (o *IpamPoolEditInput) GetPoolEndIpAddr() string`
 
-GetPoolEndAddressAddr returns the PoolEndAddressAddr field if non-nil, zero value otherwise.
+GetPoolEndIpAddr returns the PoolEndIpAddr field if non-nil, zero value otherwise.
 
-### GetPoolEndAddressAddrOk
+### GetPoolEndIpAddrOk
 
-`func (o *IpamPoolEditInput) GetPoolEndAddressAddrOk() (*string, bool)`
+`func (o *IpamPoolEditInput) GetPoolEndIpAddrOk() (*string, bool)`
 
-GetPoolEndAddressAddrOk returns a tuple with the PoolEndAddressAddr field if it's non-nil, zero value otherwise
+GetPoolEndIpAddrOk returns a tuple with the PoolEndIpAddr field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPoolEndAddressAddr
+### SetPoolEndIpAddr
 
-`func (o *IpamPoolEditInput) SetPoolEndAddressAddr(v string)`
+`func (o *IpamPoolEditInput) SetPoolEndIpAddr(v string)`
 
-SetPoolEndAddressAddr sets PoolEndAddressAddr field to given value.
+SetPoolEndIpAddr sets PoolEndIpAddr field to given value.
 
-### HasPoolEndAddressAddr
+### HasPoolEndIpAddr
 
-`func (o *IpamPoolEditInput) HasPoolEndAddressAddr() bool`
+`func (o *IpamPoolEditInput) HasPoolEndIpAddr() bool`
 
-HasPoolEndAddressAddr returns a boolean if a field has been set.
+HasPoolEndIpAddr returns a boolean if a field has been set.
 
 ### GetPoolId
 
@@ -162,30 +162,30 @@ SetSpaceName sets SpaceName field to given value.
 
 HasSpaceName returns a boolean if a field has been set.
 
-### GetPoolStartAddressAddr
+### GetPoolStartIpAddr
 
-`func (o *IpamPoolEditInput) GetPoolStartAddressAddr() string`
+`func (o *IpamPoolEditInput) GetPoolStartIpAddr() string`
 
-GetPoolStartAddressAddr returns the PoolStartAddressAddr field if non-nil, zero value otherwise.
+GetPoolStartIpAddr returns the PoolStartIpAddr field if non-nil, zero value otherwise.
 
-### GetPoolStartAddressAddrOk
+### GetPoolStartIpAddrOk
 
-`func (o *IpamPoolEditInput) GetPoolStartAddressAddrOk() (*string, bool)`
+`func (o *IpamPoolEditInput) GetPoolStartIpAddrOk() (*string, bool)`
 
-GetPoolStartAddressAddrOk returns a tuple with the PoolStartAddressAddr field if it's non-nil, zero value otherwise
+GetPoolStartIpAddrOk returns a tuple with the PoolStartIpAddr field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPoolStartAddressAddr
+### SetPoolStartIpAddr
 
-`func (o *IpamPoolEditInput) SetPoolStartAddressAddr(v string)`
+`func (o *IpamPoolEditInput) SetPoolStartIpAddr(v string)`
 
-SetPoolStartAddressAddr sets PoolStartAddressAddr field to given value.
+SetPoolStartIpAddr sets PoolStartIpAddr field to given value.
 
-### HasPoolStartAddressAddr
+### HasPoolStartIpAddr
 
-`func (o *IpamPoolEditInput) HasPoolStartAddressAddr() bool`
+`func (o *IpamPoolEditInput) HasPoolStartIpAddr() bool`
 
-HasPoolStartAddressAddr returns a boolean if a field has been set.
+HasPoolStartIpAddr returns a boolean if a field has been set.
 
 ### GetNetworkId
 

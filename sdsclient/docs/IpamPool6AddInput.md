@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Pool6EndAddressAddr** | Pointer to **string** | todo(here) :ipam.pool6.add.input.pool6_end_address_addr. : IPv6 address | [optional] 
+**Pool6EndIpAddr** | Pointer to **string** | The last IP address of the pool. | [optional] 
 **SpaceId** | Pointer to **int32** | The database identifier (ID) of the space, a unique numeric key value automatically incremented when you add a space. Use the ID to specify the space of your choice. | [optional] 
 **SpaceName** | Pointer to **string** | The name of the space. | [optional] 
-**Pool6StartAddressAddr** | Pointer to **string** | todo(here) :ipam.pool6.add.input.pool6_start_address_addr. : IPv6 address | [optional] 
+**Pool6StartIpAddr** | Pointer to **string** | The first IP address of the pool. | [optional] 
 **Network6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 network, a unique numeric key value automatically incremented when you add an IPv6 network. Use the ID to specify the IPv6 network of your choice. | [optional] 
 **Pool6Name** | Pointer to **string** | The name of the IPv6 pool, each IPv6 pool must have a unique name. | [optional] 
 **Pool6ReadOnly** | Pointer to **int32** | The reservation status of the IPv6 pool. If set 1, the IP addresses it contains cannot be assigned. | [optional] 
@@ -35,30 +35,30 @@ NewIpamPool6AddInputWithDefaults instantiates a new IpamPool6AddInput object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetPool6EndAddressAddr
+### GetPool6EndIpAddr
 
-`func (o *IpamPool6AddInput) GetPool6EndAddressAddr() string`
+`func (o *IpamPool6AddInput) GetPool6EndIpAddr() string`
 
-GetPool6EndAddressAddr returns the Pool6EndAddressAddr field if non-nil, zero value otherwise.
+GetPool6EndIpAddr returns the Pool6EndIpAddr field if non-nil, zero value otherwise.
 
-### GetPool6EndAddressAddrOk
+### GetPool6EndIpAddrOk
 
-`func (o *IpamPool6AddInput) GetPool6EndAddressAddrOk() (*string, bool)`
+`func (o *IpamPool6AddInput) GetPool6EndIpAddrOk() (*string, bool)`
 
-GetPool6EndAddressAddrOk returns a tuple with the Pool6EndAddressAddr field if it's non-nil, zero value otherwise
+GetPool6EndIpAddrOk returns a tuple with the Pool6EndIpAddr field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPool6EndAddressAddr
+### SetPool6EndIpAddr
 
-`func (o *IpamPool6AddInput) SetPool6EndAddressAddr(v string)`
+`func (o *IpamPool6AddInput) SetPool6EndIpAddr(v string)`
 
-SetPool6EndAddressAddr sets Pool6EndAddressAddr field to given value.
+SetPool6EndIpAddr sets Pool6EndIpAddr field to given value.
 
-### HasPool6EndAddressAddr
+### HasPool6EndIpAddr
 
-`func (o *IpamPool6AddInput) HasPool6EndAddressAddr() bool`
+`func (o *IpamPool6AddInput) HasPool6EndIpAddr() bool`
 
-HasPool6EndAddressAddr returns a boolean if a field has been set.
+HasPool6EndIpAddr returns a boolean if a field has been set.
 
 ### GetSpaceId
 
@@ -110,30 +110,30 @@ SetSpaceName sets SpaceName field to given value.
 
 HasSpaceName returns a boolean if a field has been set.
 
-### GetPool6StartAddressAddr
+### GetPool6StartIpAddr
 
-`func (o *IpamPool6AddInput) GetPool6StartAddressAddr() string`
+`func (o *IpamPool6AddInput) GetPool6StartIpAddr() string`
 
-GetPool6StartAddressAddr returns the Pool6StartAddressAddr field if non-nil, zero value otherwise.
+GetPool6StartIpAddr returns the Pool6StartIpAddr field if non-nil, zero value otherwise.
 
-### GetPool6StartAddressAddrOk
+### GetPool6StartIpAddrOk
 
-`func (o *IpamPool6AddInput) GetPool6StartAddressAddrOk() (*string, bool)`
+`func (o *IpamPool6AddInput) GetPool6StartIpAddrOk() (*string, bool)`
 
-GetPool6StartAddressAddrOk returns a tuple with the Pool6StartAddressAddr field if it's non-nil, zero value otherwise
+GetPool6StartIpAddrOk returns a tuple with the Pool6StartIpAddr field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPool6StartAddressAddr
+### SetPool6StartIpAddr
 
-`func (o *IpamPool6AddInput) SetPool6StartAddressAddr(v string)`
+`func (o *IpamPool6AddInput) SetPool6StartIpAddr(v string)`
 
-SetPool6StartAddressAddr sets Pool6StartAddressAddr field to given value.
+SetPool6StartIpAddr sets Pool6StartIpAddr field to given value.
 
-### HasPool6StartAddressAddr
+### HasPool6StartIpAddr
 
-`func (o *IpamPool6AddInput) HasPool6StartAddressAddr() bool`
+`func (o *IpamPool6AddInput) HasPool6StartIpAddr() bool`
 
-HasPool6StartAddressAddr returns a boolean if a field has been set.
+HasPool6StartIpAddr returns a boolean if a field has been set.
 
 ### GetNetwork6Id
 

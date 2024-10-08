@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DeviceInterfaceDataData**](DeviceInterfaceDataData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerDeviceInterfaceData**](DataInnerDeviceInterfaceData.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DeviceInterfaceData) GetData() []DeviceInterfaceDataData`
+`func (o *DeviceInterfaceData) GetData() []DataInnerDeviceInterfaceData`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DeviceInterfaceData) GetDataOk() (*[]DeviceInterfaceDataData, bool)`
+`func (o *DeviceInterfaceData) GetDataOk() (*[]DataInnerDeviceInterfaceData, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DeviceInterfaceData) SetData(v []DeviceInterfaceDataData)`
+`func (o *DeviceInterfaceData) SetData(v []DataInnerDeviceInterfaceData)`
 
 SetData sets Data field to given value.
 

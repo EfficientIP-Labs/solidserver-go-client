@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]AppPoolAddSuccessData**](AppPoolAddSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerIpamPoolAddSuccess**](DataInnerIpamPoolAddSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *IpamPoolAddSuccess) GetData() []AppPoolAddSuccessData`
+`func (o *IpamPoolAddSuccess) GetData() []DataInnerIpamPoolAddSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *IpamPoolAddSuccess) GetDataOk() (*[]AppPoolAddSuccessData, bool)`
+`func (o *IpamPoolAddSuccess) GetDataOk() (*[]DataInnerIpamPoolAddSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *IpamPoolAddSuccess) SetData(v []AppPoolAddSuccessData)`
+`func (o *IpamPoolAddSuccess) SetData(v []DataInnerIpamPoolAddSuccess)`
 
 SetData sets Data field to given value.
 

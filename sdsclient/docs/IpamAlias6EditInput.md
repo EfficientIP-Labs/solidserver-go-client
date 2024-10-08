@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Address6Hostaddr** | Pointer to **string** | todo(here) :ipam.alias6.edit.input.address6_hostaddr. : IPv6 address | [optional] 
+**Address6Hostaddr** | Pointer to **string** | The IP address. | [optional] 
 **Address6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 address, a unique numeric key value automatically incremented when you add an IPv6 address. Use the ID to specify the IPv6 address of your choice. | [optional] 
-**Alias6Name** | Pointer to **string** | todo(here) :ipam.alias6.edit.input.alias6_name. : String | [optional] 
-**Alias6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 alias, a unique numeric key value automatically incremented when you add an IPv6 alias. Use the ID to specify which IPv6 alias to edit. | [optional] 
+**Alias6Name** | Pointer to **string** | The name of the IPv6 address. | [optional] 
+**Alias6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 alias, a unique numeric key value automatically incremented when you add an IPv6 alias. Use the ID to specify the IPv6 alias of your choice. | [optional] 
 **SpaceId** | Pointer to **int32** | The database identifier (ID) of the space, a unique numeric key value automatically incremented when you add a space. Use the ID to specify the space of your choice. | [optional] 
 **SpaceName** | Pointer to **string** | The name of the space. | [optional] 
 **Alias6Type** | Pointer to **string** | The type of the alias. | [optional] 

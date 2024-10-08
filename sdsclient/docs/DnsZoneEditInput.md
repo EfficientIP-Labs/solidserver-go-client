@@ -8,27 +8,30 @@ Name | Type | Description | Notes
 **ServerName** | Pointer to **string** | The name of the DNS server. | [optional] 
 **ViewId** | Pointer to **int32** | The database identifier (ID) of the DNS view the object belongs to. | [optional] 
 **ViewName** | Pointer to **string** | The name of the DNS view the object belongs to. | [optional] 
-**ZoneId** | Pointer to **int32** | The database identifier (ID) of the DNS zone, a unique numeric key value automatically incremented when you add a DNS zone. Use the ID to specify which DNS zone to edit. | [optional] 
-**ZoneName** | Pointer to **string** | The name of the DNS zone, each DNS zone must have a unique name. For hint zones (&lt;b&gt;dnszone_type&lt;/b&gt;: &lt;b&gt;hint&lt;/b&gt;), you must specify &lt;b&gt;.&lt;/b&gt; (dot) as &lt;b&gt;dnszone_name&lt;/b&gt;. | [optional] 
+**ZoneId** | Pointer to **int32** | The database identifier (ID) of the DNS zone, a unique numeric key value automatically incremented when you add a DNS zone. Use the ID to specify the DNS zone of your choice. | [optional] 
+**ZoneName** | Pointer to **string** | The name of the DNS zone, each DNS zone must have a unique name. For hint zones (&lt;b&gt;zone_type&lt;/b&gt;: &lt;b&gt;hint&lt;/b&gt;), you must type in &lt;b&gt;.&lt;/b&gt; (dot) as &lt;b&gt;zone_name&lt;/b&gt;. | [optional] 
 **ZoneType** | Pointer to **string** | The type of the DNS zone, either &lt;b&gt;master&lt;/b&gt;, &lt;b&gt;slave&lt;/b&gt;, &lt;b&gt;forward&lt;/b&gt;, &lt;b&gt;stub&lt;/b&gt;, &lt;b&gt;hint&lt;/b&gt; or &lt;b&gt;delegation-only&lt;/b&gt;. | [optional] 
 **ServerHostaddr** | Pointer to **string** | The IP address of the DNS server. | [optional] 
-**ZoneAdIntegrated** | Pointer to **int32** | The AD integrated status of the DNS zone. Set it to &lt;b&gt;1&lt;/b&gt; to indicate that the DNS zone belongs to an Active Directory integrated Microsoft DNS server. | [optional] 
+**ServerDdnsScavenging** | Pointer to **int32** | The DDNS scavenging status of the zone. Set it to &lt;b&gt;1&lt;/b&gt; to enable the scavenging and automatically delete the stale resource records dynamically added via GSS-TSIG. DDNS scavenging is only effective if the parameters &lt;b&gt;zone_use_update_policy&lt;/b&gt; and &lt;b&gt;gss_enabled&lt;/b&gt; are set to &lt;b&gt;1&lt;/b&gt;, and the rule 416 is enabled in the GUI. | [optional] 
+**ZoneAdIntegrated** | Pointer to **int32** | The AD integrated status of the DNS zone. Set it to &lt;b&gt;1&lt;/b&gt; to indicate that the DNS zone belongs to an Active Directory integrated Microsoft Windows DNS server. | [optional] 
 **ZoneAllowQuery** | Pointer to **string** | The ACL values associated with the allow-query configuration of the DNS zone, as follows: &lt;b&gt;&amp;lt;value1&amp;gt;;&amp;lt;value2&amp;gt;;... &lt;/b&gt;. Values may include IP and network addresses, the name of TSIG keys and ACLs, preceded by &lt;b&gt;!&lt;/b&gt; if the access is denied. | [optional] 
 **ZoneAllowTransfer** | Pointer to **string** | The ACL values associated with the allow-transfer configuration of the DNS zone, as follows: &lt;b&gt;&amp;lt;value1&amp;gt;;&amp;lt;value2&amp;gt;;... &lt;/b&gt;. Values may include IP and network addresses, the name of TSIG keys and ACLs, preceded by &lt;b&gt;!&lt;/b&gt; if the access is denied. | [optional] 
 **ZoneAllowUpdate** | Pointer to **string** | The ACL values associated with the allow-update configuration of the DNS zone, as follows: &lt;b&gt;&amp;lt;value1&amp;gt;;&amp;lt;value2&amp;gt;;... &lt;/b&gt;. Values may include IP and network addresses, the name of TSIG keys and ACLs, preceded by &lt;b&gt;!&lt;/b&gt; if the access is denied. | [optional] 
-**ZoneAlsoNotify** | Pointer to **string** | The IP address and port of the DNS server managing the smart architecture the DNS zone belongs to. If the parameter &lt;b&gt;dnszone_notify&lt;/b&gt; is set to &lt;b&gt;yes&lt;/b&gt; or &lt;b&gt;explicit&lt;/b&gt;, the server specified is instantly notified of any slave zones updates. | [optional] 
-**ZoneForward** | Pointer to **string** | The forwarding mode of the DNS zone.&lt;table&gt;&lt;caption&gt;dnszone_forward possible values&lt;/caption&gt;&lt;br/&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;br/&gt;&lt;/thead&gt;&lt;br/&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td &gt;first&lt;/td&gt;&lt;td &gt;The zone sends the queries to the forwarder(s). If no answer is returned, it attempts to answer the queries on its own.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;only&lt;/td&gt;&lt;td &gt;The zone only forwards the queries to the forwarder(s). Required by some reverse forward zones (e.g., in the case of private addresses).&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;&lt;br/&gt; If the parameter has no value, it indicates that the forwarding is disabled. | [optional] 
+**ZoneAlsoNotify** | Pointer to **string** | The IP address and port of the DNS server managing the smart architecture the DNS zone belongs to. If the parameter &lt;b&gt;zone_notify&lt;/b&gt; is set to &lt;b&gt;yes&lt;/b&gt; or &lt;b&gt;explicit&lt;/b&gt;, the server specified is instantly notified of any slave zones updates. | [optional] 
+**ZoneForward** | Pointer to **string** | The forwarding mode of the DNS zone.&lt;table&gt;&lt;caption&gt;zone_forward possible values&lt;/caption&gt;&lt;br/&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;br/&gt;&lt;/thead&gt;&lt;br/&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td &gt;first&lt;/td&gt;&lt;td &gt;The zone sends the queries to the forwarder(s). If no answer is returned, it attempts to answer the queries on its own.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;only&lt;/td&gt;&lt;td &gt;The zone only forwards the queries to the forwarder(s). Required by some reverse forward zones (e.g., in the case of private addresses).&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;&lt;br/&gt; If the parameter has no value, it indicates that the forwarding is disabled. | [optional] 
 **ZoneForwarders** | Pointer to **string** | The IP address(es) of the forwarder(s) associated with the DNS zone. It lists the DNS servers to which any unknown query on this zone should be sent, as follows: &lt;b&gt;&amp;lt;ip_address1&amp;gt;;&amp;lt;ip_address2&amp;gt;;...&lt;/b&gt; . | [optional] 
 **ZoneIsRpz** | Pointer to **int32** | The RPZ status of the DNS zone. Set it to &lt;b&gt;1&lt;/b&gt; to indicate that the DNS zone is a Response Policy Zone. | [optional] 
 **ZoneMasters** | Pointer to **string** | For slave DNS zones, the IP address of the DNS server and, if relevant, the name of the DNS view that contain the master DNS zone, as follows: &lt;b&gt;&amp;lt;ip_addr&amp;gt;;&lt;/b&gt; or &lt;b&gt;&amp;lt;ip_addr&amp;gt; key &amp;lt;dnsview_name&amp;gt;;&lt;/b&gt; . | [optional] 
-**ZoneNotify** | Pointer to **string** | The notify status of the DNS zone.&lt;table&gt;&lt;caption&gt;dnszone_notify possible values&lt;/caption&gt;&lt;br/&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;br/&gt;&lt;/thead&gt;&lt;br/&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td &gt;no&lt;/td&gt;&lt;td &gt;No notify message is sent.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;yes&lt;/td&gt;&lt;td &gt;A notify message is sent to the name servers defined in the NS records of the zone and to the IP address(es) specified in the parameter .&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;explicit&lt;/td&gt;&lt;td &gt;A notify message is sent only to the IP address(es) specified in the parameter .&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;&lt;br/&gt;The notify message is not sent to the server itself or to the primary server defined in the SOA record of the zone. | [optional] 
-**ZoneOrder** | Pointer to **int32** | The level of the DNS RPZ zone, where 0 represents the highest level in the views hierarchy. The RPZ rules of each zone are reviewed following this order. For non-RPZ zones, that have their parameter zone_is_rpz set to &lt;b&gt;0&lt;/b&gt;, you do not need to set this parameter. | [optional] 
-**ZoneResponsePolicy** | Pointer to **string** | The response policy of the DNS zone.&lt;table&gt;&lt;caption&gt;dnszone_response_policy possible values&lt;/caption&gt;&lt;br/&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Policy&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;br/&gt;&lt;/thead&gt;&lt;br/&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td &gt;given&lt;/td&gt;&lt;td &gt;All the rules specified in the RPZ zone are applied normally.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;disabled&lt;/td&gt;&lt;td &gt;The RPZ zone rules configuration is not applied. All the rules it contains are ignored.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;passthru&lt;/td&gt;&lt;td &gt;The rules specified in the RPZ matching the listed RR names are ignored, no matter the RPZ zone they belong to.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;nxdomain&lt;/td&gt;&lt;td &gt;The rules specified in the RPZ return an NXDOMAIN response.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;nodata&lt;/td&gt;&lt;td &gt;The rules specified in the RPZ return a NODATA response.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;cname &lt;domain-name&gt;&lt;/td&gt;&lt;td &gt;All the rules specified in the RPZ are redirected toward the specified domain name.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;&lt;br/&gt;You can only add RPZ zones on EfficientIP or BIND DNS servers. | [optional] 
-**ZoneRpzLog** | Pointer to **int32** | TODO:dns_zone_add.input.zone_rpz_log | [optional] 
+**ZoneNotify** | Pointer to **string** | The notify status of the DNS zone.&lt;table&gt;&lt;caption&gt;zone_notify possible values&lt;/caption&gt;&lt;br/&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;br/&gt;&lt;/thead&gt;&lt;br/&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td &gt;no&lt;/td&gt;&lt;td &gt;No notify message is sent.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;yes&lt;/td&gt;&lt;td &gt;A notify message is sent to the name servers defined in the NS records of the zone and to the IP address(es) specified in the parameter .&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;explicit&lt;/td&gt;&lt;td &gt;A notify message is sent only to the IP address(es) specified in the parameter .&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;&lt;br/&gt;The notify message is not sent to the server itself or to the primary server defined in the SOA record of the zone. | [optional] 
+**ZoneOrder** | Pointer to **int32** | The level of the RPZ zone, where 0 represents the highest level in the views hierarchy. The RPZ rules of each zone are reviewed following this order. For non-RPZ zones, that have their parameter zone_is_rpz set to &lt;b&gt;0&lt;/b&gt;, you do not need to set this parameter. | [optional] 
+**ZoneResponsePolicy** | Pointer to **string** | The response policy of the DNS zone. All the zones can be set with the policy &lt;b&gt;given&lt;/b&gt;, only RPZ zones can be set with other policies.&lt;table&gt;&lt;caption&gt;zone_response_policy possible values&lt;/caption&gt;&lt;br/&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Policy&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;br/&gt;&lt;/thead&gt;&lt;br/&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td &gt;given&lt;/td&gt;&lt;td &gt;All the rules specified in the RPZ zone are applied normally.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;disabled&lt;/td&gt;&lt;td &gt;The RPZ zone rules configuration is not applied. All the rules it contains are ignored.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;passthru&lt;/td&gt;&lt;td &gt;The rules specified in the RPZ matching the listed RR names are ignored, no matter the RPZ zone they belong to.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;nxdomain&lt;/td&gt;&lt;td &gt;The rules specified in the RPZ return an NXDOMAIN response.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;nodata&lt;/td&gt;&lt;td &gt;The rules specified in the RPZ return a NODATA response.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td &gt;cname &lt;domain-name&gt;&lt;/td&gt;&lt;td &gt;All the rules specified in the RPZ are redirected toward the specified domain name.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;&lt;br/&gt;You can only add RPZ zones on EfficientIP or BIND DNS servers. | [optional] 
+**ZoneRpzLog** | Pointer to **int32** | The RPZ logging status, if &lt;b&gt;zone_is_rpz&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt; or &lt;b&gt;yes&lt;/b&gt;. It allows you to log all the operations triggered by the RPZ rules of the zone. | [optional] 
+**ZoneRpzMaxPolicyTtl** | Pointer to **int32** | A way to set the number of seconds of the max policy Time To Live of the zone. By default, the parameter is empty, and the &lt;b&gt;Server max policy TTL&lt;/b&gt; of the zone is of 5 seconds. It overrides the same option set at server level. | [optional] 
+**ZoneRpzRecursiveOnly** | Pointer to **int32** | A way to &lt;b&gt;Enable recursive-only on the server&lt;/b&gt; for the zone. By default it is enabled (&lt;b&gt;1&lt;/b&gt;) and, for this zone, the server only processes policies on recursive queries. It overrides the same option set at server level. | [optional] 
 **ZoneSpaceId** | Pointer to **int32** | The database identifier (ID) of the space associated with the DNS zone the record belongs to. | [optional] 
 **ZoneSpaceName** | Pointer to **string** | The name of the space associated with the DNS zone the record belongs to. | [optional] 
-**RowState** | Pointer to **int32** | The object activation status.&lt;ul class&#x3D;dashed &gt;&lt;li&gt;                                                If set to &lt;b&gt;0&lt;/b&gt;, the object is present in the database but ignored, i.e. it cannot be managed, counted or listed. This status is applied on objects deleted from the GUI.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;                                                If set to &lt;b&gt;1&lt;/b&gt;, the object is enabled and managed.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;                                                If set to &lt;b&gt;2&lt;/b&gt;, the object is unmanaged, disabled or both depending on the context.&lt;br/&gt;                                            &lt;/li&gt;&lt;/ul&gt;By default, &lt;b&gt;row_enabled&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt; when an object is created. | [optional] 
-**ZoneUseUpdatePolicy** | Pointer to **int32** | The update policy status of the DNS zone. Set it to &lt;b&gt;1&lt;/b&gt; to indicate that the DNS zone uses a specific GSS-TSIG/update-policy. You can only configure the zone update policy if the parameter &lt;b&gt;gss_enabled&lt;/b&gt; of the server it belongs to is set to &lt;b&gt;1&lt;/b&gt;. | [optional] 
+**RowState** | Pointer to **int32** | The object activation status.&lt;ul&gt;&lt;li&gt; If set to &lt;b&gt;0&lt;/b&gt;, the object is present in the database but ignored, i.e. it cannot be managed, counted or listed. This status is applied on objects deleted from the GUI.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; If set to &lt;b&gt;1&lt;/b&gt;, the object is enabled and managed.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; If set to &lt;b&gt;2&lt;/b&gt;, the object is unmanaged, disabled or both depending on the context.&lt;br/&gt;&lt;/li&gt;&lt;/ul&gt;By default, &lt;b&gt;row_state&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt; when an object is created. | [optional] 
+**ZoneUseUpdatePolicy** | Pointer to **int32** | The update policy status of the DNS zone. Set it to &lt;b&gt;1&lt;/b&gt; to indicate that the DNS zone uses a specific GSS-TSIG/update-policy. You can only configure the zone update policy if the parameter &lt;b&gt;gss_enabled&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt;. | [optional] 
 **ClassParametersToDelete** | Pointer to **[]string** | class parameters you want to delete from the object | [optional] 
 **ZoneClassName** | Pointer to **string** | The name of the class to apply to the object you are editing. You must specify the class file directory, e.g. &lt;b&gt;my_directory/my_class.class&lt;/b&gt; . You cannot use the classes &lt;b&gt;global&lt;/b&gt; and &lt;b&gt;default&lt;/b&gt;, they are reserved by the system. | [optional] 
 **ZoneClassParameters** | Pointer to [**[]ApiClassParameterInputEntry**](ApiClassParameterInputEntry.md) | class parameters in json format | [optional] 
@@ -252,6 +255,31 @@ SetServerHostaddr sets ServerHostaddr field to given value.
 `func (o *DnsZoneEditInput) HasServerHostaddr() bool`
 
 HasServerHostaddr returns a boolean if a field has been set.
+
+### GetServerDdnsScavenging
+
+`func (o *DnsZoneEditInput) GetServerDdnsScavenging() int32`
+
+GetServerDdnsScavenging returns the ServerDdnsScavenging field if non-nil, zero value otherwise.
+
+### GetServerDdnsScavengingOk
+
+`func (o *DnsZoneEditInput) GetServerDdnsScavengingOk() (*int32, bool)`
+
+GetServerDdnsScavengingOk returns a tuple with the ServerDdnsScavenging field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetServerDdnsScavenging
+
+`func (o *DnsZoneEditInput) SetServerDdnsScavenging(v int32)`
+
+SetServerDdnsScavenging sets ServerDdnsScavenging field to given value.
+
+### HasServerDdnsScavenging
+
+`func (o *DnsZoneEditInput) HasServerDdnsScavenging() bool`
+
+HasServerDdnsScavenging returns a boolean if a field has been set.
 
 ### GetZoneAdIntegrated
 
@@ -577,6 +605,56 @@ SetZoneRpzLog sets ZoneRpzLog field to given value.
 `func (o *DnsZoneEditInput) HasZoneRpzLog() bool`
 
 HasZoneRpzLog returns a boolean if a field has been set.
+
+### GetZoneRpzMaxPolicyTtl
+
+`func (o *DnsZoneEditInput) GetZoneRpzMaxPolicyTtl() int32`
+
+GetZoneRpzMaxPolicyTtl returns the ZoneRpzMaxPolicyTtl field if non-nil, zero value otherwise.
+
+### GetZoneRpzMaxPolicyTtlOk
+
+`func (o *DnsZoneEditInput) GetZoneRpzMaxPolicyTtlOk() (*int32, bool)`
+
+GetZoneRpzMaxPolicyTtlOk returns a tuple with the ZoneRpzMaxPolicyTtl field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetZoneRpzMaxPolicyTtl
+
+`func (o *DnsZoneEditInput) SetZoneRpzMaxPolicyTtl(v int32)`
+
+SetZoneRpzMaxPolicyTtl sets ZoneRpzMaxPolicyTtl field to given value.
+
+### HasZoneRpzMaxPolicyTtl
+
+`func (o *DnsZoneEditInput) HasZoneRpzMaxPolicyTtl() bool`
+
+HasZoneRpzMaxPolicyTtl returns a boolean if a field has been set.
+
+### GetZoneRpzRecursiveOnly
+
+`func (o *DnsZoneEditInput) GetZoneRpzRecursiveOnly() int32`
+
+GetZoneRpzRecursiveOnly returns the ZoneRpzRecursiveOnly field if non-nil, zero value otherwise.
+
+### GetZoneRpzRecursiveOnlyOk
+
+`func (o *DnsZoneEditInput) GetZoneRpzRecursiveOnlyOk() (*int32, bool)`
+
+GetZoneRpzRecursiveOnlyOk returns a tuple with the ZoneRpzRecursiveOnly field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetZoneRpzRecursiveOnly
+
+`func (o *DnsZoneEditInput) SetZoneRpzRecursiveOnly(v int32)`
+
+SetZoneRpzRecursiveOnly sets ZoneRpzRecursiveOnly field to given value.
+
+### HasZoneRpzRecursiveOnly
+
+`func (o *DnsZoneEditInput) HasZoneRpzRecursiveOnly() bool`
+
+HasZoneRpzRecursiveOnly returns a boolean if a field has been set.
 
 ### GetZoneSpaceId
 

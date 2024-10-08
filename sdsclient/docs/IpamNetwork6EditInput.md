@@ -9,21 +9,22 @@ Name | Type | Description | Notes
 **SpaceName** | Pointer to **string** | The name of the space. | [optional] 
 **Network6Addr** | Pointer to **string** | The start IP address of the IPv6 network, its first IP address. | [optional] 
 **Network6EndAddr** | Pointer to **string** | The end IP address of the IPv6 network, its last IP address. | [optional] 
-**Network6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 network, a unique numeric key value automatically incremented when you add an IPv6 network. Use the ID to specify which IPv6 network to edit. | [optional] 
+**Network6Id** | Pointer to **int32** | The database identifier (ID) of the IPv6 network, a unique numeric key value automatically incremented when you add an IPv6 network. Use the ID to specify the IPv6 network of your choice. | [optional] 
 **Network6Prefix** | Pointer to **string** | The prefix of the IPv6 network, an integer that defines the number of address the network contains. | [optional] 
-**AllowTreeReparenting** | Pointer to **int32** | A way to allow (1) or prevent (0) changing the parent of the network you are adding. Upon edition of the network, this parameter decides if you can associate it with a different parent network. | [optional] 
+**AllowBlock6Creation** | Pointer to **int32** | Internal use. Not documented. | [optional] 
+**AllowTreeReparenting** | Pointer to **int32** | A way to allow (1) or prevent (0) changing the parent of the network you are adding. Upon editing of the network, this parameter decides if you can associate it with a different parent network. | [optional] 
 **Network6IsTerminal** | Pointer to **int32** | A way to determine if a network can contain other networks. If set to 1, the network is terminal and cannot contain other subnet-type networks. By essence, block-type networks are non-terminal and are always set to 0. | [optional] 
 **Network6LockNetworkBroadcast** | Pointer to **int32** | A way to prevent &lt;b&gt;(1)&lt;/b&gt; users from assigning the broadcast IP address and network IP address of the network. | [optional] 
 **PermitInvalid** | Pointer to **int32** | A way to authorize (&lt;b&gt;1&lt;/b&gt;) IPv6 networks overlapping within a space. | [optional] 
 **PermitNoBlock6** | Pointer to **int32** | A way to force the creation of an IPv6 subnet-type network. If set to 1, you can create a subnet-type network even if no block-type network matching the start address exists. | [optional] 
-**RelativePosition** | Pointer to **int32** | The position of the network within the hierarchy of networks of a VLSM organization. It calculates between &lt;b&gt;0&lt;/b&gt; and &lt;b&gt;n&lt;/b&gt; all the levels of the organization, its behavior depends on the value of the parameter &lt;b&gt;use_reversed_relative_position&lt;/b&gt;:&lt;ul class&#x3D;dashed &gt;&lt;li&gt;&lt;b&gt;use_reversed_relative_position&#x3D;0&lt;/b&gt; where &lt;b&gt;0&lt;/b&gt; indicates a block-type network at the highest level possible, in a space-based organization, it belongs to the top space. The levels increment from &lt;b&gt;0&lt;/b&gt; down to &lt;b&gt;n&lt;/b&gt;, the lowest level you set up, within networks or spaces.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;&lt;b&gt;use_reversed_relative_position&#x3D;1&lt;/b&gt; where &lt;b&gt;1&lt;/b&gt; indicates a network located at the lowest level of the organization, within networks or spaces. The levels increment from &lt;b&gt;0&lt;/b&gt; up to &lt;b&gt;n&lt;/b&gt;, the network at the highest level of the organization.&lt;br/&gt;                                            &lt;/li&gt;&lt;/ul&gt; | [optional] 
-**RowState** | Pointer to **string** | The object activation status.&lt;ul class&#x3D;dashed &gt;&lt;li&gt;                                                If set to &lt;b&gt;0&lt;/b&gt;, the object is present in the database but ignored, i.e. it cannot be managed, counted or listed. This status is applied on objects deleted from the GUI.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;                                                If set to &lt;b&gt;1&lt;/b&gt;, the object is enabled and managed.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;                                                If set to &lt;b&gt;2&lt;/b&gt;, the object is unmanaged, disabled or both depending on the context.&lt;br/&gt;                                            &lt;/li&gt;&lt;/ul&gt;By default, &lt;b&gt;row_enabled&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt; when an object is created. | [optional] 
+**RelativePosition** | Pointer to **int32** | The position of the network within the hierarchy of networks of a VLSM organization. It calculates between &lt;b&gt;0&lt;/b&gt; and &lt;b&gt;n&lt;/b&gt; all the levels of the organization, its behavior depends on the value of the parameter &lt;b&gt;use_reversed_relative_position&lt;/b&gt;:&lt;ul&gt;&lt;li&gt; &lt;b&gt;use_reversed_relative_position&#x3D;0&lt;/b&gt; where &lt;b&gt;0&lt;/b&gt; indicates a block-type network at the highest level possible, in a space-based organization, it belongs to the top space. The levels increment from &lt;b&gt;0&lt;/b&gt; down to &lt;b&gt;n&lt;/b&gt;, the lowest level you set up, within networks or spaces.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; &lt;b&gt;use_reversed_relative_position&#x3D;1&lt;/b&gt; where &lt;b&gt;1&lt;/b&gt; indicates a network located at the lowest level of the organization, within networks or spaces. The levels increment from &lt;b&gt;0&lt;/b&gt; up to &lt;b&gt;n&lt;/b&gt;, the network at the highest level of the organization.&lt;br/&gt;&lt;/li&gt;&lt;/ul&gt; | [optional] 
+**RowState** | Pointer to **string** | The object activation status.&lt;ul&gt;&lt;li&gt; If set to &lt;b&gt;0&lt;/b&gt;, the object is present in the database but ignored, i.e. it cannot be managed, counted or listed. This status is applied on objects deleted from the GUI.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; If set to &lt;b&gt;1&lt;/b&gt;, the object is enabled and managed.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; If set to &lt;b&gt;2&lt;/b&gt;, the object is unmanaged, disabled or both depending on the context.&lt;br/&gt;&lt;/li&gt;&lt;/ul&gt;By default, &lt;b&gt;row_state&lt;/b&gt; is set to &lt;b&gt;1&lt;/b&gt; when an object is created. | [optional] 
 **Network6Name** | Pointer to **string** | The name of the IPv6 network, each IPv6 network must have a unique name. | [optional] 
-**NetworkLevel** | Pointer to **int32** | The level of the network within the space:&lt;ul class&#x3D;dashed &gt;&lt;li&gt;                                                Set it to &lt;b&gt;0&lt;/b&gt; for a block-type network.&lt;br/&gt;                                            &lt;/li&gt;&lt;li&gt;                                                Set it to a value between &lt;b&gt;1&lt;/b&gt; and &lt;b&gt;n&lt;/b&gt; for a subnet-type network.&lt;br/&gt;                                            &lt;/li&gt;&lt;/ul&gt;If you set a value between &lt;b&gt;2&lt;/b&gt; and &lt;b&gt;n&lt;/b&gt;, you are setting a network-based VLSM organization where non terminal subnet-type networks can contain other subnet-type networks. | [optional] 
+**NetworkLevel** | Pointer to **int32** | The level of the network within the space:&lt;ul&gt;&lt;li&gt; Set it to &lt;b&gt;0&lt;/b&gt; for a block-type network.&lt;br/&gt;&lt;/li&gt;&lt;li&gt; Set it to a value between &lt;b&gt;1&lt;/b&gt; and &lt;b&gt;n&lt;/b&gt; for a subnet-type network.&lt;br/&gt;&lt;/li&gt;&lt;/ul&gt;If you set a value between &lt;b&gt;2&lt;/b&gt; and &lt;b&gt;n&lt;/b&gt;, you are setting a network-based VLSM organization where non terminal subnet-type networks can contain other subnet-type networks. | [optional] 
 **UseReversedRelativePosition** | Pointer to **int32** | A way to determine if the calculation of the parameter &lt;b&gt;relative_position&lt;/b&gt; should start from the top (&lt;b&gt;0&lt;/b&gt;) or the bottom (&lt;b&gt;1&lt;/b&gt;) of the VLSM organization. | [optional] 
 **VlanId** | Pointer to **int32** | The database identifier (ID) of the VLAN you want to associate with the network. | [optional] 
-**VlsmSpaceId** | Pointer to **int32** | The database identifier (ID) of a VLSM child space of the space specified in &lt;b&gt;site_id&lt;/b&gt;. If you specify an ID, the subnet-type network you are editing is duplicated as a VLSM block-type network in the child space, with the same name but a different ID. This parameter serves the same purpose as &lt;b&gt;vlsm_site_name&lt;/b&gt;. | [optional] 
-**VlsmSpaceName** | Pointer to **string** | The name of a VLSM child space of the space specified in &lt;b&gt;site_id&lt;/b&gt;. If you specify a name, the subnet-type network you are editing is duplicated as a VLSM block-type network in the child space, with the same name but a different ID. This parameter serves the same purpose as &lt;b&gt;vlsm_site_id&lt;/b&gt;. | [optional] 
+**VlsmSpaceId** | Pointer to **int32** | The database identifier (ID) of a VLSM child space of the space specified in &lt;b&gt;space_id&lt;/b&gt;. If you specify an ID, the subnet-type network you are editing is duplicated as a VLSM block-type network in the child space, with the same name but a different ID. This parameter serves the same purpose as &lt;b&gt;vlsm_space_name&lt;/b&gt;. | [optional] 
+**VlsmSpaceName** | Pointer to **string** | The name of a VLSM child space of the space specified in &lt;b&gt;space_id&lt;/b&gt;. If you specify a name, the subnet-type network you are editing is duplicated as a VLSM block-type network in the child space, with the same name but a different ID. This parameter serves the same purpose as &lt;b&gt;vlsm_space_id&lt;/b&gt;. | [optional] 
 **ClassParametersToDelete** | Pointer to **[]string** | class parameters you want to delete from the object | [optional] 
 **Network6ClassParameters** | Pointer to [**[]ApiClassParameterInputEntry**](ApiClassParameterInputEntry.md) | class parameters in json format | [optional] 
 **Network6ClassName** | Pointer to **string** | The name of the class to apply to the object you are editing. You must specify the class file directory, e.g. &lt;b&gt;my_directory/my_class.class&lt;/b&gt; . You cannot use the classes &lt;b&gt;global&lt;/b&gt; and &lt;b&gt;default&lt;/b&gt;, they are reserved by the system. | [optional] 
@@ -222,6 +223,31 @@ SetNetwork6Prefix sets Network6Prefix field to given value.
 `func (o *IpamNetwork6EditInput) HasNetwork6Prefix() bool`
 
 HasNetwork6Prefix returns a boolean if a field has been set.
+
+### GetAllowBlock6Creation
+
+`func (o *IpamNetwork6EditInput) GetAllowBlock6Creation() int32`
+
+GetAllowBlock6Creation returns the AllowBlock6Creation field if non-nil, zero value otherwise.
+
+### GetAllowBlock6CreationOk
+
+`func (o *IpamNetwork6EditInput) GetAllowBlock6CreationOk() (*int32, bool)`
+
+GetAllowBlock6CreationOk returns a tuple with the AllowBlock6Creation field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAllowBlock6Creation
+
+`func (o *IpamNetwork6EditInput) SetAllowBlock6Creation(v int32)`
+
+SetAllowBlock6Creation sets AllowBlock6Creation field to given value.
+
+### HasAllowBlock6Creation
+
+`func (o *IpamNetwork6EditInput) HasAllowBlock6Creation() bool`
+
+HasAllowBlock6Creation returns a boolean if a field has been set.
 
 ### GetAllowTreeReparenting
 

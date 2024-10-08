@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DomainId** | Pointer to **int32** | The database identifier (ID) of the VLAN domain, a unique numeric key value automatically incremented when you add a VLAN domain. Use the ID to specify the VLAN domain of your choice. | [optional] 
 **DomainName** | Pointer to **string** | The name of the VLAN domain. | [optional] 
-**RangeId** | Pointer to **int32** | The database identifier (ID) of the VLAN range, a unique numeric key value automatically incremented when you add a VLAN range. Use the ID to specify which VLAN range to edit. | [optional] 
+**RangeId** | Pointer to **int32** | The database identifier (ID) of the VLAN range, a unique numeric key value automatically incremented when you add a VLAN range. Use the ID to specify the VLAN range of your choice. | [optional] 
 **RangeName** | Pointer to **string** | The name of the VLAN range, each VLAN range must have a unique name. | [optional] 
 **RangeDescription** | Pointer to **string** | The description of the VLAN range. | [optional] 
 **RangeDisableOverlapping** | Pointer to **int32** | The overlapping restriction status of the VLAN range. Set it to &lt;b&gt;1&lt;/b&gt; to prevent VLAN ID overlapping in the range. | [optional] 

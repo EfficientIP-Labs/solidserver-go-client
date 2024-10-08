@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DnsZoneDeleteSuccessData**](DnsZoneDeleteSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerDnsZoneDeleteSuccess**](DataInnerDnsZoneDeleteSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DnsZoneDeleteSuccess) GetData() []DnsZoneDeleteSuccessData`
+`func (o *DnsZoneDeleteSuccess) GetData() []DataInnerDnsZoneDeleteSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DnsZoneDeleteSuccess) GetDataOk() (*[]DnsZoneDeleteSuccessData, bool)`
+`func (o *DnsZoneDeleteSuccess) GetDataOk() (*[]DataInnerDnsZoneDeleteSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DnsZoneDeleteSuccess) SetData(v []DnsZoneDeleteSuccessData)`
+`func (o *DnsZoneDeleteSuccess) SetData(v []DataInnerDnsZoneDeleteSuccess)`
 
 SetData sets Data field to given value.
 

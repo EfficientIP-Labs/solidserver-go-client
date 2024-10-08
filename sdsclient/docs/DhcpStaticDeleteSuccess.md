@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DhcpStaticDeleteSuccessData**](DhcpStaticDeleteSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerDhcpStaticDeleteSuccess**](DataInnerDhcpStaticDeleteSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DhcpStaticDeleteSuccess) GetData() []DhcpStaticDeleteSuccessData`
+`func (o *DhcpStaticDeleteSuccess) GetData() []DataInnerDhcpStaticDeleteSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DhcpStaticDeleteSuccess) GetDataOk() (*[]DhcpStaticDeleteSuccessData, bool)`
+`func (o *DhcpStaticDeleteSuccess) GetDataOk() (*[]DataInnerDhcpStaticDeleteSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DhcpStaticDeleteSuccess) SetData(v []DhcpStaticDeleteSuccessData)`
+`func (o *DhcpStaticDeleteSuccess) SetData(v []DataInnerDhcpStaticDeleteSuccess)`
 
 SetData sets Data field to given value.
 

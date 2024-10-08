@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ServerId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 server, a unique numeric key value automatically incremented when you add a DHCPv4 server. Use the ID to specify the DHCPv4 server of your choice. | [optional] 
 **ServerName** | Pointer to **string** | The name of the DHCPv4 server. | [optional] 
-**ScopeId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 scope, a unique numeric key value automatically incremented when you add a DHCPv4 scope. Use the ID to specify which DHCPv4 scope to edit. | [optional] 
+**ScopeId** | Pointer to **int32** | The database identifier (ID) of the DHCPv4 scope, a unique numeric key value automatically incremented when you add a DHCPv4 scope. Use the ID to specify the DHCPv4 scope of your choice. | [optional] 
 **ScopeNetAddr** | Pointer to **string** | The first IP address of the DHCPv4 scope. | [optional] 
 **ScopeNetMask** | Pointer to **string** | The netmask of the DHCPv4 scope. It is expressed in dot-decimal notation and defines the number of addresses the scope contains. | [optional] 
 **ServerHostaddr** | Pointer to **string** | The IP address of the DHCP server. | [optional] 

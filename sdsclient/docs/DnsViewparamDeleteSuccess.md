@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Success** | Pointer to **bool** | state true/false indicate if action succeed | [optional] 
 **Messages** | Pointer to [**[]ApiMessageEntry**](ApiMessageEntry.md) | List or notice/warning/error messages | [optional] 
-**Data** | Pointer to [**[]DnsViewparamDeleteSuccessData**](DnsViewparamDeleteSuccessData.md) |  | [optional] 
+**Data** | Pointer to [**[]DataInnerDnsViewparamDeleteSuccess**](DataInnerDnsViewparamDeleteSuccess.md) |  | [optional] 
 
 ## Methods
 
@@ -79,20 +79,20 @@ HasMessages returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DnsViewparamDeleteSuccess) GetData() []DnsViewparamDeleteSuccessData`
+`func (o *DnsViewparamDeleteSuccess) GetData() []DataInnerDnsViewparamDeleteSuccess`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DnsViewparamDeleteSuccess) GetDataOk() (*[]DnsViewparamDeleteSuccessData, bool)`
+`func (o *DnsViewparamDeleteSuccess) GetDataOk() (*[]DataInnerDnsViewparamDeleteSuccess, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DnsViewparamDeleteSuccess) SetData(v []DnsViewparamDeleteSuccessData)`
+`func (o *DnsViewparamDeleteSuccess) SetData(v []DataInnerDnsViewparamDeleteSuccess)`
 
 SetData sets Data field to given value.
 

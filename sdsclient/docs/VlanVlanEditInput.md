@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DomainId** | Pointer to **int32** | The database identifier (ID) of the VLAN domain, a unique numeric key value automatically incremented when you add a VLAN domain. Use the ID to specify the VLAN domain of your choice. | [optional] 
 **DomainName** | Pointer to **string** | The name of the VLAN domain. | [optional] 
-**VlanId** | Pointer to **int32** | The database identifier (ID) of the VLAN, a unique numeric key value automatically incremented when you add a VLAN. Use the ID to specify which VLAN to edit. | [optional] 
-**VlanVlanId** | Pointer to **int32** | The VLAN identifier (ID) of the VLAN, a unique numeric key value within a VLAN domain. Use the ID to specify which VLAN to edit. | [optional] 
+**VlanId** | Pointer to **int32** | The database identifier (ID) of the VLAN, a unique numeric key value automatically incremented when you add a VLAN. Use the ID to specify the VLAN of your choice. | [optional] 
+**VlanVlanId** | Pointer to **int32** | The VLAN identifier (ID) of the VLAN, a unique numeric key value within a VLAN domain. Use the ID to specify the VLAN of your choice. | [optional] 
 **RangeId** | Pointer to **int32** | The database identifier (ID) of the VLAN range, a unique numeric key value automatically incremented when you add a VLAN range. Use the ID to specify the VLAN range of your choice. | [optional] 
 **RangeName** | Pointer to **string** | The name of the VLAN range. | [optional] 
 **VlanName** | Pointer to **string** | The name of the VLAN, each VLAN must have a unique name. | [optional] 
