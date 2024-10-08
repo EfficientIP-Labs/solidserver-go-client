@@ -23,7 +23,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```go
-import client "github.com/efficientIP-Labs/solidserver-go-client/sdsclient"
+import "github.com/efficientIP-Labs/solidserver-go-client/sdsclient"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:
@@ -855,8 +855,8 @@ Example
 ```go
 auth := context.WithValue(
             context.Background(),
-            sdsapi.ContextEipApiTokenAuth,
-            sdsapi.EipApiTokenAuth{
+            sdsclient.ContextEipApiTokenAuth,
+            sdsclient.EipApiTokenAuth{
                 Token:  "TOKEN",
                 Secret: "SECRET",
             },

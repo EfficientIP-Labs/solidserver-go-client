@@ -855,8 +855,8 @@ Example
 ```go
 auth := context.WithValue(
             context.Background(),
-            sdsapi.ContextEipApiTokenAuth,
-            sdsapi.EipApiTokenAuth{
+            sdsclient.ContextEipApiTokenAuth,
+            sdsclient.EipApiTokenAuth{
                 Token:  "TOKEN",
                 Secret: "SECRET",
             },
