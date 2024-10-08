@@ -79,711 +79,711 @@ All URIs are relative to *https://sds-ip-or-name:443/api/v2.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AppAPI* | [**AppApplicationAdd**](docs/AppAPI.md#appapplicationadd) | **Post** /app/application/add | Add an application
-*AppAPI* | [**AppApplicationCount**](docs/AppAPI.md#appapplicationcount) | **Get** /app/application/count | Count the number of applications
-*AppAPI* | [**AppApplicationDelete**](docs/AppAPI.md#appapplicationdelete) | **Delete** /app/application/delete | Delete an application
-*AppAPI* | [**AppApplicationEdit**](docs/AppAPI.md#appapplicationedit) | **Put** /app/application/edit | Edit an application
-*AppAPI* | [**AppApplicationInfo**](docs/AppAPI.md#appapplicationinfo) | **Get** /app/application/info | Display the properties of an application
-*AppAPI* | [**AppApplicationList**](docs/AppAPI.md#appapplicationlist) | **Get** /app/application/list | List the applications
-*AppAPI* | [**AppNodeAdd**](docs/AppAPI.md#appnodeadd) | **Post** /app/node/add | Add a node
-*AppAPI* | [**AppNodeCount**](docs/AppAPI.md#appnodecount) | **Get** /app/node/count | Count the number of nodes
-*AppAPI* | [**AppNodeDelete**](docs/AppAPI.md#appnodedelete) | **Delete** /app/node/delete | Delete a node
-*AppAPI* | [**AppNodeEdit**](docs/AppAPI.md#appnodeedit) | **Put** /app/node/edit | Edit a node
-*AppAPI* | [**AppNodeInfo**](docs/AppAPI.md#appnodeinfo) | **Get** /app/node/info | Display the properties of a node
-*AppAPI* | [**AppNodeList**](docs/AppAPI.md#appnodelist) | **Get** /app/node/list | List the nodes
-*AppAPI* | [**AppPoolAdd**](docs/AppAPI.md#apppooladd) | **Post** /app/pool/add | Add a pool
-*AppAPI* | [**AppPoolCount**](docs/AppAPI.md#apppoolcount) | **Get** /app/pool/count | Count the number of pools
-*AppAPI* | [**AppPoolDelete**](docs/AppAPI.md#apppooldelete) | **Delete** /app/pool/delete | Delete a pool
-*AppAPI* | [**AppPoolEdit**](docs/AppAPI.md#apppooledit) | **Put** /app/pool/edit | Edit a pool
-*AppAPI* | [**AppPoolInfo**](docs/AppAPI.md#apppoolinfo) | **Get** /app/pool/info | Display the properties of a pool
-*AppAPI* | [**AppPoolList**](docs/AppAPI.md#apppoollist) | **Get** /app/pool/list | List the pools
-*DeviceAPI* | [**DeviceDeviceAdd**](docs/DeviceAPI.md#devicedeviceadd) | **Post** /device/device/add | Add a Device Manager device
-*DeviceAPI* | [**DeviceDeviceCount**](docs/DeviceAPI.md#devicedevicecount) | **Get** /device/device/count | Count the number of Device Manager devices
-*DeviceAPI* | [**DeviceDeviceDelete**](docs/DeviceAPI.md#devicedevicedelete) | **Delete** /device/device/delete | Delete a Device Manager device
-*DeviceAPI* | [**DeviceDeviceEdit**](docs/DeviceAPI.md#devicedeviceedit) | **Put** /device/device/edit | Add a Device Manager device
-*DeviceAPI* | [**DeviceDeviceInfo**](docs/DeviceAPI.md#devicedeviceinfo) | **Get** /device/device/info | Display the properties of a Device Manager device
-*DeviceAPI* | [**DeviceDeviceList**](docs/DeviceAPI.md#devicedevicelist) | **Get** /device/device/list | List the Device Manager devices
-*DeviceAPI* | [**DeviceInterfaceAdd**](docs/DeviceAPI.md#deviceinterfaceadd) | **Post** /device/interface/add | Add a Device Manager port or interface
-*DeviceAPI* | [**DeviceInterfaceCount**](docs/DeviceAPI.md#deviceinterfacecount) | **Get** /device/interface/count | Count the number Device Manager ports &amp;amp; interfaces
-*DeviceAPI* | [**DeviceInterfaceDelete**](docs/DeviceAPI.md#deviceinterfacedelete) | **Delete** /device/interface/delete | Delete a Device Manager port or interface
-*DeviceAPI* | [**DeviceInterfaceEdit**](docs/DeviceAPI.md#deviceinterfaceedit) | **Put** /device/interface/edit | Add a Device Manager port or interface
-*DeviceAPI* | [**DeviceInterfaceInfo**](docs/DeviceAPI.md#deviceinterfaceinfo) | **Get** /device/interface/info | Display the properties of a Device Manager port or interface
-*DeviceAPI* | [**DeviceInterfaceList**](docs/DeviceAPI.md#deviceinterfacelist) | **Get** /device/interface/list | List the Device Manager ports &amp;amp; interfaces
-*DeviceAPI* | [**DeviceLinkAdd**](docs/DeviceAPI.md#devicelinkadd) | **Post** /device/link/add | Link two Device Manager devices using their ports and/or interfaces
-*DeviceAPI* | [**DeviceLinkCount**](docs/DeviceAPI.md#devicelinkcount) | **Get** /device/link/count | Count the number of links between Device Manager devices
-*DeviceAPI* | [**DeviceLinkDelete**](docs/DeviceAPI.md#devicelinkdelete) | **Delete** /device/link/delete | Delete a link between two Device Manager devices
-*DeviceAPI* | [**DeviceLinkEdit**](docs/DeviceAPI.md#devicelinkedit) | **Put** /device/link/edit | Link two Device Manager devices using their ports and/or interfaces
-*DeviceAPI* | [**DeviceLinkList**](docs/DeviceAPI.md#devicelinklist) | **Get** /device/link/list | List Device Manager ports &amp;amp; interfaces
-*DhcpAPI* | [**DhcpAcl6Count**](docs/DhcpAPI.md#dhcpacl6count) | **Get** /dhcp/acl6/count | Count the number of DHCPv6 ACLs
-*DhcpAPI* | [**DhcpAcl6Info**](docs/DhcpAPI.md#dhcpacl6info) | **Get** /dhcp/acl6/info | Display the properties of a DHCPv6 ACL
-*DhcpAPI* | [**DhcpAcl6List**](docs/DhcpAPI.md#dhcpacl6list) | **Get** /dhcp/acl6/list | List the DHCPv6 ACLs
-*DhcpAPI* | [**DhcpAclCount**](docs/DhcpAPI.md#dhcpaclcount) | **Get** /dhcp/acl/count | Count the number of DHCP ACLs
-*DhcpAPI* | [**DhcpAclInfo**](docs/DhcpAPI.md#dhcpaclinfo) | **Get** /dhcp/acl/info | Display the properties of a DHCP ACL
-*DhcpAPI* | [**DhcpAclList**](docs/DhcpAPI.md#dhcpacllist) | **Get** /dhcp/acl/list | List the DHCP ACLs
-*DhcpAPI* | [**DhcpAclentry6Count**](docs/DhcpAPI.md#dhcpaclentry6count) | **Get** /dhcp/aclentry6/count | Count the number of DHCPv6 ACL entries
-*DhcpAPI* | [**DhcpAclentry6Info**](docs/DhcpAPI.md#dhcpaclentry6info) | **Get** /dhcp/aclentry6/info | Display the properties of a DHCPv6 ACL entry
-*DhcpAPI* | [**DhcpAclentry6List**](docs/DhcpAPI.md#dhcpaclentry6list) | **Get** /dhcp/aclentry6/list | List the DHCPv6 ACL entries
-*DhcpAPI* | [**DhcpAclentryCount**](docs/DhcpAPI.md#dhcpaclentrycount) | **Get** /dhcp/aclentry/count | Count the number of DHCP ACL entries
-*DhcpAPI* | [**DhcpAclentryInfo**](docs/DhcpAPI.md#dhcpaclentryinfo) | **Get** /dhcp/aclentry/info | Display the properties of a DHCP ACL entry
-*DhcpAPI* | [**DhcpAclentryList**](docs/DhcpAPI.md#dhcpaclentrylist) | **Get** /dhcp/aclentry/list | List the DHCP ACL entries
-*DhcpAPI* | [**DhcpFailoverCount**](docs/DhcpAPI.md#dhcpfailovercount) | **Get** /dhcp/failover/count | Count the number of DHCPv4 failover channels
-*DhcpAPI* | [**DhcpFailoverInfo**](docs/DhcpAPI.md#dhcpfailoverinfo) | **Get** /dhcp/failover/info | Display the properties of a DHCPv4 failover channel
-*DhcpAPI* | [**DhcpFailoverList**](docs/DhcpAPI.md#dhcpfailoverlist) | **Get** /dhcp/failover/list | List the DHCPv4 failover channels
-*DhcpAPI* | [**DhcpGroup6List**](docs/DhcpAPI.md#dhcpgroup6list) | **Get** /dhcp/group6/list | List the DHCPv6 groups
-*DhcpAPI* | [**DhcpGroupAdd**](docs/DhcpAPI.md#dhcpgroupadd) | **Post** /dhcp/group/add | Add a DHCPv4 group
-*DhcpAPI* | [**DhcpGroupCount**](docs/DhcpAPI.md#dhcpgroupcount) | **Get** /dhcp/group/count | Count the number of DHCPv4 groups
-*DhcpAPI* | [**DhcpGroupDelete**](docs/DhcpAPI.md#dhcpgroupdelete) | **Delete** /dhcp/group/delete | Delete a DHCPv4 group
-*DhcpAPI* | [**DhcpGroupEdit**](docs/DhcpAPI.md#dhcpgroupedit) | **Put** /dhcp/group/edit | Add a DHCPv4 group
-*DhcpAPI* | [**DhcpGroupInfo**](docs/DhcpAPI.md#dhcpgroupinfo) | **Get** /dhcp/group/info | Display the properties of a DHCPv4 group
-*DhcpAPI* | [**DhcpGroupList**](docs/DhcpAPI.md#dhcpgrouplist) | **Get** /dhcp/group/list | List the DHCPv4 groups
-*DhcpAPI* | [**DhcpLease6Count**](docs/DhcpAPI.md#dhcplease6count) | **Get** /dhcp/lease6/count | Count the number of DHCPv6 leases
-*DhcpAPI* | [**DhcpLease6List**](docs/DhcpAPI.md#dhcplease6list) | **Get** /dhcp/lease6/list | List the DHCPv6 leases
-*DhcpAPI* | [**DhcpLeaseCount**](docs/DhcpAPI.md#dhcpleasecount) | **Get** /dhcp/lease/count | Count the number of DHCPv4 leases
-*DhcpAPI* | [**DhcpLeaseInfo**](docs/DhcpAPI.md#dhcpleaseinfo) | **Get** /dhcp/lease/info | Display the properties of a DHCPv4 lease
-*DhcpAPI* | [**DhcpLeaseList**](docs/DhcpAPI.md#dhcpleaselist) | **Get** /dhcp/lease/list | List the DHCPv4 leases
-*DhcpAPI* | [**DhcpRange6Add**](docs/DhcpAPI.md#dhcprange6add) | **Post** /dhcp/range6/add | Add a DHCPv6 range
-*DhcpAPI* | [**DhcpRange6Count**](docs/DhcpAPI.md#dhcprange6count) | **Get** /dhcp/range6/count | Count the number of DHCPv6 ranges
-*DhcpAPI* | [**DhcpRange6Delete**](docs/DhcpAPI.md#dhcprange6delete) | **Delete** /dhcp/range6/delete | Delete a DHCPv6 range
-*DhcpAPI* | [**DhcpRange6Edit**](docs/DhcpAPI.md#dhcprange6edit) | **Put** /dhcp/range6/edit | Edit a DHCPv6 range
-*DhcpAPI* | [**DhcpRange6Info**](docs/DhcpAPI.md#dhcprange6info) | **Get** /dhcp/range6/info | Display the properties of a DHCPv6 range
-*DhcpAPI* | [**DhcpRange6List**](docs/DhcpAPI.md#dhcprange6list) | **Get** /dhcp/range6/list | List the DHCPv6 ranges
-*DhcpAPI* | [**DhcpRangeAdd**](docs/DhcpAPI.md#dhcprangeadd) | **Post** /dhcp/range/add | Add a DHCPv4 range
-*DhcpAPI* | [**DhcpRangeCount**](docs/DhcpAPI.md#dhcprangecount) | **Get** /dhcp/range/count | Count the number of DHCPv4 ranges
-*DhcpAPI* | [**DhcpRangeDelete**](docs/DhcpAPI.md#dhcprangedelete) | **Delete** /dhcp/range/delete | Delete a DHCPv4 range
-*DhcpAPI* | [**DhcpRangeEdit**](docs/DhcpAPI.md#dhcprangeedit) | **Put** /dhcp/range/edit | Edit a DHCPv4 range
-*DhcpAPI* | [**DhcpRangeInfo**](docs/DhcpAPI.md#dhcprangeinfo) | **Get** /dhcp/range/info | Display the properties of a DHCPv4 range
-*DhcpAPI* | [**DhcpRangeList**](docs/DhcpAPI.md#dhcprangelist) | **Get** /dhcp/range/list | List the DHCPv4 ranges
-*DhcpAPI* | [**DhcpScope6Add**](docs/DhcpAPI.md#dhcpscope6add) | **Post** /dhcp/scope6/add | Add a DHCPv6 scope
-*DhcpAPI* | [**DhcpScope6Count**](docs/DhcpAPI.md#dhcpscope6count) | **Get** /dhcp/scope6/count | Count the number of DHCPv6 scopes
-*DhcpAPI* | [**DhcpScope6Delete**](docs/DhcpAPI.md#dhcpscope6delete) | **Delete** /dhcp/scope6/delete | Delete a DHCPv6 scope
-*DhcpAPI* | [**DhcpScope6Edit**](docs/DhcpAPI.md#dhcpscope6edit) | **Put** /dhcp/scope6/edit | Edit a DHCPv6 scope
-*DhcpAPI* | [**DhcpScope6Info**](docs/DhcpAPI.md#dhcpscope6info) | **Get** /dhcp/scope6/info | Display the properties of a DHCPv6 scope
-*DhcpAPI* | [**DhcpScope6List**](docs/DhcpAPI.md#dhcpscope6list) | **Get** /dhcp/scope6/list | List the DHCPv6 scopes
-*DhcpAPI* | [**DhcpScopeAdd**](docs/DhcpAPI.md#dhcpscopeadd) | **Post** /dhcp/scope/add | Add a DHCPv4 scope
-*DhcpAPI* | [**DhcpScopeCount**](docs/DhcpAPI.md#dhcpscopecount) | **Get** /dhcp/scope/count | Count the number of DHCPv4 scopes
-*DhcpAPI* | [**DhcpScopeDelete**](docs/DhcpAPI.md#dhcpscopedelete) | **Delete** /dhcp/scope/delete | Delete a DHCPv4 scope
-*DhcpAPI* | [**DhcpScopeEdit**](docs/DhcpAPI.md#dhcpscopeedit) | **Put** /dhcp/scope/edit | Edit a DHCPv4 scope
-*DhcpAPI* | [**DhcpScopeInfo**](docs/DhcpAPI.md#dhcpscopeinfo) | **Get** /dhcp/scope/info | Display the properties of a DHCPv4 scope
-*DhcpAPI* | [**DhcpScopeList**](docs/DhcpAPI.md#dhcpscopelist) | **Get** /dhcp/scope/list | List the DHCPv4 scopes
-*DhcpAPI* | [**DhcpServer6Count**](docs/DhcpAPI.md#dhcpserver6count) | **Get** /dhcp/server6/count | Count the number of DHCPv6 servers
-*DhcpAPI* | [**DhcpServer6Info**](docs/DhcpAPI.md#dhcpserver6info) | **Get** /dhcp/server6/info | Display the properties of a DHCPv6 server
-*DhcpAPI* | [**DhcpServer6List**](docs/DhcpAPI.md#dhcpserver6list) | **Get** /dhcp/server6/list | List the DHCPv6 servers
-*DhcpAPI* | [**DhcpServerCount**](docs/DhcpAPI.md#dhcpservercount) | **Get** /dhcp/server/count | Count the number of DHCPv4 servers
-*DhcpAPI* | [**DhcpServerInfo**](docs/DhcpAPI.md#dhcpserverinfo) | **Get** /dhcp/server/info | Display the properties of a DHCPv4 server
-*DhcpAPI* | [**DhcpServerList**](docs/DhcpAPI.md#dhcpserverlist) | **Get** /dhcp/server/list | List the DHCPv4 servers
-*DhcpAPI* | [**DhcpSharednetwork6Add**](docs/DhcpAPI.md#dhcpsharednetwork6add) | **Post** /dhcp/sharednetwork6/add | Add a DHCPv6 shared network
-*DhcpAPI* | [**DhcpSharednetwork6Count**](docs/DhcpAPI.md#dhcpsharednetwork6count) | **Get** /dhcp/sharednetwork6/count | Count the number of DHCPv6 shared networks
-*DhcpAPI* | [**DhcpSharednetwork6Delete**](docs/DhcpAPI.md#dhcpsharednetwork6delete) | **Delete** /dhcp/sharednetwork6/delete | Delete a DHCPv6 Shared Network
-*DhcpAPI* | [**DhcpSharednetwork6Edit**](docs/DhcpAPI.md#dhcpsharednetwork6edit) | **Put** /dhcp/sharednetwork6/edit | Edit a DHCPv6 shared network
-*DhcpAPI* | [**DhcpSharednetwork6Info**](docs/DhcpAPI.md#dhcpsharednetwork6info) | **Get** /dhcp/sharednetwork6/info | Display the properties of a DHCPv6 shared network
-*DhcpAPI* | [**DhcpSharednetwork6List**](docs/DhcpAPI.md#dhcpsharednetwork6list) | **Get** /dhcp/sharednetwork6/list | List the DHCPv6 shared networks
-*DhcpAPI* | [**DhcpSharednetworkAdd**](docs/DhcpAPI.md#dhcpsharednetworkadd) | **Post** /dhcp/sharednetwork/add | Add a DHCPv4 shared network
-*DhcpAPI* | [**DhcpSharednetworkCount**](docs/DhcpAPI.md#dhcpsharednetworkcount) | **Get** /dhcp/sharednetwork/count | Count the number of DHCPv4 shared networks
-*DhcpAPI* | [**DhcpSharednetworkDelete**](docs/DhcpAPI.md#dhcpsharednetworkdelete) | **Delete** /dhcp/sharednetwork/delete | Delete a DHCPv4 Shared Network
-*DhcpAPI* | [**DhcpSharednetworkEdit**](docs/DhcpAPI.md#dhcpsharednetworkedit) | **Put** /dhcp/sharednetwork/edit | Edit a DHCPv4 shared network
-*DhcpAPI* | [**DhcpSharednetworkInfo**](docs/DhcpAPI.md#dhcpsharednetworkinfo) | **Get** /dhcp/sharednetwork/info | Display the properties of a DHCPv4 shared network
-*DhcpAPI* | [**DhcpSharednetworkList**](docs/DhcpAPI.md#dhcpsharednetworklist) | **Get** /dhcp/sharednetwork/list | List the DHCPv4 shared networks
-*DhcpAPI* | [**DhcpStatic6Add**](docs/DhcpAPI.md#dhcpstatic6add) | **Post** /dhcp/static6/add | Add a DHCPv6 static
-*DhcpAPI* | [**DhcpStatic6Count**](docs/DhcpAPI.md#dhcpstatic6count) | **Get** /dhcp/static6/count | Count the number of DHCPv6 statics
-*DhcpAPI* | [**DhcpStatic6Delete**](docs/DhcpAPI.md#dhcpstatic6delete) | **Delete** /dhcp/static6/delete | Delete a DHCPv6 static
-*DhcpAPI* | [**DhcpStatic6Edit**](docs/DhcpAPI.md#dhcpstatic6edit) | **Put** /dhcp/static6/edit | Edit a DHCPv6 static
-*DhcpAPI* | [**DhcpStatic6Info**](docs/DhcpAPI.md#dhcpstatic6info) | **Get** /dhcp/static6/info | Display the properties of a DHCPv6 static
-*DhcpAPI* | [**DhcpStatic6List**](docs/DhcpAPI.md#dhcpstatic6list) | **Get** /dhcp/static6/list | List the DHCPv6 statics
-*DhcpAPI* | [**DhcpStaticAdd**](docs/DhcpAPI.md#dhcpstaticadd) | **Post** /dhcp/static/add | Add a DHCPv4 static
-*DhcpAPI* | [**DhcpStaticCount**](docs/DhcpAPI.md#dhcpstaticcount) | **Get** /dhcp/static/count | Count the number of DHCPv4 statics
-*DhcpAPI* | [**DhcpStaticDelete**](docs/DhcpAPI.md#dhcpstaticdelete) | **Delete** /dhcp/static/delete | Delete a DHCPv4 static
-*DhcpAPI* | [**DhcpStaticEdit**](docs/DhcpAPI.md#dhcpstaticedit) | **Put** /dhcp/static/edit | Edit a DHCPv4 static
-*DhcpAPI* | [**DhcpStaticInfo**](docs/DhcpAPI.md#dhcpstaticinfo) | **Get** /dhcp/static/info | Display the properties of a DHCPv4 static
-*DhcpAPI* | [**DhcpStaticList**](docs/DhcpAPI.md#dhcpstaticlist) | **Get** /dhcp/static/list | List the DHCPv4 statics
-*DnsAPI* | [**DnsAclAdd**](docs/DnsAPI.md#dnsacladd) | **Post** /dns/acl/add | Add a DNS ACL
-*DnsAPI* | [**DnsAclCount**](docs/DnsAPI.md#dnsaclcount) | **Get** /dns/acl/count | Count the number of DNS ACLs
-*DnsAPI* | [**DnsAclDelete**](docs/DnsAPI.md#dnsacldelete) | **Delete** /dns/acl/delete | Delete a DNS ACL
-*DnsAPI* | [**DnsAclEdit**](docs/DnsAPI.md#dnsacledit) | **Put** /dns/acl/edit | Edit a DNS ACL
-*DnsAPI* | [**DnsAclInfo**](docs/DnsAPI.md#dnsaclinfo) | **Get** /dns/acl/info | Display the properties of a DNS ACL
-*DnsAPI* | [**DnsAclList**](docs/DnsAPI.md#dnsacllist) | **Get** /dns/acl/list | List the DNS ACLs
-*DnsAPI* | [**DnsRrAdd**](docs/DnsAPI.md#dnsrradd) | **Post** /dns/rr/add | Add a resource record
-*DnsAPI* | [**DnsRrCount**](docs/DnsAPI.md#dnsrrcount) | **Get** /dns/rr/count | Count the number of resource records
-*DnsAPI* | [**DnsRrDelete**](docs/DnsAPI.md#dnsrrdelete) | **Delete** /dns/rr/delete | Delete a resource record
-*DnsAPI* | [**DnsRrEdit**](docs/DnsAPI.md#dnsrredit) | **Put** /dns/rr/edit | Edit a resource record
-*DnsAPI* | [**DnsRrInfo**](docs/DnsAPI.md#dnsrrinfo) | **Get** /dns/rr/info | Display the properties of a resource record
-*DnsAPI* | [**DnsRrList**](docs/DnsAPI.md#dnsrrlist) | **Get** /dns/rr/list | List the resource records
-*DnsAPI* | [**DnsServerCount**](docs/DnsAPI.md#dnsservercount) | **Get** /dns/server/count | Count the number of DNS servers
-*DnsAPI* | [**DnsServerInfo**](docs/DnsAPI.md#dnsserverinfo) | **Get** /dns/server/info | Display the properties of a DNS server
-*DnsAPI* | [**DnsServerList**](docs/DnsAPI.md#dnsserverlist) | **Get** /dns/server/list | List the DNS servers
-*DnsAPI* | [**DnsViewAdd**](docs/DnsAPI.md#dnsviewadd) | **Post** /dns/view/add | Add a view
-*DnsAPI* | [**DnsViewCount**](docs/DnsAPI.md#dnsviewcount) | **Get** /dns/view/count | Count the number of views
-*DnsAPI* | [**DnsViewDelete**](docs/DnsAPI.md#dnsviewdelete) | **Delete** /dns/view/delete | Delete a view
-*DnsAPI* | [**DnsViewEdit**](docs/DnsAPI.md#dnsviewedit) | **Put** /dns/view/edit | Edit a view
-*DnsAPI* | [**DnsViewInfo**](docs/DnsAPI.md#dnsviewinfo) | **Get** /dns/view/info | Display the properties of a view
-*DnsAPI* | [**DnsViewList**](docs/DnsAPI.md#dnsviewlist) | **Get** /dns/view/list | List the views
-*DnsAPI* | [**DnsViewparamAdd**](docs/DnsAPI.md#dnsviewparamadd) | **Post** /dns/viewparam/add | Add a DNS option on a view
-*DnsAPI* | [**DnsViewparamCount**](docs/DnsAPI.md#dnsviewparamcount) | **Get** /dns/viewparam/count | Count the number of DNS options of a view
-*DnsAPI* | [**DnsViewparamDelete**](docs/DnsAPI.md#dnsviewparamdelete) | **Delete** /dns/viewparam/delete | Delete a DNS option from a view
-*DnsAPI* | [**DnsViewparamEdit**](docs/DnsAPI.md#dnsviewparamedit) | **Put** /dns/viewparam/edit | Edit a DNS option on a view
-*DnsAPI* | [**DnsViewparamInfo**](docs/DnsAPI.md#dnsviewparaminfo) | **Get** /dns/viewparam/info | Display the properties of a DNS option set on a view
-*DnsAPI* | [**DnsViewparamList**](docs/DnsAPI.md#dnsviewparamlist) | **Get** /dns/viewparam/list | List the DNS options of a view
-*DnsAPI* | [**DnsZoneAdd**](docs/DnsAPI.md#dnszoneadd) | **Post** /dns/zone/add | Add a zone
-*DnsAPI* | [**DnsZoneCount**](docs/DnsAPI.md#dnszonecount) | **Get** /dns/zone/count | Count the number of zones
-*DnsAPI* | [**DnsZoneDelete**](docs/DnsAPI.md#dnszonedelete) | **Delete** /dns/zone/delete | Delete a zone
-*DnsAPI* | [**DnsZoneEdit**](docs/DnsAPI.md#dnszoneedit) | **Put** /dns/zone/edit | Edit a zone
-*DnsAPI* | [**DnsZoneInfo**](docs/DnsAPI.md#dnszoneinfo) | **Get** /dns/zone/info | Display the properties of a zone
-*DnsAPI* | [**DnsZoneList**](docs/DnsAPI.md#dnszonelist) | **Get** /dns/zone/list | List the DNS options of a zone
-*DnsAPI* | [**DnsZoneparamAdd**](docs/DnsAPI.md#dnszoneparamadd) | **Post** /dns/zoneparam/add | Add a DNS option on a zone
-*DnsAPI* | [**DnsZoneparamCount**](docs/DnsAPI.md#dnszoneparamcount) | **Get** /dns/zoneparam/count | Count the number of DNS options of a zone
-*DnsAPI* | [**DnsZoneparamDelete**](docs/DnsAPI.md#dnszoneparamdelete) | **Delete** /dns/zoneparam/delete | Delete a DNS option from a zone
-*DnsAPI* | [**DnsZoneparamEdit**](docs/DnsAPI.md#dnszoneparamedit) | **Put** /dns/zoneparam/edit | Edit a DNS option on a zone
-*DnsAPI* | [**DnsZoneparamInfo**](docs/DnsAPI.md#dnszoneparaminfo) | **Get** /dns/zoneparam/info | Display the properties of a DNS option set on a zone
-*DnsAPI* | [**DnsZoneparamList**](docs/DnsAPI.md#dnszoneparamlist) | **Get** /dns/zoneparam/list | List the DNS options of a zone
-*GuardianAPI* | [**GuardianPolicyAdd**](docs/GuardianAPI.md#guardianpolicyadd) | **Post** /guardian/policy/add | Add a policy
-*GuardianAPI* | [**GuardianPolicyCount**](docs/GuardianAPI.md#guardianpolicycount) | **Get** /guardian/policy/count | Count the number of policies
-*GuardianAPI* | [**GuardianPolicyDelete**](docs/GuardianAPI.md#guardianpolicydelete) | **Delete** /guardian/policy/delete | Delete a policy
-*GuardianAPI* | [**GuardianPolicyEdit**](docs/GuardianAPI.md#guardianpolicyedit) | **Put** /guardian/policy/edit | Edit a policy
-*GuardianAPI* | [**GuardianPolicyInfo**](docs/GuardianAPI.md#guardianpolicyinfo) | **Get** /guardian/policy/info | Display the properties of a policy
-*GuardianAPI* | [**GuardianPolicyList**](docs/GuardianAPI.md#guardianpolicylist) | **Get** /guardian/policy/list | List the policies
-*IpamAPI* | [**IpamAddress6Add**](docs/IpamAPI.md#ipamaddress6add) | **Post** /ipam/address6/add | Add an IPv6 address
-*IpamAPI* | [**IpamAddress6Count**](docs/IpamAPI.md#ipamaddress6count) | **Get** /ipam/address6/count | Count the number of IPv6 addresses
-*IpamAPI* | [**IpamAddress6Delete**](docs/IpamAPI.md#ipamaddress6delete) | **Delete** /ipam/address6/delete | Delete an IPv6 address
-*IpamAPI* | [**IpamAddress6Edit**](docs/IpamAPI.md#ipamaddress6edit) | **Put** /ipam/address6/edit | Edit an IPv6 address
-*IpamAPI* | [**IpamAddress6Info**](docs/IpamAPI.md#ipamaddress6info) | **Get** /ipam/address6/info | Display the properties of an IPv6 address
-*IpamAPI* | [**IpamAddress6List**](docs/IpamAPI.md#ipamaddress6list) | **Get** /ipam/address6/list | List the IPv6 addresses
-*IpamAPI* | [**IpamAddressAdd**](docs/IpamAPI.md#ipamaddressadd) | **Post** /ipam/address/add | Add an IPv4 address
-*IpamAPI* | [**IpamAddressCount**](docs/IpamAPI.md#ipamaddresscount) | **Get** /ipam/address/count | Count the number of IPv4 addresses
-*IpamAPI* | [**IpamAddressDelete**](docs/IpamAPI.md#ipamaddressdelete) | **Delete** /ipam/address/delete | Delete an IPv4 address
-*IpamAPI* | [**IpamAddressEdit**](docs/IpamAPI.md#ipamaddressedit) | **Put** /ipam/address/edit | Edit an IPv4 address
-*IpamAPI* | [**IpamAddressInfo**](docs/IpamAPI.md#ipamaddressinfo) | **Get** /ipam/address/info | Display the properties of an IPv4 address
-*IpamAPI* | [**IpamAddressList**](docs/IpamAPI.md#ipamaddresslist) | **Get** /ipam/address/list | List the IPv4 addresses
-*IpamAPI* | [**IpamAlias6Add**](docs/IpamAPI.md#ipamalias6add) | **Post** /ipam/alias6/add | Add an IPv6 address alias
-*IpamAPI* | [**IpamAlias6Count**](docs/IpamAPI.md#ipamalias6count) | **Get** /ipam/alias6/count | Count the number of aliases of an IPv6 address
-*IpamAPI* | [**IpamAlias6Delete**](docs/IpamAPI.md#ipamalias6delete) | **Delete** /ipam/alias6/delete | Delete an IPv6 address alias
-*IpamAPI* | [**IpamAlias6Edit**](docs/IpamAPI.md#ipamalias6edit) | **Put** /ipam/alias6/edit | Edit an IPv6 address alias
-*IpamAPI* | [**IpamAlias6List**](docs/IpamAPI.md#ipamalias6list) | **Get** /ipam/alias6/list | List the aliases of an IPv6 address
-*IpamAPI* | [**IpamAliasAdd**](docs/IpamAPI.md#ipamaliasadd) | **Post** /ipam/alias/add | Add an IPv4 address alias
-*IpamAPI* | [**IpamAliasCount**](docs/IpamAPI.md#ipamaliascount) | **Get** /ipam/alias/count | Count the number of aliases of an IPv4 address
-*IpamAPI* | [**IpamAliasDelete**](docs/IpamAPI.md#ipamaliasdelete) | **Delete** /ipam/alias/delete | Delete an IPv4 address alias
-*IpamAPI* | [**IpamAliasEdit**](docs/IpamAPI.md#ipamaliasedit) | **Put** /ipam/alias/edit | Edit an IPv4 address alias
-*IpamAPI* | [**IpamAliasList**](docs/IpamAPI.md#ipamaliaslist) | **Get** /ipam/alias/list | List the aliases of an IPv4 address
-*IpamAPI* | [**IpamNetwork6Add**](docs/IpamAPI.md#ipamnetwork6add) | **Post** /ipam/network6/add | Add an IPv6 block/subnet-type network
-*IpamAPI* | [**IpamNetwork6Count**](docs/IpamAPI.md#ipamnetwork6count) | **Get** /ipam/network6/count | Count the number of IPv6 block/subnet-type networks
-*IpamAPI* | [**IpamNetwork6Delete**](docs/IpamAPI.md#ipamnetwork6delete) | **Delete** /ipam/network6/delete | Delete an IPv6 block/subnet-type network
-*IpamAPI* | [**IpamNetwork6Edit**](docs/IpamAPI.md#ipamnetwork6edit) | **Put** /ipam/network6/edit | Edit an IPv6 block/subnet-type network
-*IpamAPI* | [**IpamNetwork6Info**](docs/IpamAPI.md#ipamnetwork6info) | **Get** /ipam/network6/info | Display the properties of an IPv6 block/subnet-type network
-*IpamAPI* | [**IpamNetwork6List**](docs/IpamAPI.md#ipamnetwork6list) | **Get** /ipam/network6/list | List the IPv6 block/subnet-type networks
-*IpamAPI* | [**IpamNetworkAdd**](docs/IpamAPI.md#ipamnetworkadd) | **Post** /ipam/network/add | Add an IPv4 block/subnet-type network
-*IpamAPI* | [**IpamNetworkCount**](docs/IpamAPI.md#ipamnetworkcount) | **Get** /ipam/network/count | Count the number of IPv4 block/subnet-type networks
-*IpamAPI* | [**IpamNetworkDelete**](docs/IpamAPI.md#ipamnetworkdelete) | **Delete** /ipam/network/delete | Delete an IPv4 block/subnet-type network
-*IpamAPI* | [**IpamNetworkEdit**](docs/IpamAPI.md#ipamnetworkedit) | **Put** /ipam/network/edit | Edit an IPv4 block/subnet-type network
-*IpamAPI* | [**IpamNetworkInfo**](docs/IpamAPI.md#ipamnetworkinfo) | **Get** /ipam/network/info | Display the properties of an IPv4 block/subnet-type network
-*IpamAPI* | [**IpamNetworkList**](docs/IpamAPI.md#ipamnetworklist) | **Get** /ipam/network/list | List the IPv4 block/subnet-type networks
-*IpamAPI* | [**IpamPool6Add**](docs/IpamAPI.md#ipampool6add) | **Post** /ipam/pool6/add | Add an IPv6 pool
-*IpamAPI* | [**IpamPool6Count**](docs/IpamAPI.md#ipampool6count) | **Get** /ipam/pool6/count | Count the number of IPv6 pools
-*IpamAPI* | [**IpamPool6Delete**](docs/IpamAPI.md#ipampool6delete) | **Delete** /ipam/pool6/delete | Delete an IPv6 pool
-*IpamAPI* | [**IpamPool6Edit**](docs/IpamAPI.md#ipampool6edit) | **Put** /ipam/pool6/edit | Edit an IPv6 pool
-*IpamAPI* | [**IpamPool6Info**](docs/IpamAPI.md#ipampool6info) | **Get** /ipam/pool6/info | Display the properties of an IPv6 pool
-*IpamAPI* | [**IpamPool6List**](docs/IpamAPI.md#ipampool6list) | **Get** /ipam/pool6/list | List the IPv6 pools
-*IpamAPI* | [**IpamPoolAdd**](docs/IpamAPI.md#ipampooladd) | **Post** /ipam/pool/add | Add an IPv4 pool
-*IpamAPI* | [**IpamPoolCount**](docs/IpamAPI.md#ipampoolcount) | **Get** /ipam/pool/count | Count the number of IPv4 pools
-*IpamAPI* | [**IpamPoolDelete**](docs/IpamAPI.md#ipampooldelete) | **Delete** /ipam/pool/delete | Delete an IPv4 pool
-*IpamAPI* | [**IpamPoolEdit**](docs/IpamAPI.md#ipampooledit) | **Put** /ipam/pool/edit | Edit an IPv4 pool
-*IpamAPI* | [**IpamPoolInfo**](docs/IpamAPI.md#ipampoolinfo) | **Get** /ipam/pool/info | Display the properties of an IPv4 pool
-*IpamAPI* | [**IpamPoolList**](docs/IpamAPI.md#ipampoollist) | **Get** /ipam/pool/list | List the IPv4 pools
-*IpamAPI* | [**IpamSpaceAdd**](docs/IpamAPI.md#ipamspaceadd) | **Post** /ipam/space/add | Add a space
-*IpamAPI* | [**IpamSpaceCount**](docs/IpamAPI.md#ipamspacecount) | **Get** /ipam/space/count | Count the number of spaces
-*IpamAPI* | [**IpamSpaceDelete**](docs/IpamAPI.md#ipamspacedelete) | **Delete** /ipam/space/delete | Delete a space
-*IpamAPI* | [**IpamSpaceEdit**](docs/IpamAPI.md#ipamspaceedit) | **Put** /ipam/space/edit | Edit a space
-*IpamAPI* | [**IpamSpaceInfo**](docs/IpamAPI.md#ipamspaceinfo) | **Get** /ipam/space/info | Display the properties of a space
-*IpamAPI* | [**IpamSpaceList**](docs/IpamAPI.md#ipamspacelist) | **Get** /ipam/space/list | List the spaces
-*VlanAPI* | [**VlanDomainAdd**](docs/VlanAPI.md#vlandomainadd) | **Post** /vlan/domain/add | Add a VLAN domain
-*VlanAPI* | [**VlanDomainCount**](docs/VlanAPI.md#vlandomaincount) | **Get** /vlan/domain/count | Count the number of VLAN domains
-*VlanAPI* | [**VlanDomainDelete**](docs/VlanAPI.md#vlandomaindelete) | **Delete** /vlan/domain/delete | Delete a VLAN domain
-*VlanAPI* | [**VlanDomainEdit**](docs/VlanAPI.md#vlandomainedit) | **Put** /vlan/domain/edit | Edit a VLAN domain
-*VlanAPI* | [**VlanDomainInfo**](docs/VlanAPI.md#vlandomaininfo) | **Get** /vlan/domain/info | Display the properties of a VLAN domain
-*VlanAPI* | [**VlanDomainList**](docs/VlanAPI.md#vlandomainlist) | **Get** /vlan/domain/list | List the VLAN domains
-*VlanAPI* | [**VlanRangeAdd**](docs/VlanAPI.md#vlanrangeadd) | **Post** /vlan/range/add | Add a VLAN range
-*VlanAPI* | [**VlanRangeCount**](docs/VlanAPI.md#vlanrangecount) | **Get** /vlan/range/count | Count the number of VLAN ranges
-*VlanAPI* | [**VlanRangeDelete**](docs/VlanAPI.md#vlanrangedelete) | **Delete** /vlan/range/delete | Delete a VLAN range
-*VlanAPI* | [**VlanRangeEdit**](docs/VlanAPI.md#vlanrangeedit) | **Put** /vlan/range/edit | Edit a VLAN range
-*VlanAPI* | [**VlanRangeInfo**](docs/VlanAPI.md#vlanrangeinfo) | **Get** /vlan/range/info | Display the properties of a VLAN range
-*VlanAPI* | [**VlanRangeList**](docs/VlanAPI.md#vlanrangelist) | **Get** /vlan/range/list | List the VLAN ranges
-*VlanAPI* | [**VlanVlanAdd**](docs/VlanAPI.md#vlanvlanadd) | **Post** /vlan/vlan/add | Add a VLAN
-*VlanAPI* | [**VlanVlanCount**](docs/VlanAPI.md#vlanvlancount) | **Get** /vlan/vlan/count | Count the number of VLANs
-*VlanAPI* | [**VlanVlanDelete**](docs/VlanAPI.md#vlanvlandelete) | **Delete** /vlan/vlan/delete | Delete a VLAN
-*VlanAPI* | [**VlanVlanEdit**](docs/VlanAPI.md#vlanvlanedit) | **Put** /vlan/vlan/edit | Edit a VLAN
-*VlanAPI* | [**VlanVlanInfo**](docs/VlanAPI.md#vlanvlaninfo) | **Get** /vlan/vlan/info | Display the properties of a VLAN
-*VlanAPI* | [**VlanVlanList**](docs/VlanAPI.md#vlanvlanlist) | **Get** /vlan/vlan/list | List the VLANs
+*AppAPI* | [**AppApplicationAdd**](sdsclient/docs/AppAPI.md#appapplicationadd) | **Post** /app/application/add | Add an application
+*AppAPI* | [**AppApplicationCount**](sdsclient/docs/AppAPI.md#appapplicationcount) | **Get** /app/application/count | Count the number of applications
+*AppAPI* | [**AppApplicationDelete**](sdsclient/docs/AppAPI.md#appapplicationdelete) | **Delete** /app/application/delete | Delete an application
+*AppAPI* | [**AppApplicationEdit**](sdsclient/docs/AppAPI.md#appapplicationedit) | **Put** /app/application/edit | Edit an application
+*AppAPI* | [**AppApplicationInfo**](sdsclient/docs/AppAPI.md#appapplicationinfo) | **Get** /app/application/info | Display the properties of an application
+*AppAPI* | [**AppApplicationList**](sdsclient/docs/AppAPI.md#appapplicationlist) | **Get** /app/application/list | List the applications
+*AppAPI* | [**AppNodeAdd**](sdsclient/docs/AppAPI.md#appnodeadd) | **Post** /app/node/add | Add a node
+*AppAPI* | [**AppNodeCount**](sdsclient/docs/AppAPI.md#appnodecount) | **Get** /app/node/count | Count the number of nodes
+*AppAPI* | [**AppNodeDelete**](sdsclient/docs/AppAPI.md#appnodedelete) | **Delete** /app/node/delete | Delete a node
+*AppAPI* | [**AppNodeEdit**](sdsclient/docs/AppAPI.md#appnodeedit) | **Put** /app/node/edit | Edit a node
+*AppAPI* | [**AppNodeInfo**](sdsclient/docs/AppAPI.md#appnodeinfo) | **Get** /app/node/info | Display the properties of a node
+*AppAPI* | [**AppNodeList**](sdsclient/docs/AppAPI.md#appnodelist) | **Get** /app/node/list | List the nodes
+*AppAPI* | [**AppPoolAdd**](sdsclient/docs/AppAPI.md#apppooladd) | **Post** /app/pool/add | Add a pool
+*AppAPI* | [**AppPoolCount**](sdsclient/docs/AppAPI.md#apppoolcount) | **Get** /app/pool/count | Count the number of pools
+*AppAPI* | [**AppPoolDelete**](sdsclient/docs/AppAPI.md#apppooldelete) | **Delete** /app/pool/delete | Delete a pool
+*AppAPI* | [**AppPoolEdit**](sdsclient/docs/AppAPI.md#apppooledit) | **Put** /app/pool/edit | Edit a pool
+*AppAPI* | [**AppPoolInfo**](sdsclient/docs/AppAPI.md#apppoolinfo) | **Get** /app/pool/info | Display the properties of a pool
+*AppAPI* | [**AppPoolList**](sdsclient/docs/AppAPI.md#apppoollist) | **Get** /app/pool/list | List the pools
+*DeviceAPI* | [**DeviceDeviceAdd**](sdsclient/docs/DeviceAPI.md#devicedeviceadd) | **Post** /device/device/add | Add a Device Manager device
+*DeviceAPI* | [**DeviceDeviceCount**](sdsclient/docs/DeviceAPI.md#devicedevicecount) | **Get** /device/device/count | Count the number of Device Manager devices
+*DeviceAPI* | [**DeviceDeviceDelete**](sdsclient/docs/DeviceAPI.md#devicedevicedelete) | **Delete** /device/device/delete | Delete a Device Manager device
+*DeviceAPI* | [**DeviceDeviceEdit**](sdsclient/docs/DeviceAPI.md#devicedeviceedit) | **Put** /device/device/edit | Add a Device Manager device
+*DeviceAPI* | [**DeviceDeviceInfo**](sdsclient/docs/DeviceAPI.md#devicedeviceinfo) | **Get** /device/device/info | Display the properties of a Device Manager device
+*DeviceAPI* | [**DeviceDeviceList**](sdsclient/docs/DeviceAPI.md#devicedevicelist) | **Get** /device/device/list | List the Device Manager devices
+*DeviceAPI* | [**DeviceInterfaceAdd**](sdsclient/docs/DeviceAPI.md#deviceinterfaceadd) | **Post** /device/interface/add | Add a Device Manager port or interface
+*DeviceAPI* | [**DeviceInterfaceCount**](sdsclient/docs/DeviceAPI.md#deviceinterfacecount) | **Get** /device/interface/count | Count the number Device Manager ports &amp;amp; interfaces
+*DeviceAPI* | [**DeviceInterfaceDelete**](sdsclient/docs/DeviceAPI.md#deviceinterfacedelete) | **Delete** /device/interface/delete | Delete a Device Manager port or interface
+*DeviceAPI* | [**DeviceInterfaceEdit**](sdsclient/docs/DeviceAPI.md#deviceinterfaceedit) | **Put** /device/interface/edit | Add a Device Manager port or interface
+*DeviceAPI* | [**DeviceInterfaceInfo**](sdsclient/docs/DeviceAPI.md#deviceinterfaceinfo) | **Get** /device/interface/info | Display the properties of a Device Manager port or interface
+*DeviceAPI* | [**DeviceInterfaceList**](sdsclient/docs/DeviceAPI.md#deviceinterfacelist) | **Get** /device/interface/list | List the Device Manager ports &amp;amp; interfaces
+*DeviceAPI* | [**DeviceLinkAdd**](sdsclient/docs/DeviceAPI.md#devicelinkadd) | **Post** /device/link/add | Link two Device Manager devices using their ports and/or interfaces
+*DeviceAPI* | [**DeviceLinkCount**](sdsclient/docs/DeviceAPI.md#devicelinkcount) | **Get** /device/link/count | Count the number of links between Device Manager devices
+*DeviceAPI* | [**DeviceLinkDelete**](sdsclient/docs/DeviceAPI.md#devicelinkdelete) | **Delete** /device/link/delete | Delete a link between two Device Manager devices
+*DeviceAPI* | [**DeviceLinkEdit**](sdsclient/docs/DeviceAPI.md#devicelinkedit) | **Put** /device/link/edit | Link two Device Manager devices using their ports and/or interfaces
+*DeviceAPI* | [**DeviceLinkList**](sdsclient/docs/DeviceAPI.md#devicelinklist) | **Get** /device/link/list | List Device Manager ports &amp;amp; interfaces
+*DhcpAPI* | [**DhcpAcl6Count**](sdsclient/docs/DhcpAPI.md#dhcpacl6count) | **Get** /dhcp/acl6/count | Count the number of DHCPv6 ACLs
+*DhcpAPI* | [**DhcpAcl6Info**](sdsclient/docs/DhcpAPI.md#dhcpacl6info) | **Get** /dhcp/acl6/info | Display the properties of a DHCPv6 ACL
+*DhcpAPI* | [**DhcpAcl6List**](sdsclient/docs/DhcpAPI.md#dhcpacl6list) | **Get** /dhcp/acl6/list | List the DHCPv6 ACLs
+*DhcpAPI* | [**DhcpAclCount**](sdsclient/docs/DhcpAPI.md#dhcpaclcount) | **Get** /dhcp/acl/count | Count the number of DHCP ACLs
+*DhcpAPI* | [**DhcpAclInfo**](sdsclient/docs/DhcpAPI.md#dhcpaclinfo) | **Get** /dhcp/acl/info | Display the properties of a DHCP ACL
+*DhcpAPI* | [**DhcpAclList**](sdsclient/docs/DhcpAPI.md#dhcpacllist) | **Get** /dhcp/acl/list | List the DHCP ACLs
+*DhcpAPI* | [**DhcpAclentry6Count**](sdsclient/docs/DhcpAPI.md#dhcpaclentry6count) | **Get** /dhcp/aclentry6/count | Count the number of DHCPv6 ACL entries
+*DhcpAPI* | [**DhcpAclentry6Info**](sdsclient/docs/DhcpAPI.md#dhcpaclentry6info) | **Get** /dhcp/aclentry6/info | Display the properties of a DHCPv6 ACL entry
+*DhcpAPI* | [**DhcpAclentry6List**](sdsclient/docs/DhcpAPI.md#dhcpaclentry6list) | **Get** /dhcp/aclentry6/list | List the DHCPv6 ACL entries
+*DhcpAPI* | [**DhcpAclentryCount**](sdsclient/docs/DhcpAPI.md#dhcpaclentrycount) | **Get** /dhcp/aclentry/count | Count the number of DHCP ACL entries
+*DhcpAPI* | [**DhcpAclentryInfo**](sdsclient/docs/DhcpAPI.md#dhcpaclentryinfo) | **Get** /dhcp/aclentry/info | Display the properties of a DHCP ACL entry
+*DhcpAPI* | [**DhcpAclentryList**](sdsclient/docs/DhcpAPI.md#dhcpaclentrylist) | **Get** /dhcp/aclentry/list | List the DHCP ACL entries
+*DhcpAPI* | [**DhcpFailoverCount**](sdsclient/docs/DhcpAPI.md#dhcpfailovercount) | **Get** /dhcp/failover/count | Count the number of DHCPv4 failover channels
+*DhcpAPI* | [**DhcpFailoverInfo**](sdsclient/docs/DhcpAPI.md#dhcpfailoverinfo) | **Get** /dhcp/failover/info | Display the properties of a DHCPv4 failover channel
+*DhcpAPI* | [**DhcpFailoverList**](sdsclient/docs/DhcpAPI.md#dhcpfailoverlist) | **Get** /dhcp/failover/list | List the DHCPv4 failover channels
+*DhcpAPI* | [**DhcpGroup6List**](sdsclient/docs/DhcpAPI.md#dhcpgroup6list) | **Get** /dhcp/group6/list | List the DHCPv6 groups
+*DhcpAPI* | [**DhcpGroupAdd**](sdsclient/docs/DhcpAPI.md#dhcpgroupadd) | **Post** /dhcp/group/add | Add a DHCPv4 group
+*DhcpAPI* | [**DhcpGroupCount**](sdsclient/docs/DhcpAPI.md#dhcpgroupcount) | **Get** /dhcp/group/count | Count the number of DHCPv4 groups
+*DhcpAPI* | [**DhcpGroupDelete**](sdsclient/docs/DhcpAPI.md#dhcpgroupdelete) | **Delete** /dhcp/group/delete | Delete a DHCPv4 group
+*DhcpAPI* | [**DhcpGroupEdit**](sdsclient/docs/DhcpAPI.md#dhcpgroupedit) | **Put** /dhcp/group/edit | Add a DHCPv4 group
+*DhcpAPI* | [**DhcpGroupInfo**](sdsclient/docs/DhcpAPI.md#dhcpgroupinfo) | **Get** /dhcp/group/info | Display the properties of a DHCPv4 group
+*DhcpAPI* | [**DhcpGroupList**](sdsclient/docs/DhcpAPI.md#dhcpgrouplist) | **Get** /dhcp/group/list | List the DHCPv4 groups
+*DhcpAPI* | [**DhcpLease6Count**](sdsclient/docs/DhcpAPI.md#dhcplease6count) | **Get** /dhcp/lease6/count | Count the number of DHCPv6 leases
+*DhcpAPI* | [**DhcpLease6List**](sdsclient/docs/DhcpAPI.md#dhcplease6list) | **Get** /dhcp/lease6/list | List the DHCPv6 leases
+*DhcpAPI* | [**DhcpLeaseCount**](sdsclient/docs/DhcpAPI.md#dhcpleasecount) | **Get** /dhcp/lease/count | Count the number of DHCPv4 leases
+*DhcpAPI* | [**DhcpLeaseInfo**](sdsclient/docs/DhcpAPI.md#dhcpleaseinfo) | **Get** /dhcp/lease/info | Display the properties of a DHCPv4 lease
+*DhcpAPI* | [**DhcpLeaseList**](sdsclient/docs/DhcpAPI.md#dhcpleaselist) | **Get** /dhcp/lease/list | List the DHCPv4 leases
+*DhcpAPI* | [**DhcpRange6Add**](sdsclient/docs/DhcpAPI.md#dhcprange6add) | **Post** /dhcp/range6/add | Add a DHCPv6 range
+*DhcpAPI* | [**DhcpRange6Count**](sdsclient/docs/DhcpAPI.md#dhcprange6count) | **Get** /dhcp/range6/count | Count the number of DHCPv6 ranges
+*DhcpAPI* | [**DhcpRange6Delete**](sdsclient/docs/DhcpAPI.md#dhcprange6delete) | **Delete** /dhcp/range6/delete | Delete a DHCPv6 range
+*DhcpAPI* | [**DhcpRange6Edit**](sdsclient/docs/DhcpAPI.md#dhcprange6edit) | **Put** /dhcp/range6/edit | Edit a DHCPv6 range
+*DhcpAPI* | [**DhcpRange6Info**](sdsclient/docs/DhcpAPI.md#dhcprange6info) | **Get** /dhcp/range6/info | Display the properties of a DHCPv6 range
+*DhcpAPI* | [**DhcpRange6List**](sdsclient/docs/DhcpAPI.md#dhcprange6list) | **Get** /dhcp/range6/list | List the DHCPv6 ranges
+*DhcpAPI* | [**DhcpRangeAdd**](sdsclient/docs/DhcpAPI.md#dhcprangeadd) | **Post** /dhcp/range/add | Add a DHCPv4 range
+*DhcpAPI* | [**DhcpRangeCount**](sdsclient/docs/DhcpAPI.md#dhcprangecount) | **Get** /dhcp/range/count | Count the number of DHCPv4 ranges
+*DhcpAPI* | [**DhcpRangeDelete**](sdsclient/docs/DhcpAPI.md#dhcprangedelete) | **Delete** /dhcp/range/delete | Delete a DHCPv4 range
+*DhcpAPI* | [**DhcpRangeEdit**](sdsclient/docs/DhcpAPI.md#dhcprangeedit) | **Put** /dhcp/range/edit | Edit a DHCPv4 range
+*DhcpAPI* | [**DhcpRangeInfo**](sdsclient/docs/DhcpAPI.md#dhcprangeinfo) | **Get** /dhcp/range/info | Display the properties of a DHCPv4 range
+*DhcpAPI* | [**DhcpRangeList**](sdsclient/docs/DhcpAPI.md#dhcprangelist) | **Get** /dhcp/range/list | List the DHCPv4 ranges
+*DhcpAPI* | [**DhcpScope6Add**](sdsclient/docs/DhcpAPI.md#dhcpscope6add) | **Post** /dhcp/scope6/add | Add a DHCPv6 scope
+*DhcpAPI* | [**DhcpScope6Count**](sdsclient/docs/DhcpAPI.md#dhcpscope6count) | **Get** /dhcp/scope6/count | Count the number of DHCPv6 scopes
+*DhcpAPI* | [**DhcpScope6Delete**](sdsclient/docs/DhcpAPI.md#dhcpscope6delete) | **Delete** /dhcp/scope6/delete | Delete a DHCPv6 scope
+*DhcpAPI* | [**DhcpScope6Edit**](sdsclient/docs/DhcpAPI.md#dhcpscope6edit) | **Put** /dhcp/scope6/edit | Edit a DHCPv6 scope
+*DhcpAPI* | [**DhcpScope6Info**](sdsclient/docs/DhcpAPI.md#dhcpscope6info) | **Get** /dhcp/scope6/info | Display the properties of a DHCPv6 scope
+*DhcpAPI* | [**DhcpScope6List**](sdsclient/docs/DhcpAPI.md#dhcpscope6list) | **Get** /dhcp/scope6/list | List the DHCPv6 scopes
+*DhcpAPI* | [**DhcpScopeAdd**](sdsclient/docs/DhcpAPI.md#dhcpscopeadd) | **Post** /dhcp/scope/add | Add a DHCPv4 scope
+*DhcpAPI* | [**DhcpScopeCount**](sdsclient/docs/DhcpAPI.md#dhcpscopecount) | **Get** /dhcp/scope/count | Count the number of DHCPv4 scopes
+*DhcpAPI* | [**DhcpScopeDelete**](sdsclient/docs/DhcpAPI.md#dhcpscopedelete) | **Delete** /dhcp/scope/delete | Delete a DHCPv4 scope
+*DhcpAPI* | [**DhcpScopeEdit**](sdsclient/docs/DhcpAPI.md#dhcpscopeedit) | **Put** /dhcp/scope/edit | Edit a DHCPv4 scope
+*DhcpAPI* | [**DhcpScopeInfo**](sdsclient/docs/DhcpAPI.md#dhcpscopeinfo) | **Get** /dhcp/scope/info | Display the properties of a DHCPv4 scope
+*DhcpAPI* | [**DhcpScopeList**](sdsclient/docs/DhcpAPI.md#dhcpscopelist) | **Get** /dhcp/scope/list | List the DHCPv4 scopes
+*DhcpAPI* | [**DhcpServer6Count**](sdsclient/docs/DhcpAPI.md#dhcpserver6count) | **Get** /dhcp/server6/count | Count the number of DHCPv6 servers
+*DhcpAPI* | [**DhcpServer6Info**](sdsclient/docs/DhcpAPI.md#dhcpserver6info) | **Get** /dhcp/server6/info | Display the properties of a DHCPv6 server
+*DhcpAPI* | [**DhcpServer6List**](sdsclient/docs/DhcpAPI.md#dhcpserver6list) | **Get** /dhcp/server6/list | List the DHCPv6 servers
+*DhcpAPI* | [**DhcpServerCount**](sdsclient/docs/DhcpAPI.md#dhcpservercount) | **Get** /dhcp/server/count | Count the number of DHCPv4 servers
+*DhcpAPI* | [**DhcpServerInfo**](sdsclient/docs/DhcpAPI.md#dhcpserverinfo) | **Get** /dhcp/server/info | Display the properties of a DHCPv4 server
+*DhcpAPI* | [**DhcpServerList**](sdsclient/docs/DhcpAPI.md#dhcpserverlist) | **Get** /dhcp/server/list | List the DHCPv4 servers
+*DhcpAPI* | [**DhcpSharednetwork6Add**](sdsclient/docs/DhcpAPI.md#dhcpsharednetwork6add) | **Post** /dhcp/sharednetwork6/add | Add a DHCPv6 shared network
+*DhcpAPI* | [**DhcpSharednetwork6Count**](sdsclient/docs/DhcpAPI.md#dhcpsharednetwork6count) | **Get** /dhcp/sharednetwork6/count | Count the number of DHCPv6 shared networks
+*DhcpAPI* | [**DhcpSharednetwork6Delete**](sdsclient/docs/DhcpAPI.md#dhcpsharednetwork6delete) | **Delete** /dhcp/sharednetwork6/delete | Delete a DHCPv6 Shared Network
+*DhcpAPI* | [**DhcpSharednetwork6Edit**](sdsclient/docs/DhcpAPI.md#dhcpsharednetwork6edit) | **Put** /dhcp/sharednetwork6/edit | Edit a DHCPv6 shared network
+*DhcpAPI* | [**DhcpSharednetwork6Info**](sdsclient/docs/DhcpAPI.md#dhcpsharednetwork6info) | **Get** /dhcp/sharednetwork6/info | Display the properties of a DHCPv6 shared network
+*DhcpAPI* | [**DhcpSharednetwork6List**](sdsclient/docs/DhcpAPI.md#dhcpsharednetwork6list) | **Get** /dhcp/sharednetwork6/list | List the DHCPv6 shared networks
+*DhcpAPI* | [**DhcpSharednetworkAdd**](sdsclient/docs/DhcpAPI.md#dhcpsharednetworkadd) | **Post** /dhcp/sharednetwork/add | Add a DHCPv4 shared network
+*DhcpAPI* | [**DhcpSharednetworkCount**](sdsclient/docs/DhcpAPI.md#dhcpsharednetworkcount) | **Get** /dhcp/sharednetwork/count | Count the number of DHCPv4 shared networks
+*DhcpAPI* | [**DhcpSharednetworkDelete**](sdsclient/docs/DhcpAPI.md#dhcpsharednetworkdelete) | **Delete** /dhcp/sharednetwork/delete | Delete a DHCPv4 Shared Network
+*DhcpAPI* | [**DhcpSharednetworkEdit**](sdsclient/docs/DhcpAPI.md#dhcpsharednetworkedit) | **Put** /dhcp/sharednetwork/edit | Edit a DHCPv4 shared network
+*DhcpAPI* | [**DhcpSharednetworkInfo**](sdsclient/docs/DhcpAPI.md#dhcpsharednetworkinfo) | **Get** /dhcp/sharednetwork/info | Display the properties of a DHCPv4 shared network
+*DhcpAPI* | [**DhcpSharednetworkList**](sdsclient/docs/DhcpAPI.md#dhcpsharednetworklist) | **Get** /dhcp/sharednetwork/list | List the DHCPv4 shared networks
+*DhcpAPI* | [**DhcpStatic6Add**](sdsclient/docs/DhcpAPI.md#dhcpstatic6add) | **Post** /dhcp/static6/add | Add a DHCPv6 static
+*DhcpAPI* | [**DhcpStatic6Count**](sdsclient/docs/DhcpAPI.md#dhcpstatic6count) | **Get** /dhcp/static6/count | Count the number of DHCPv6 statics
+*DhcpAPI* | [**DhcpStatic6Delete**](sdsclient/docs/DhcpAPI.md#dhcpstatic6delete) | **Delete** /dhcp/static6/delete | Delete a DHCPv6 static
+*DhcpAPI* | [**DhcpStatic6Edit**](sdsclient/docs/DhcpAPI.md#dhcpstatic6edit) | **Put** /dhcp/static6/edit | Edit a DHCPv6 static
+*DhcpAPI* | [**DhcpStatic6Info**](sdsclient/docs/DhcpAPI.md#dhcpstatic6info) | **Get** /dhcp/static6/info | Display the properties of a DHCPv6 static
+*DhcpAPI* | [**DhcpStatic6List**](sdsclient/docs/DhcpAPI.md#dhcpstatic6list) | **Get** /dhcp/static6/list | List the DHCPv6 statics
+*DhcpAPI* | [**DhcpStaticAdd**](sdsclient/docs/DhcpAPI.md#dhcpstaticadd) | **Post** /dhcp/static/add | Add a DHCPv4 static
+*DhcpAPI* | [**DhcpStaticCount**](sdsclient/docs/DhcpAPI.md#dhcpstaticcount) | **Get** /dhcp/static/count | Count the number of DHCPv4 statics
+*DhcpAPI* | [**DhcpStaticDelete**](sdsclient/docs/DhcpAPI.md#dhcpstaticdelete) | **Delete** /dhcp/static/delete | Delete a DHCPv4 static
+*DhcpAPI* | [**DhcpStaticEdit**](sdsclient/docs/DhcpAPI.md#dhcpstaticedit) | **Put** /dhcp/static/edit | Edit a DHCPv4 static
+*DhcpAPI* | [**DhcpStaticInfo**](sdsclient/docs/DhcpAPI.md#dhcpstaticinfo) | **Get** /dhcp/static/info | Display the properties of a DHCPv4 static
+*DhcpAPI* | [**DhcpStaticList**](sdsclient/docs/DhcpAPI.md#dhcpstaticlist) | **Get** /dhcp/static/list | List the DHCPv4 statics
+*DnsAPI* | [**DnsAclAdd**](sdsclient/docs/DnsAPI.md#dnsacladd) | **Post** /dns/acl/add | Add a DNS ACL
+*DnsAPI* | [**DnsAclCount**](sdsclient/docs/DnsAPI.md#dnsaclcount) | **Get** /dns/acl/count | Count the number of DNS ACLs
+*DnsAPI* | [**DnsAclDelete**](sdsclient/docs/DnsAPI.md#dnsacldelete) | **Delete** /dns/acl/delete | Delete a DNS ACL
+*DnsAPI* | [**DnsAclEdit**](sdsclient/docs/DnsAPI.md#dnsacledit) | **Put** /dns/acl/edit | Edit a DNS ACL
+*DnsAPI* | [**DnsAclInfo**](sdsclient/docs/DnsAPI.md#dnsaclinfo) | **Get** /dns/acl/info | Display the properties of a DNS ACL
+*DnsAPI* | [**DnsAclList**](sdsclient/docs/DnsAPI.md#dnsacllist) | **Get** /dns/acl/list | List the DNS ACLs
+*DnsAPI* | [**DnsRrAdd**](sdsclient/docs/DnsAPI.md#dnsrradd) | **Post** /dns/rr/add | Add a resource record
+*DnsAPI* | [**DnsRrCount**](sdsclient/docs/DnsAPI.md#dnsrrcount) | **Get** /dns/rr/count | Count the number of resource records
+*DnsAPI* | [**DnsRrDelete**](sdsclient/docs/DnsAPI.md#dnsrrdelete) | **Delete** /dns/rr/delete | Delete a resource record
+*DnsAPI* | [**DnsRrEdit**](sdsclient/docs/DnsAPI.md#dnsrredit) | **Put** /dns/rr/edit | Edit a resource record
+*DnsAPI* | [**DnsRrInfo**](sdsclient/docs/DnsAPI.md#dnsrrinfo) | **Get** /dns/rr/info | Display the properties of a resource record
+*DnsAPI* | [**DnsRrList**](sdsclient/docs/DnsAPI.md#dnsrrlist) | **Get** /dns/rr/list | List the resource records
+*DnsAPI* | [**DnsServerCount**](sdsclient/docs/DnsAPI.md#dnsservercount) | **Get** /dns/server/count | Count the number of DNS servers
+*DnsAPI* | [**DnsServerInfo**](sdsclient/docs/DnsAPI.md#dnsserverinfo) | **Get** /dns/server/info | Display the properties of a DNS server
+*DnsAPI* | [**DnsServerList**](sdsclient/docs/DnsAPI.md#dnsserverlist) | **Get** /dns/server/list | List the DNS servers
+*DnsAPI* | [**DnsViewAdd**](sdsclient/docs/DnsAPI.md#dnsviewadd) | **Post** /dns/view/add | Add a view
+*DnsAPI* | [**DnsViewCount**](sdsclient/docs/DnsAPI.md#dnsviewcount) | **Get** /dns/view/count | Count the number of views
+*DnsAPI* | [**DnsViewDelete**](sdsclient/docs/DnsAPI.md#dnsviewdelete) | **Delete** /dns/view/delete | Delete a view
+*DnsAPI* | [**DnsViewEdit**](sdsclient/docs/DnsAPI.md#dnsviewedit) | **Put** /dns/view/edit | Edit a view
+*DnsAPI* | [**DnsViewInfo**](sdsclient/docs/DnsAPI.md#dnsviewinfo) | **Get** /dns/view/info | Display the properties of a view
+*DnsAPI* | [**DnsViewList**](sdsclient/docs/DnsAPI.md#dnsviewlist) | **Get** /dns/view/list | List the views
+*DnsAPI* | [**DnsViewparamAdd**](sdsclient/docs/DnsAPI.md#dnsviewparamadd) | **Post** /dns/viewparam/add | Add a DNS option on a view
+*DnsAPI* | [**DnsViewparamCount**](sdsclient/docs/DnsAPI.md#dnsviewparamcount) | **Get** /dns/viewparam/count | Count the number of DNS options of a view
+*DnsAPI* | [**DnsViewparamDelete**](sdsclient/docs/DnsAPI.md#dnsviewparamdelete) | **Delete** /dns/viewparam/delete | Delete a DNS option from a view
+*DnsAPI* | [**DnsViewparamEdit**](sdsclient/docs/DnsAPI.md#dnsviewparamedit) | **Put** /dns/viewparam/edit | Edit a DNS option on a view
+*DnsAPI* | [**DnsViewparamInfo**](sdsclient/docs/DnsAPI.md#dnsviewparaminfo) | **Get** /dns/viewparam/info | Display the properties of a DNS option set on a view
+*DnsAPI* | [**DnsViewparamList**](sdsclient/docs/DnsAPI.md#dnsviewparamlist) | **Get** /dns/viewparam/list | List the DNS options of a view
+*DnsAPI* | [**DnsZoneAdd**](sdsclient/docs/DnsAPI.md#dnszoneadd) | **Post** /dns/zone/add | Add a zone
+*DnsAPI* | [**DnsZoneCount**](sdsclient/docs/DnsAPI.md#dnszonecount) | **Get** /dns/zone/count | Count the number of zones
+*DnsAPI* | [**DnsZoneDelete**](sdsclient/docs/DnsAPI.md#dnszonedelete) | **Delete** /dns/zone/delete | Delete a zone
+*DnsAPI* | [**DnsZoneEdit**](sdsclient/docs/DnsAPI.md#dnszoneedit) | **Put** /dns/zone/edit | Edit a zone
+*DnsAPI* | [**DnsZoneInfo**](sdsclient/docs/DnsAPI.md#dnszoneinfo) | **Get** /dns/zone/info | Display the properties of a zone
+*DnsAPI* | [**DnsZoneList**](sdsclient/docs/DnsAPI.md#dnszonelist) | **Get** /dns/zone/list | List the DNS options of a zone
+*DnsAPI* | [**DnsZoneparamAdd**](sdsclient/docs/DnsAPI.md#dnszoneparamadd) | **Post** /dns/zoneparam/add | Add a DNS option on a zone
+*DnsAPI* | [**DnsZoneparamCount**](sdsclient/docs/DnsAPI.md#dnszoneparamcount) | **Get** /dns/zoneparam/count | Count the number of DNS options of a zone
+*DnsAPI* | [**DnsZoneparamDelete**](sdsclient/docs/DnsAPI.md#dnszoneparamdelete) | **Delete** /dns/zoneparam/delete | Delete a DNS option from a zone
+*DnsAPI* | [**DnsZoneparamEdit**](sdsclient/docs/DnsAPI.md#dnszoneparamedit) | **Put** /dns/zoneparam/edit | Edit a DNS option on a zone
+*DnsAPI* | [**DnsZoneparamInfo**](sdsclient/docs/DnsAPI.md#dnszoneparaminfo) | **Get** /dns/zoneparam/info | Display the properties of a DNS option set on a zone
+*DnsAPI* | [**DnsZoneparamList**](sdsclient/docs/DnsAPI.md#dnszoneparamlist) | **Get** /dns/zoneparam/list | List the DNS options of a zone
+*GuardianAPI* | [**GuardianPolicyAdd**](sdsclient/docs/GuardianAPI.md#guardianpolicyadd) | **Post** /guardian/policy/add | Add a policy
+*GuardianAPI* | [**GuardianPolicyCount**](sdsclient/docs/GuardianAPI.md#guardianpolicycount) | **Get** /guardian/policy/count | Count the number of policies
+*GuardianAPI* | [**GuardianPolicyDelete**](sdsclient/docs/GuardianAPI.md#guardianpolicydelete) | **Delete** /guardian/policy/delete | Delete a policy
+*GuardianAPI* | [**GuardianPolicyEdit**](sdsclient/docs/GuardianAPI.md#guardianpolicyedit) | **Put** /guardian/policy/edit | Edit a policy
+*GuardianAPI* | [**GuardianPolicyInfo**](sdsclient/docs/GuardianAPI.md#guardianpolicyinfo) | **Get** /guardian/policy/info | Display the properties of a policy
+*GuardianAPI* | [**GuardianPolicyList**](sdsclient/docs/GuardianAPI.md#guardianpolicylist) | **Get** /guardian/policy/list | List the policies
+*IpamAPI* | [**IpamAddress6Add**](sdsclient/docs/IpamAPI.md#ipamaddress6add) | **Post** /ipam/address6/add | Add an IPv6 address
+*IpamAPI* | [**IpamAddress6Count**](sdsclient/docs/IpamAPI.md#ipamaddress6count) | **Get** /ipam/address6/count | Count the number of IPv6 addresses
+*IpamAPI* | [**IpamAddress6Delete**](sdsclient/docs/IpamAPI.md#ipamaddress6delete) | **Delete** /ipam/address6/delete | Delete an IPv6 address
+*IpamAPI* | [**IpamAddress6Edit**](sdsclient/docs/IpamAPI.md#ipamaddress6edit) | **Put** /ipam/address6/edit | Edit an IPv6 address
+*IpamAPI* | [**IpamAddress6Info**](sdsclient/docs/IpamAPI.md#ipamaddress6info) | **Get** /ipam/address6/info | Display the properties of an IPv6 address
+*IpamAPI* | [**IpamAddress6List**](sdsclient/docs/IpamAPI.md#ipamaddress6list) | **Get** /ipam/address6/list | List the IPv6 addresses
+*IpamAPI* | [**IpamAddressAdd**](sdsclient/docs/IpamAPI.md#ipamaddressadd) | **Post** /ipam/address/add | Add an IPv4 address
+*IpamAPI* | [**IpamAddressCount**](sdsclient/docs/IpamAPI.md#ipamaddresscount) | **Get** /ipam/address/count | Count the number of IPv4 addresses
+*IpamAPI* | [**IpamAddressDelete**](sdsclient/docs/IpamAPI.md#ipamaddressdelete) | **Delete** /ipam/address/delete | Delete an IPv4 address
+*IpamAPI* | [**IpamAddressEdit**](sdsclient/docs/IpamAPI.md#ipamaddressedit) | **Put** /ipam/address/edit | Edit an IPv4 address
+*IpamAPI* | [**IpamAddressInfo**](sdsclient/docs/IpamAPI.md#ipamaddressinfo) | **Get** /ipam/address/info | Display the properties of an IPv4 address
+*IpamAPI* | [**IpamAddressList**](sdsclient/docs/IpamAPI.md#ipamaddresslist) | **Get** /ipam/address/list | List the IPv4 addresses
+*IpamAPI* | [**IpamAlias6Add**](sdsclient/docs/IpamAPI.md#ipamalias6add) | **Post** /ipam/alias6/add | Add an IPv6 address alias
+*IpamAPI* | [**IpamAlias6Count**](sdsclient/docs/IpamAPI.md#ipamalias6count) | **Get** /ipam/alias6/count | Count the number of aliases of an IPv6 address
+*IpamAPI* | [**IpamAlias6Delete**](sdsclient/docs/IpamAPI.md#ipamalias6delete) | **Delete** /ipam/alias6/delete | Delete an IPv6 address alias
+*IpamAPI* | [**IpamAlias6Edit**](sdsclient/docs/IpamAPI.md#ipamalias6edit) | **Put** /ipam/alias6/edit | Edit an IPv6 address alias
+*IpamAPI* | [**IpamAlias6List**](sdsclient/docs/IpamAPI.md#ipamalias6list) | **Get** /ipam/alias6/list | List the aliases of an IPv6 address
+*IpamAPI* | [**IpamAliasAdd**](sdsclient/docs/IpamAPI.md#ipamaliasadd) | **Post** /ipam/alias/add | Add an IPv4 address alias
+*IpamAPI* | [**IpamAliasCount**](sdsclient/docs/IpamAPI.md#ipamaliascount) | **Get** /ipam/alias/count | Count the number of aliases of an IPv4 address
+*IpamAPI* | [**IpamAliasDelete**](sdsclient/docs/IpamAPI.md#ipamaliasdelete) | **Delete** /ipam/alias/delete | Delete an IPv4 address alias
+*IpamAPI* | [**IpamAliasEdit**](sdsclient/docs/IpamAPI.md#ipamaliasedit) | **Put** /ipam/alias/edit | Edit an IPv4 address alias
+*IpamAPI* | [**IpamAliasList**](sdsclient/docs/IpamAPI.md#ipamaliaslist) | **Get** /ipam/alias/list | List the aliases of an IPv4 address
+*IpamAPI* | [**IpamNetwork6Add**](sdsclient/docs/IpamAPI.md#ipamnetwork6add) | **Post** /ipam/network6/add | Add an IPv6 block/subnet-type network
+*IpamAPI* | [**IpamNetwork6Count**](sdsclient/docs/IpamAPI.md#ipamnetwork6count) | **Get** /ipam/network6/count | Count the number of IPv6 block/subnet-type networks
+*IpamAPI* | [**IpamNetwork6Delete**](sdsclient/docs/IpamAPI.md#ipamnetwork6delete) | **Delete** /ipam/network6/delete | Delete an IPv6 block/subnet-type network
+*IpamAPI* | [**IpamNetwork6Edit**](sdsclient/docs/IpamAPI.md#ipamnetwork6edit) | **Put** /ipam/network6/edit | Edit an IPv6 block/subnet-type network
+*IpamAPI* | [**IpamNetwork6Info**](sdsclient/docs/IpamAPI.md#ipamnetwork6info) | **Get** /ipam/network6/info | Display the properties of an IPv6 block/subnet-type network
+*IpamAPI* | [**IpamNetwork6List**](sdsclient/docs/IpamAPI.md#ipamnetwork6list) | **Get** /ipam/network6/list | List the IPv6 block/subnet-type networks
+*IpamAPI* | [**IpamNetworkAdd**](sdsclient/docs/IpamAPI.md#ipamnetworkadd) | **Post** /ipam/network/add | Add an IPv4 block/subnet-type network
+*IpamAPI* | [**IpamNetworkCount**](sdsclient/docs/IpamAPI.md#ipamnetworkcount) | **Get** /ipam/network/count | Count the number of IPv4 block/subnet-type networks
+*IpamAPI* | [**IpamNetworkDelete**](sdsclient/docs/IpamAPI.md#ipamnetworkdelete) | **Delete** /ipam/network/delete | Delete an IPv4 block/subnet-type network
+*IpamAPI* | [**IpamNetworkEdit**](sdsclient/docs/IpamAPI.md#ipamnetworkedit) | **Put** /ipam/network/edit | Edit an IPv4 block/subnet-type network
+*IpamAPI* | [**IpamNetworkInfo**](sdsclient/docs/IpamAPI.md#ipamnetworkinfo) | **Get** /ipam/network/info | Display the properties of an IPv4 block/subnet-type network
+*IpamAPI* | [**IpamNetworkList**](sdsclient/docs/IpamAPI.md#ipamnetworklist) | **Get** /ipam/network/list | List the IPv4 block/subnet-type networks
+*IpamAPI* | [**IpamPool6Add**](sdsclient/docs/IpamAPI.md#ipampool6add) | **Post** /ipam/pool6/add | Add an IPv6 pool
+*IpamAPI* | [**IpamPool6Count**](sdsclient/docs/IpamAPI.md#ipampool6count) | **Get** /ipam/pool6/count | Count the number of IPv6 pools
+*IpamAPI* | [**IpamPool6Delete**](sdsclient/docs/IpamAPI.md#ipampool6delete) | **Delete** /ipam/pool6/delete | Delete an IPv6 pool
+*IpamAPI* | [**IpamPool6Edit**](sdsclient/docs/IpamAPI.md#ipampool6edit) | **Put** /ipam/pool6/edit | Edit an IPv6 pool
+*IpamAPI* | [**IpamPool6Info**](sdsclient/docs/IpamAPI.md#ipampool6info) | **Get** /ipam/pool6/info | Display the properties of an IPv6 pool
+*IpamAPI* | [**IpamPool6List**](sdsclient/docs/IpamAPI.md#ipampool6list) | **Get** /ipam/pool6/list | List the IPv6 pools
+*IpamAPI* | [**IpamPoolAdd**](sdsclient/docs/IpamAPI.md#ipampooladd) | **Post** /ipam/pool/add | Add an IPv4 pool
+*IpamAPI* | [**IpamPoolCount**](sdsclient/docs/IpamAPI.md#ipampoolcount) | **Get** /ipam/pool/count | Count the number of IPv4 pools
+*IpamAPI* | [**IpamPoolDelete**](sdsclient/docs/IpamAPI.md#ipampooldelete) | **Delete** /ipam/pool/delete | Delete an IPv4 pool
+*IpamAPI* | [**IpamPoolEdit**](sdsclient/docs/IpamAPI.md#ipampooledit) | **Put** /ipam/pool/edit | Edit an IPv4 pool
+*IpamAPI* | [**IpamPoolInfo**](sdsclient/docs/IpamAPI.md#ipampoolinfo) | **Get** /ipam/pool/info | Display the properties of an IPv4 pool
+*IpamAPI* | [**IpamPoolList**](sdsclient/docs/IpamAPI.md#ipampoollist) | **Get** /ipam/pool/list | List the IPv4 pools
+*IpamAPI* | [**IpamSpaceAdd**](sdsclient/docs/IpamAPI.md#ipamspaceadd) | **Post** /ipam/space/add | Add a space
+*IpamAPI* | [**IpamSpaceCount**](sdsclient/docs/IpamAPI.md#ipamspacecount) | **Get** /ipam/space/count | Count the number of spaces
+*IpamAPI* | [**IpamSpaceDelete**](sdsclient/docs/IpamAPI.md#ipamspacedelete) | **Delete** /ipam/space/delete | Delete a space
+*IpamAPI* | [**IpamSpaceEdit**](sdsclient/docs/IpamAPI.md#ipamspaceedit) | **Put** /ipam/space/edit | Edit a space
+*IpamAPI* | [**IpamSpaceInfo**](sdsclient/docs/IpamAPI.md#ipamspaceinfo) | **Get** /ipam/space/info | Display the properties of a space
+*IpamAPI* | [**IpamSpaceList**](sdsclient/docs/IpamAPI.md#ipamspacelist) | **Get** /ipam/space/list | List the spaces
+*VlanAPI* | [**VlanDomainAdd**](sdsclient/docs/VlanAPI.md#vlandomainadd) | **Post** /vlan/domain/add | Add a VLAN domain
+*VlanAPI* | [**VlanDomainCount**](sdsclient/docs/VlanAPI.md#vlandomaincount) | **Get** /vlan/domain/count | Count the number of VLAN domains
+*VlanAPI* | [**VlanDomainDelete**](sdsclient/docs/VlanAPI.md#vlandomaindelete) | **Delete** /vlan/domain/delete | Delete a VLAN domain
+*VlanAPI* | [**VlanDomainEdit**](sdsclient/docs/VlanAPI.md#vlandomainedit) | **Put** /vlan/domain/edit | Edit a VLAN domain
+*VlanAPI* | [**VlanDomainInfo**](sdsclient/docs/VlanAPI.md#vlandomaininfo) | **Get** /vlan/domain/info | Display the properties of a VLAN domain
+*VlanAPI* | [**VlanDomainList**](sdsclient/docs/VlanAPI.md#vlandomainlist) | **Get** /vlan/domain/list | List the VLAN domains
+*VlanAPI* | [**VlanRangeAdd**](sdsclient/docs/VlanAPI.md#vlanrangeadd) | **Post** /vlan/range/add | Add a VLAN range
+*VlanAPI* | [**VlanRangeCount**](sdsclient/docs/VlanAPI.md#vlanrangecount) | **Get** /vlan/range/count | Count the number of VLAN ranges
+*VlanAPI* | [**VlanRangeDelete**](sdsclient/docs/VlanAPI.md#vlanrangedelete) | **Delete** /vlan/range/delete | Delete a VLAN range
+*VlanAPI* | [**VlanRangeEdit**](sdsclient/docs/VlanAPI.md#vlanrangeedit) | **Put** /vlan/range/edit | Edit a VLAN range
+*VlanAPI* | [**VlanRangeInfo**](sdsclient/docs/VlanAPI.md#vlanrangeinfo) | **Get** /vlan/range/info | Display the properties of a VLAN range
+*VlanAPI* | [**VlanRangeList**](sdsclient/docs/VlanAPI.md#vlanrangelist) | **Get** /vlan/range/list | List the VLAN ranges
+*VlanAPI* | [**VlanVlanAdd**](sdsclient/docs/VlanAPI.md#vlanvlanadd) | **Post** /vlan/vlan/add | Add a VLAN
+*VlanAPI* | [**VlanVlanCount**](sdsclient/docs/VlanAPI.md#vlanvlancount) | **Get** /vlan/vlan/count | Count the number of VLANs
+*VlanAPI* | [**VlanVlanDelete**](sdsclient/docs/VlanAPI.md#vlanvlandelete) | **Delete** /vlan/vlan/delete | Delete a VLAN
+*VlanAPI* | [**VlanVlanEdit**](sdsclient/docs/VlanAPI.md#vlanvlanedit) | **Put** /vlan/vlan/edit | Edit a VLAN
+*VlanAPI* | [**VlanVlanInfo**](sdsclient/docs/VlanAPI.md#vlanvlaninfo) | **Get** /vlan/vlan/info | Display the properties of a VLAN
+*VlanAPI* | [**VlanVlanList**](sdsclient/docs/VlanAPI.md#vlanvlanlist) | **Get** /vlan/vlan/list | List the VLANs
 
 
 ## Documentation For Models
 
- - [ApiClassParameterInputEntry](docs/ApiClassParameterInputEntry.md)
- - [ApiClassParameterOutputEntry](docs/ApiClassParameterOutputEntry.md)
- - [ApiCountResponseSuccess](docs/ApiCountResponseSuccess.md)
- - [ApiCountResponseSuccessDataInner](docs/ApiCountResponseSuccessDataInner.md)
- - [ApiMessageEntry](docs/ApiMessageEntry.md)
- - [ApiResponse](docs/ApiResponse.md)
- - [AppApplicationAddFailed](docs/AppApplicationAddFailed.md)
- - [AppApplicationAddInput](docs/AppApplicationAddInput.md)
- - [AppApplicationAddSuccess](docs/AppApplicationAddSuccess.md)
- - [AppApplicationData](docs/AppApplicationData.md)
- - [AppApplicationDeleteFailed](docs/AppApplicationDeleteFailed.md)
- - [AppApplicationDeleteSuccess](docs/AppApplicationDeleteSuccess.md)
- - [AppApplicationEditFailed](docs/AppApplicationEditFailed.md)
- - [AppApplicationEditInput](docs/AppApplicationEditInput.md)
- - [AppApplicationEditSuccess](docs/AppApplicationEditSuccess.md)
- - [AppNodeAddFailed](docs/AppNodeAddFailed.md)
- - [AppNodeAddInput](docs/AppNodeAddInput.md)
- - [AppNodeAddSuccess](docs/AppNodeAddSuccess.md)
- - [AppNodeData](docs/AppNodeData.md)
- - [AppNodeDeleteFailed](docs/AppNodeDeleteFailed.md)
- - [AppNodeDeleteSuccess](docs/AppNodeDeleteSuccess.md)
- - [AppNodeEditFailed](docs/AppNodeEditFailed.md)
- - [AppNodeEditInput](docs/AppNodeEditInput.md)
- - [AppNodeEditSuccess](docs/AppNodeEditSuccess.md)
- - [AppPoolAddFailed](docs/AppPoolAddFailed.md)
- - [AppPoolAddInput](docs/AppPoolAddInput.md)
- - [AppPoolAddSuccess](docs/AppPoolAddSuccess.md)
- - [AppPoolData](docs/AppPoolData.md)
- - [AppPoolDeleteFailed](docs/AppPoolDeleteFailed.md)
- - [AppPoolDeleteSuccess](docs/AppPoolDeleteSuccess.md)
- - [AppPoolEditFailed](docs/AppPoolEditFailed.md)
- - [AppPoolEditInput](docs/AppPoolEditInput.md)
- - [AppPoolEditSuccess](docs/AppPoolEditSuccess.md)
- - [DataInnerAppApplicationAddSuccess](docs/DataInnerAppApplicationAddSuccess.md)
- - [DataInnerAppApplicationData](docs/DataInnerAppApplicationData.md)
- - [DataInnerAppApplicationDeleteSuccess](docs/DataInnerAppApplicationDeleteSuccess.md)
- - [DataInnerAppApplicationEditSuccess](docs/DataInnerAppApplicationEditSuccess.md)
- - [DataInnerAppNodeAddSuccess](docs/DataInnerAppNodeAddSuccess.md)
- - [DataInnerAppNodeData](docs/DataInnerAppNodeData.md)
- - [DataInnerAppNodeDeleteSuccess](docs/DataInnerAppNodeDeleteSuccess.md)
- - [DataInnerAppNodeEditSuccess](docs/DataInnerAppNodeEditSuccess.md)
- - [DataInnerAppPoolAddSuccess](docs/DataInnerAppPoolAddSuccess.md)
- - [DataInnerAppPoolData](docs/DataInnerAppPoolData.md)
- - [DataInnerAppPoolDeleteSuccess](docs/DataInnerAppPoolDeleteSuccess.md)
- - [DataInnerAppPoolEditSuccess](docs/DataInnerAppPoolEditSuccess.md)
- - [DataInnerDeviceDeviceAddSuccess](docs/DataInnerDeviceDeviceAddSuccess.md)
- - [DataInnerDeviceDeviceData](docs/DataInnerDeviceDeviceData.md)
- - [DataInnerDeviceDeviceDeleteSuccess](docs/DataInnerDeviceDeviceDeleteSuccess.md)
- - [DataInnerDeviceDeviceEditSuccess](docs/DataInnerDeviceDeviceEditSuccess.md)
- - [DataInnerDeviceInterfaceAddSuccess](docs/DataInnerDeviceInterfaceAddSuccess.md)
- - [DataInnerDeviceInterfaceData](docs/DataInnerDeviceInterfaceData.md)
- - [DataInnerDeviceInterfaceDeleteSuccess](docs/DataInnerDeviceInterfaceDeleteSuccess.md)
- - [DataInnerDeviceInterfaceEditSuccess](docs/DataInnerDeviceInterfaceEditSuccess.md)
- - [DataInnerDeviceLinkAddSuccess](docs/DataInnerDeviceLinkAddSuccess.md)
- - [DataInnerDeviceLinkData](docs/DataInnerDeviceLinkData.md)
- - [DataInnerDeviceLinkDeleteSuccess](docs/DataInnerDeviceLinkDeleteSuccess.md)
- - [DataInnerDeviceLinkEditSuccess](docs/DataInnerDeviceLinkEditSuccess.md)
- - [DataInnerDhcpAcl6Data](docs/DataInnerDhcpAcl6Data.md)
- - [DataInnerDhcpAclData](docs/DataInnerDhcpAclData.md)
- - [DataInnerDhcpAclentry6Data](docs/DataInnerDhcpAclentry6Data.md)
- - [DataInnerDhcpAclentryData](docs/DataInnerDhcpAclentryData.md)
- - [DataInnerDhcpFailoverData](docs/DataInnerDhcpFailoverData.md)
- - [DataInnerDhcpGroup6Data](docs/DataInnerDhcpGroup6Data.md)
- - [DataInnerDhcpGroupAddSuccess](docs/DataInnerDhcpGroupAddSuccess.md)
- - [DataInnerDhcpGroupData](docs/DataInnerDhcpGroupData.md)
- - [DataInnerDhcpGroupDeleteSuccess](docs/DataInnerDhcpGroupDeleteSuccess.md)
- - [DataInnerDhcpGroupEditSuccess](docs/DataInnerDhcpGroupEditSuccess.md)
- - [DataInnerDhcpLease6Data](docs/DataInnerDhcpLease6Data.md)
- - [DataInnerDhcpLeaseData](docs/DataInnerDhcpLeaseData.md)
- - [DataInnerDhcpRange6AddSuccess](docs/DataInnerDhcpRange6AddSuccess.md)
- - [DataInnerDhcpRange6Data](docs/DataInnerDhcpRange6Data.md)
- - [DataInnerDhcpRange6DeleteSuccess](docs/DataInnerDhcpRange6DeleteSuccess.md)
- - [DataInnerDhcpRange6EditSuccess](docs/DataInnerDhcpRange6EditSuccess.md)
- - [DataInnerDhcpRangeAddSuccess](docs/DataInnerDhcpRangeAddSuccess.md)
- - [DataInnerDhcpRangeData](docs/DataInnerDhcpRangeData.md)
- - [DataInnerDhcpRangeDeleteSuccess](docs/DataInnerDhcpRangeDeleteSuccess.md)
- - [DataInnerDhcpRangeEditSuccess](docs/DataInnerDhcpRangeEditSuccess.md)
- - [DataInnerDhcpScope6AddSuccess](docs/DataInnerDhcpScope6AddSuccess.md)
- - [DataInnerDhcpScope6Data](docs/DataInnerDhcpScope6Data.md)
- - [DataInnerDhcpScope6DeleteSuccess](docs/DataInnerDhcpScope6DeleteSuccess.md)
- - [DataInnerDhcpScope6EditSuccess](docs/DataInnerDhcpScope6EditSuccess.md)
- - [DataInnerDhcpScopeAddSuccess](docs/DataInnerDhcpScopeAddSuccess.md)
- - [DataInnerDhcpScopeData](docs/DataInnerDhcpScopeData.md)
- - [DataInnerDhcpScopeDeleteSuccess](docs/DataInnerDhcpScopeDeleteSuccess.md)
- - [DataInnerDhcpScopeEditSuccess](docs/DataInnerDhcpScopeEditSuccess.md)
- - [DataInnerDhcpServer6Data](docs/DataInnerDhcpServer6Data.md)
- - [DataInnerDhcpServerData](docs/DataInnerDhcpServerData.md)
- - [DataInnerDhcpSharednetwork6AddSuccess](docs/DataInnerDhcpSharednetwork6AddSuccess.md)
- - [DataInnerDhcpSharednetwork6Data](docs/DataInnerDhcpSharednetwork6Data.md)
- - [DataInnerDhcpSharednetwork6DeleteSuccess](docs/DataInnerDhcpSharednetwork6DeleteSuccess.md)
- - [DataInnerDhcpSharednetwork6EditSuccess](docs/DataInnerDhcpSharednetwork6EditSuccess.md)
- - [DataInnerDhcpSharednetworkAddSuccess](docs/DataInnerDhcpSharednetworkAddSuccess.md)
- - [DataInnerDhcpSharednetworkData](docs/DataInnerDhcpSharednetworkData.md)
- - [DataInnerDhcpSharednetworkDeleteSuccess](docs/DataInnerDhcpSharednetworkDeleteSuccess.md)
- - [DataInnerDhcpSharednetworkEditSuccess](docs/DataInnerDhcpSharednetworkEditSuccess.md)
- - [DataInnerDhcpStatic6AddSuccess](docs/DataInnerDhcpStatic6AddSuccess.md)
- - [DataInnerDhcpStatic6Data](docs/DataInnerDhcpStatic6Data.md)
- - [DataInnerDhcpStatic6DeleteSuccess](docs/DataInnerDhcpStatic6DeleteSuccess.md)
- - [DataInnerDhcpStatic6EditSuccess](docs/DataInnerDhcpStatic6EditSuccess.md)
- - [DataInnerDhcpStaticAddSuccess](docs/DataInnerDhcpStaticAddSuccess.md)
- - [DataInnerDhcpStaticData](docs/DataInnerDhcpStaticData.md)
- - [DataInnerDhcpStaticDeleteSuccess](docs/DataInnerDhcpStaticDeleteSuccess.md)
- - [DataInnerDhcpStaticEditSuccess](docs/DataInnerDhcpStaticEditSuccess.md)
- - [DataInnerDnsAclAddSuccess](docs/DataInnerDnsAclAddSuccess.md)
- - [DataInnerDnsAclData](docs/DataInnerDnsAclData.md)
- - [DataInnerDnsAclDeleteSuccess](docs/DataInnerDnsAclDeleteSuccess.md)
- - [DataInnerDnsAclEditSuccess](docs/DataInnerDnsAclEditSuccess.md)
- - [DataInnerDnsRrAddSuccess](docs/DataInnerDnsRrAddSuccess.md)
- - [DataInnerDnsRrData](docs/DataInnerDnsRrData.md)
- - [DataInnerDnsRrDeleteSuccess](docs/DataInnerDnsRrDeleteSuccess.md)
- - [DataInnerDnsRrEditSuccess](docs/DataInnerDnsRrEditSuccess.md)
- - [DataInnerDnsServerData](docs/DataInnerDnsServerData.md)
- - [DataInnerDnsViewAddSuccess](docs/DataInnerDnsViewAddSuccess.md)
- - [DataInnerDnsViewData](docs/DataInnerDnsViewData.md)
- - [DataInnerDnsViewDeleteSuccess](docs/DataInnerDnsViewDeleteSuccess.md)
- - [DataInnerDnsViewEditSuccess](docs/DataInnerDnsViewEditSuccess.md)
- - [DataInnerDnsViewparamAddSuccess](docs/DataInnerDnsViewparamAddSuccess.md)
- - [DataInnerDnsViewparamData](docs/DataInnerDnsViewparamData.md)
- - [DataInnerDnsViewparamDeleteSuccess](docs/DataInnerDnsViewparamDeleteSuccess.md)
- - [DataInnerDnsViewparamEditSuccess](docs/DataInnerDnsViewparamEditSuccess.md)
- - [DataInnerDnsZoneAddSuccess](docs/DataInnerDnsZoneAddSuccess.md)
- - [DataInnerDnsZoneData](docs/DataInnerDnsZoneData.md)
- - [DataInnerDnsZoneDeleteSuccess](docs/DataInnerDnsZoneDeleteSuccess.md)
- - [DataInnerDnsZoneEditSuccess](docs/DataInnerDnsZoneEditSuccess.md)
- - [DataInnerDnsZoneparamAddSuccess](docs/DataInnerDnsZoneparamAddSuccess.md)
- - [DataInnerDnsZoneparamData](docs/DataInnerDnsZoneparamData.md)
- - [DataInnerDnsZoneparamDeleteSuccess](docs/DataInnerDnsZoneparamDeleteSuccess.md)
- - [DataInnerDnsZoneparamEditSuccess](docs/DataInnerDnsZoneparamEditSuccess.md)
- - [DataInnerGuardianPolicyAddSuccess](docs/DataInnerGuardianPolicyAddSuccess.md)
- - [DataInnerGuardianPolicyData](docs/DataInnerGuardianPolicyData.md)
- - [DataInnerGuardianPolicyDeleteSuccess](docs/DataInnerGuardianPolicyDeleteSuccess.md)
- - [DataInnerGuardianPolicyEditSuccess](docs/DataInnerGuardianPolicyEditSuccess.md)
- - [DataInnerIpamAddress6AddSuccess](docs/DataInnerIpamAddress6AddSuccess.md)
- - [DataInnerIpamAddress6Data](docs/DataInnerIpamAddress6Data.md)
- - [DataInnerIpamAddress6DeleteSuccess](docs/DataInnerIpamAddress6DeleteSuccess.md)
- - [DataInnerIpamAddress6EditSuccess](docs/DataInnerIpamAddress6EditSuccess.md)
- - [DataInnerIpamAddressAddSuccess](docs/DataInnerIpamAddressAddSuccess.md)
- - [DataInnerIpamAddressData](docs/DataInnerIpamAddressData.md)
- - [DataInnerIpamAddressDeleteSuccess](docs/DataInnerIpamAddressDeleteSuccess.md)
- - [DataInnerIpamAddressEditSuccess](docs/DataInnerIpamAddressEditSuccess.md)
- - [DataInnerIpamAlias6AddSuccess](docs/DataInnerIpamAlias6AddSuccess.md)
- - [DataInnerIpamAlias6Data](docs/DataInnerIpamAlias6Data.md)
- - [DataInnerIpamAlias6DeleteSuccess](docs/DataInnerIpamAlias6DeleteSuccess.md)
- - [DataInnerIpamAlias6EditSuccess](docs/DataInnerIpamAlias6EditSuccess.md)
- - [DataInnerIpamAliasAddSuccess](docs/DataInnerIpamAliasAddSuccess.md)
- - [DataInnerIpamAliasData](docs/DataInnerIpamAliasData.md)
- - [DataInnerIpamAliasDeleteSuccess](docs/DataInnerIpamAliasDeleteSuccess.md)
- - [DataInnerIpamAliasEditSuccess](docs/DataInnerIpamAliasEditSuccess.md)
- - [DataInnerIpamNetwork6AddSuccess](docs/DataInnerIpamNetwork6AddSuccess.md)
- - [DataInnerIpamNetwork6Data](docs/DataInnerIpamNetwork6Data.md)
- - [DataInnerIpamNetwork6DeleteSuccess](docs/DataInnerIpamNetwork6DeleteSuccess.md)
- - [DataInnerIpamNetwork6EditSuccess](docs/DataInnerIpamNetwork6EditSuccess.md)
- - [DataInnerIpamNetworkAddSuccess](docs/DataInnerIpamNetworkAddSuccess.md)
- - [DataInnerIpamNetworkData](docs/DataInnerIpamNetworkData.md)
- - [DataInnerIpamNetworkDeleteSuccess](docs/DataInnerIpamNetworkDeleteSuccess.md)
- - [DataInnerIpamNetworkEditSuccess](docs/DataInnerIpamNetworkEditSuccess.md)
- - [DataInnerIpamPool6AddSuccess](docs/DataInnerIpamPool6AddSuccess.md)
- - [DataInnerIpamPool6Data](docs/DataInnerIpamPool6Data.md)
- - [DataInnerIpamPool6DeleteSuccess](docs/DataInnerIpamPool6DeleteSuccess.md)
- - [DataInnerIpamPool6EditSuccess](docs/DataInnerIpamPool6EditSuccess.md)
- - [DataInnerIpamPoolAddSuccess](docs/DataInnerIpamPoolAddSuccess.md)
- - [DataInnerIpamPoolData](docs/DataInnerIpamPoolData.md)
- - [DataInnerIpamPoolDeleteSuccess](docs/DataInnerIpamPoolDeleteSuccess.md)
- - [DataInnerIpamPoolEditSuccess](docs/DataInnerIpamPoolEditSuccess.md)
- - [DataInnerIpamSpaceAddSuccess](docs/DataInnerIpamSpaceAddSuccess.md)
- - [DataInnerIpamSpaceData](docs/DataInnerIpamSpaceData.md)
- - [DataInnerIpamSpaceDeleteSuccess](docs/DataInnerIpamSpaceDeleteSuccess.md)
- - [DataInnerIpamSpaceEditSuccess](docs/DataInnerIpamSpaceEditSuccess.md)
- - [DataInnerVlanDomainAddSuccess](docs/DataInnerVlanDomainAddSuccess.md)
- - [DataInnerVlanDomainData](docs/DataInnerVlanDomainData.md)
- - [DataInnerVlanDomainDeleteSuccess](docs/DataInnerVlanDomainDeleteSuccess.md)
- - [DataInnerVlanDomainEditSuccess](docs/DataInnerVlanDomainEditSuccess.md)
- - [DataInnerVlanRangeAddSuccess](docs/DataInnerVlanRangeAddSuccess.md)
- - [DataInnerVlanRangeData](docs/DataInnerVlanRangeData.md)
- - [DataInnerVlanRangeDeleteSuccess](docs/DataInnerVlanRangeDeleteSuccess.md)
- - [DataInnerVlanRangeEditSuccess](docs/DataInnerVlanRangeEditSuccess.md)
- - [DataInnerVlanVlanAddSuccess](docs/DataInnerVlanVlanAddSuccess.md)
- - [DataInnerVlanVlanData](docs/DataInnerVlanVlanData.md)
- - [DataInnerVlanVlanDeleteSuccess](docs/DataInnerVlanVlanDeleteSuccess.md)
- - [DataInnerVlanVlanEditSuccess](docs/DataInnerVlanVlanEditSuccess.md)
- - [DeviceDeviceAddFailed](docs/DeviceDeviceAddFailed.md)
- - [DeviceDeviceAddInput](docs/DeviceDeviceAddInput.md)
- - [DeviceDeviceAddSuccess](docs/DeviceDeviceAddSuccess.md)
- - [DeviceDeviceData](docs/DeviceDeviceData.md)
- - [DeviceDeviceDeleteFailed](docs/DeviceDeviceDeleteFailed.md)
- - [DeviceDeviceDeleteSuccess](docs/DeviceDeviceDeleteSuccess.md)
- - [DeviceDeviceEditFailed](docs/DeviceDeviceEditFailed.md)
- - [DeviceDeviceEditInput](docs/DeviceDeviceEditInput.md)
- - [DeviceDeviceEditSuccess](docs/DeviceDeviceEditSuccess.md)
- - [DeviceInterfaceAddFailed](docs/DeviceInterfaceAddFailed.md)
- - [DeviceInterfaceAddInput](docs/DeviceInterfaceAddInput.md)
- - [DeviceInterfaceAddSuccess](docs/DeviceInterfaceAddSuccess.md)
- - [DeviceInterfaceData](docs/DeviceInterfaceData.md)
- - [DeviceInterfaceDeleteFailed](docs/DeviceInterfaceDeleteFailed.md)
- - [DeviceInterfaceDeleteSuccess](docs/DeviceInterfaceDeleteSuccess.md)
- - [DeviceInterfaceEditFailed](docs/DeviceInterfaceEditFailed.md)
- - [DeviceInterfaceEditInput](docs/DeviceInterfaceEditInput.md)
- - [DeviceInterfaceEditSuccess](docs/DeviceInterfaceEditSuccess.md)
- - [DeviceLinkAddFailed](docs/DeviceLinkAddFailed.md)
- - [DeviceLinkAddInput](docs/DeviceLinkAddInput.md)
- - [DeviceLinkAddSuccess](docs/DeviceLinkAddSuccess.md)
- - [DeviceLinkData](docs/DeviceLinkData.md)
- - [DeviceLinkDeleteFailed](docs/DeviceLinkDeleteFailed.md)
- - [DeviceLinkDeleteSuccess](docs/DeviceLinkDeleteSuccess.md)
- - [DeviceLinkEditFailed](docs/DeviceLinkEditFailed.md)
- - [DeviceLinkEditInput](docs/DeviceLinkEditInput.md)
- - [DeviceLinkEditSuccess](docs/DeviceLinkEditSuccess.md)
- - [DhcpAcl6Data](docs/DhcpAcl6Data.md)
- - [DhcpAclData](docs/DhcpAclData.md)
- - [DhcpAclentry6Data](docs/DhcpAclentry6Data.md)
- - [DhcpAclentryData](docs/DhcpAclentryData.md)
- - [DhcpFailoverData](docs/DhcpFailoverData.md)
- - [DhcpGroup6Data](docs/DhcpGroup6Data.md)
- - [DhcpGroupAddFailed](docs/DhcpGroupAddFailed.md)
- - [DhcpGroupAddInput](docs/DhcpGroupAddInput.md)
- - [DhcpGroupAddSuccess](docs/DhcpGroupAddSuccess.md)
- - [DhcpGroupData](docs/DhcpGroupData.md)
- - [DhcpGroupDeleteFailed](docs/DhcpGroupDeleteFailed.md)
- - [DhcpGroupDeleteSuccess](docs/DhcpGroupDeleteSuccess.md)
- - [DhcpGroupEditFailed](docs/DhcpGroupEditFailed.md)
- - [DhcpGroupEditInput](docs/DhcpGroupEditInput.md)
- - [DhcpGroupEditSuccess](docs/DhcpGroupEditSuccess.md)
- - [DhcpLease6Data](docs/DhcpLease6Data.md)
- - [DhcpLeaseData](docs/DhcpLeaseData.md)
- - [DhcpRange6AddFailed](docs/DhcpRange6AddFailed.md)
- - [DhcpRange6AddInput](docs/DhcpRange6AddInput.md)
- - [DhcpRange6AddSuccess](docs/DhcpRange6AddSuccess.md)
- - [DhcpRange6Data](docs/DhcpRange6Data.md)
- - [DhcpRange6DeleteFailed](docs/DhcpRange6DeleteFailed.md)
- - [DhcpRange6DeleteSuccess](docs/DhcpRange6DeleteSuccess.md)
- - [DhcpRange6EditFailed](docs/DhcpRange6EditFailed.md)
- - [DhcpRange6EditInput](docs/DhcpRange6EditInput.md)
- - [DhcpRange6EditSuccess](docs/DhcpRange6EditSuccess.md)
- - [DhcpRangeAddFailed](docs/DhcpRangeAddFailed.md)
- - [DhcpRangeAddInput](docs/DhcpRangeAddInput.md)
- - [DhcpRangeAddSuccess](docs/DhcpRangeAddSuccess.md)
- - [DhcpRangeData](docs/DhcpRangeData.md)
- - [DhcpRangeDeleteFailed](docs/DhcpRangeDeleteFailed.md)
- - [DhcpRangeDeleteSuccess](docs/DhcpRangeDeleteSuccess.md)
- - [DhcpRangeEditFailed](docs/DhcpRangeEditFailed.md)
- - [DhcpRangeEditInput](docs/DhcpRangeEditInput.md)
- - [DhcpRangeEditSuccess](docs/DhcpRangeEditSuccess.md)
- - [DhcpScope6AddFailed](docs/DhcpScope6AddFailed.md)
- - [DhcpScope6AddInput](docs/DhcpScope6AddInput.md)
- - [DhcpScope6AddSuccess](docs/DhcpScope6AddSuccess.md)
- - [DhcpScope6Data](docs/DhcpScope6Data.md)
- - [DhcpScope6DeleteFailed](docs/DhcpScope6DeleteFailed.md)
- - [DhcpScope6DeleteSuccess](docs/DhcpScope6DeleteSuccess.md)
- - [DhcpScope6EditFailed](docs/DhcpScope6EditFailed.md)
- - [DhcpScope6EditInput](docs/DhcpScope6EditInput.md)
- - [DhcpScope6EditSuccess](docs/DhcpScope6EditSuccess.md)
- - [DhcpScopeAddFailed](docs/DhcpScopeAddFailed.md)
- - [DhcpScopeAddInput](docs/DhcpScopeAddInput.md)
- - [DhcpScopeAddSuccess](docs/DhcpScopeAddSuccess.md)
- - [DhcpScopeData](docs/DhcpScopeData.md)
- - [DhcpScopeDeleteFailed](docs/DhcpScopeDeleteFailed.md)
- - [DhcpScopeDeleteSuccess](docs/DhcpScopeDeleteSuccess.md)
- - [DhcpScopeEditFailed](docs/DhcpScopeEditFailed.md)
- - [DhcpScopeEditInput](docs/DhcpScopeEditInput.md)
- - [DhcpScopeEditSuccess](docs/DhcpScopeEditSuccess.md)
- - [DhcpServer6Data](docs/DhcpServer6Data.md)
- - [DhcpServerData](docs/DhcpServerData.md)
- - [DhcpSharednetwork6AddFailed](docs/DhcpSharednetwork6AddFailed.md)
- - [DhcpSharednetwork6AddInput](docs/DhcpSharednetwork6AddInput.md)
- - [DhcpSharednetwork6AddSuccess](docs/DhcpSharednetwork6AddSuccess.md)
- - [DhcpSharednetwork6Data](docs/DhcpSharednetwork6Data.md)
- - [DhcpSharednetwork6DeleteFailed](docs/DhcpSharednetwork6DeleteFailed.md)
- - [DhcpSharednetwork6DeleteSuccess](docs/DhcpSharednetwork6DeleteSuccess.md)
- - [DhcpSharednetwork6EditFailed](docs/DhcpSharednetwork6EditFailed.md)
- - [DhcpSharednetwork6EditInput](docs/DhcpSharednetwork6EditInput.md)
- - [DhcpSharednetwork6EditSuccess](docs/DhcpSharednetwork6EditSuccess.md)
- - [DhcpSharednetworkAddFailed](docs/DhcpSharednetworkAddFailed.md)
- - [DhcpSharednetworkAddInput](docs/DhcpSharednetworkAddInput.md)
- - [DhcpSharednetworkAddSuccess](docs/DhcpSharednetworkAddSuccess.md)
- - [DhcpSharednetworkData](docs/DhcpSharednetworkData.md)
- - [DhcpSharednetworkDeleteFailed](docs/DhcpSharednetworkDeleteFailed.md)
- - [DhcpSharednetworkDeleteSuccess](docs/DhcpSharednetworkDeleteSuccess.md)
- - [DhcpSharednetworkEditFailed](docs/DhcpSharednetworkEditFailed.md)
- - [DhcpSharednetworkEditInput](docs/DhcpSharednetworkEditInput.md)
- - [DhcpSharednetworkEditSuccess](docs/DhcpSharednetworkEditSuccess.md)
- - [DhcpStatic6AddFailed](docs/DhcpStatic6AddFailed.md)
- - [DhcpStatic6AddInput](docs/DhcpStatic6AddInput.md)
- - [DhcpStatic6AddSuccess](docs/DhcpStatic6AddSuccess.md)
- - [DhcpStatic6Data](docs/DhcpStatic6Data.md)
- - [DhcpStatic6DeleteFailed](docs/DhcpStatic6DeleteFailed.md)
- - [DhcpStatic6DeleteSuccess](docs/DhcpStatic6DeleteSuccess.md)
- - [DhcpStatic6EditFailed](docs/DhcpStatic6EditFailed.md)
- - [DhcpStatic6EditInput](docs/DhcpStatic6EditInput.md)
- - [DhcpStatic6EditSuccess](docs/DhcpStatic6EditSuccess.md)
- - [DhcpStaticAddFailed](docs/DhcpStaticAddFailed.md)
- - [DhcpStaticAddInput](docs/DhcpStaticAddInput.md)
- - [DhcpStaticAddSuccess](docs/DhcpStaticAddSuccess.md)
- - [DhcpStaticData](docs/DhcpStaticData.md)
- - [DhcpStaticDeleteFailed](docs/DhcpStaticDeleteFailed.md)
- - [DhcpStaticDeleteSuccess](docs/DhcpStaticDeleteSuccess.md)
- - [DhcpStaticEditFailed](docs/DhcpStaticEditFailed.md)
- - [DhcpStaticEditInput](docs/DhcpStaticEditInput.md)
- - [DhcpStaticEditSuccess](docs/DhcpStaticEditSuccess.md)
- - [DnsAclAddFailed](docs/DnsAclAddFailed.md)
- - [DnsAclAddInput](docs/DnsAclAddInput.md)
- - [DnsAclAddSuccess](docs/DnsAclAddSuccess.md)
- - [DnsAclData](docs/DnsAclData.md)
- - [DnsAclDeleteFailed](docs/DnsAclDeleteFailed.md)
- - [DnsAclDeleteSuccess](docs/DnsAclDeleteSuccess.md)
- - [DnsAclEditFailed](docs/DnsAclEditFailed.md)
- - [DnsAclEditInput](docs/DnsAclEditInput.md)
- - [DnsAclEditSuccess](docs/DnsAclEditSuccess.md)
- - [DnsRrAddFailed](docs/DnsRrAddFailed.md)
- - [DnsRrAddInput](docs/DnsRrAddInput.md)
- - [DnsRrAddSuccess](docs/DnsRrAddSuccess.md)
- - [DnsRrData](docs/DnsRrData.md)
- - [DnsRrDeleteFailed](docs/DnsRrDeleteFailed.md)
- - [DnsRrDeleteSuccess](docs/DnsRrDeleteSuccess.md)
- - [DnsRrEditFailed](docs/DnsRrEditFailed.md)
- - [DnsRrEditInput](docs/DnsRrEditInput.md)
- - [DnsRrEditSuccess](docs/DnsRrEditSuccess.md)
- - [DnsServerData](docs/DnsServerData.md)
- - [DnsViewAddFailed](docs/DnsViewAddFailed.md)
- - [DnsViewAddInput](docs/DnsViewAddInput.md)
- - [DnsViewAddSuccess](docs/DnsViewAddSuccess.md)
- - [DnsViewData](docs/DnsViewData.md)
- - [DnsViewDeleteFailed](docs/DnsViewDeleteFailed.md)
- - [DnsViewDeleteSuccess](docs/DnsViewDeleteSuccess.md)
- - [DnsViewEditFailed](docs/DnsViewEditFailed.md)
- - [DnsViewEditInput](docs/DnsViewEditInput.md)
- - [DnsViewEditSuccess](docs/DnsViewEditSuccess.md)
- - [DnsViewparamAddFailed](docs/DnsViewparamAddFailed.md)
- - [DnsViewparamAddInput](docs/DnsViewparamAddInput.md)
- - [DnsViewparamAddSuccess](docs/DnsViewparamAddSuccess.md)
- - [DnsViewparamData](docs/DnsViewparamData.md)
- - [DnsViewparamDeleteFailed](docs/DnsViewparamDeleteFailed.md)
- - [DnsViewparamDeleteSuccess](docs/DnsViewparamDeleteSuccess.md)
- - [DnsViewparamEditFailed](docs/DnsViewparamEditFailed.md)
- - [DnsViewparamEditInput](docs/DnsViewparamEditInput.md)
- - [DnsViewparamEditSuccess](docs/DnsViewparamEditSuccess.md)
- - [DnsZoneAddFailed](docs/DnsZoneAddFailed.md)
- - [DnsZoneAddInput](docs/DnsZoneAddInput.md)
- - [DnsZoneAddSuccess](docs/DnsZoneAddSuccess.md)
- - [DnsZoneData](docs/DnsZoneData.md)
- - [DnsZoneDeleteFailed](docs/DnsZoneDeleteFailed.md)
- - [DnsZoneDeleteSuccess](docs/DnsZoneDeleteSuccess.md)
- - [DnsZoneEditFailed](docs/DnsZoneEditFailed.md)
- - [DnsZoneEditInput](docs/DnsZoneEditInput.md)
- - [DnsZoneEditSuccess](docs/DnsZoneEditSuccess.md)
- - [DnsZoneparamAddFailed](docs/DnsZoneparamAddFailed.md)
- - [DnsZoneparamAddInput](docs/DnsZoneparamAddInput.md)
- - [DnsZoneparamAddSuccess](docs/DnsZoneparamAddSuccess.md)
- - [DnsZoneparamData](docs/DnsZoneparamData.md)
- - [DnsZoneparamDeleteFailed](docs/DnsZoneparamDeleteFailed.md)
- - [DnsZoneparamDeleteSuccess](docs/DnsZoneparamDeleteSuccess.md)
- - [DnsZoneparamEditFailed](docs/DnsZoneparamEditFailed.md)
- - [DnsZoneparamEditInput](docs/DnsZoneparamEditInput.md)
- - [DnsZoneparamEditSuccess](docs/DnsZoneparamEditSuccess.md)
- - [GuardianPolicyAddFailed](docs/GuardianPolicyAddFailed.md)
- - [GuardianPolicyAddInput](docs/GuardianPolicyAddInput.md)
- - [GuardianPolicyAddSuccess](docs/GuardianPolicyAddSuccess.md)
- - [GuardianPolicyData](docs/GuardianPolicyData.md)
- - [GuardianPolicyDeleteFailed](docs/GuardianPolicyDeleteFailed.md)
- - [GuardianPolicyDeleteSuccess](docs/GuardianPolicyDeleteSuccess.md)
- - [GuardianPolicyEditFailed](docs/GuardianPolicyEditFailed.md)
- - [GuardianPolicyEditInput](docs/GuardianPolicyEditInput.md)
- - [GuardianPolicyEditSuccess](docs/GuardianPolicyEditSuccess.md)
- - [IpamAddress6AddFailed](docs/IpamAddress6AddFailed.md)
- - [IpamAddress6AddInput](docs/IpamAddress6AddInput.md)
- - [IpamAddress6AddSuccess](docs/IpamAddress6AddSuccess.md)
- - [IpamAddress6Data](docs/IpamAddress6Data.md)
- - [IpamAddress6DeleteFailed](docs/IpamAddress6DeleteFailed.md)
- - [IpamAddress6DeleteSuccess](docs/IpamAddress6DeleteSuccess.md)
- - [IpamAddress6EditFailed](docs/IpamAddress6EditFailed.md)
- - [IpamAddress6EditInput](docs/IpamAddress6EditInput.md)
- - [IpamAddress6EditSuccess](docs/IpamAddress6EditSuccess.md)
- - [IpamAddressAddFailed](docs/IpamAddressAddFailed.md)
- - [IpamAddressAddInput](docs/IpamAddressAddInput.md)
- - [IpamAddressAddSuccess](docs/IpamAddressAddSuccess.md)
- - [IpamAddressData](docs/IpamAddressData.md)
- - [IpamAddressDeleteFailed](docs/IpamAddressDeleteFailed.md)
- - [IpamAddressDeleteSuccess](docs/IpamAddressDeleteSuccess.md)
- - [IpamAddressEditFailed](docs/IpamAddressEditFailed.md)
- - [IpamAddressEditInput](docs/IpamAddressEditInput.md)
- - [IpamAddressEditSuccess](docs/IpamAddressEditSuccess.md)
- - [IpamAlias6AddFailed](docs/IpamAlias6AddFailed.md)
- - [IpamAlias6AddInput](docs/IpamAlias6AddInput.md)
- - [IpamAlias6AddSuccess](docs/IpamAlias6AddSuccess.md)
- - [IpamAlias6Data](docs/IpamAlias6Data.md)
- - [IpamAlias6DeleteFailed](docs/IpamAlias6DeleteFailed.md)
- - [IpamAlias6DeleteSuccess](docs/IpamAlias6DeleteSuccess.md)
- - [IpamAlias6EditFailed](docs/IpamAlias6EditFailed.md)
- - [IpamAlias6EditInput](docs/IpamAlias6EditInput.md)
- - [IpamAlias6EditSuccess](docs/IpamAlias6EditSuccess.md)
- - [IpamAliasAddFailed](docs/IpamAliasAddFailed.md)
- - [IpamAliasAddInput](docs/IpamAliasAddInput.md)
- - [IpamAliasAddSuccess](docs/IpamAliasAddSuccess.md)
- - [IpamAliasData](docs/IpamAliasData.md)
- - [IpamAliasDeleteFailed](docs/IpamAliasDeleteFailed.md)
- - [IpamAliasDeleteSuccess](docs/IpamAliasDeleteSuccess.md)
- - [IpamAliasEditFailed](docs/IpamAliasEditFailed.md)
- - [IpamAliasEditInput](docs/IpamAliasEditInput.md)
- - [IpamAliasEditSuccess](docs/IpamAliasEditSuccess.md)
- - [IpamNetwork6AddFailed](docs/IpamNetwork6AddFailed.md)
- - [IpamNetwork6AddInput](docs/IpamNetwork6AddInput.md)
- - [IpamNetwork6AddSuccess](docs/IpamNetwork6AddSuccess.md)
- - [IpamNetwork6Data](docs/IpamNetwork6Data.md)
- - [IpamNetwork6DeleteFailed](docs/IpamNetwork6DeleteFailed.md)
- - [IpamNetwork6DeleteSuccess](docs/IpamNetwork6DeleteSuccess.md)
- - [IpamNetwork6EditFailed](docs/IpamNetwork6EditFailed.md)
- - [IpamNetwork6EditInput](docs/IpamNetwork6EditInput.md)
- - [IpamNetwork6EditSuccess](docs/IpamNetwork6EditSuccess.md)
- - [IpamNetworkAddFailed](docs/IpamNetworkAddFailed.md)
- - [IpamNetworkAddInput](docs/IpamNetworkAddInput.md)
- - [IpamNetworkAddSuccess](docs/IpamNetworkAddSuccess.md)
- - [IpamNetworkData](docs/IpamNetworkData.md)
- - [IpamNetworkDeleteFailed](docs/IpamNetworkDeleteFailed.md)
- - [IpamNetworkDeleteSuccess](docs/IpamNetworkDeleteSuccess.md)
- - [IpamNetworkEditFailed](docs/IpamNetworkEditFailed.md)
- - [IpamNetworkEditInput](docs/IpamNetworkEditInput.md)
- - [IpamNetworkEditSuccess](docs/IpamNetworkEditSuccess.md)
- - [IpamPool6AddFailed](docs/IpamPool6AddFailed.md)
- - [IpamPool6AddInput](docs/IpamPool6AddInput.md)
- - [IpamPool6AddSuccess](docs/IpamPool6AddSuccess.md)
- - [IpamPool6Data](docs/IpamPool6Data.md)
- - [IpamPool6DeleteFailed](docs/IpamPool6DeleteFailed.md)
- - [IpamPool6DeleteSuccess](docs/IpamPool6DeleteSuccess.md)
- - [IpamPool6EditFailed](docs/IpamPool6EditFailed.md)
- - [IpamPool6EditInput](docs/IpamPool6EditInput.md)
- - [IpamPool6EditSuccess](docs/IpamPool6EditSuccess.md)
- - [IpamPoolAddFailed](docs/IpamPoolAddFailed.md)
- - [IpamPoolAddInput](docs/IpamPoolAddInput.md)
- - [IpamPoolAddSuccess](docs/IpamPoolAddSuccess.md)
- - [IpamPoolData](docs/IpamPoolData.md)
- - [IpamPoolDeleteFailed](docs/IpamPoolDeleteFailed.md)
- - [IpamPoolDeleteSuccess](docs/IpamPoolDeleteSuccess.md)
- - [IpamPoolEditFailed](docs/IpamPoolEditFailed.md)
- - [IpamPoolEditInput](docs/IpamPoolEditInput.md)
- - [IpamPoolEditSuccess](docs/IpamPoolEditSuccess.md)
- - [IpamSpaceAddFailed](docs/IpamSpaceAddFailed.md)
- - [IpamSpaceAddInput](docs/IpamSpaceAddInput.md)
- - [IpamSpaceAddSuccess](docs/IpamSpaceAddSuccess.md)
- - [IpamSpaceData](docs/IpamSpaceData.md)
- - [IpamSpaceDeleteFailed](docs/IpamSpaceDeleteFailed.md)
- - [IpamSpaceDeleteSuccess](docs/IpamSpaceDeleteSuccess.md)
- - [IpamSpaceEditFailed](docs/IpamSpaceEditFailed.md)
- - [IpamSpaceEditInput](docs/IpamSpaceEditInput.md)
- - [IpamSpaceEditSuccess](docs/IpamSpaceEditSuccess.md)
- - [VlanDomainAddFailed](docs/VlanDomainAddFailed.md)
- - [VlanDomainAddInput](docs/VlanDomainAddInput.md)
- - [VlanDomainAddSuccess](docs/VlanDomainAddSuccess.md)
- - [VlanDomainData](docs/VlanDomainData.md)
- - [VlanDomainDeleteFailed](docs/VlanDomainDeleteFailed.md)
- - [VlanDomainDeleteSuccess](docs/VlanDomainDeleteSuccess.md)
- - [VlanDomainEditFailed](docs/VlanDomainEditFailed.md)
- - [VlanDomainEditInput](docs/VlanDomainEditInput.md)
- - [VlanDomainEditSuccess](docs/VlanDomainEditSuccess.md)
- - [VlanRangeAddFailed](docs/VlanRangeAddFailed.md)
- - [VlanRangeAddInput](docs/VlanRangeAddInput.md)
- - [VlanRangeAddSuccess](docs/VlanRangeAddSuccess.md)
- - [VlanRangeData](docs/VlanRangeData.md)
- - [VlanRangeDeleteFailed](docs/VlanRangeDeleteFailed.md)
- - [VlanRangeDeleteSuccess](docs/VlanRangeDeleteSuccess.md)
- - [VlanRangeEditFailed](docs/VlanRangeEditFailed.md)
- - [VlanRangeEditInput](docs/VlanRangeEditInput.md)
- - [VlanRangeEditSuccess](docs/VlanRangeEditSuccess.md)
- - [VlanVlanAddFailed](docs/VlanVlanAddFailed.md)
- - [VlanVlanAddInput](docs/VlanVlanAddInput.md)
- - [VlanVlanAddSuccess](docs/VlanVlanAddSuccess.md)
- - [VlanVlanData](docs/VlanVlanData.md)
- - [VlanVlanDeleteFailed](docs/VlanVlanDeleteFailed.md)
- - [VlanVlanDeleteSuccess](docs/VlanVlanDeleteSuccess.md)
- - [VlanVlanEditFailed](docs/VlanVlanEditFailed.md)
- - [VlanVlanEditInput](docs/VlanVlanEditInput.md)
- - [VlanVlanEditSuccess](docs/VlanVlanEditSuccess.md)
+ - [ApiClassParameterInputEntry](sdsclient/docs/ApiClassParameterInputEntry.md)
+ - [ApiClassParameterOutputEntry](sdsclient/docs/ApiClassParameterOutputEntry.md)
+ - [ApiCountResponseSuccess](sdsclient/docs/ApiCountResponseSuccess.md)
+ - [ApiCountResponseSuccessDataInner](sdsclient/docs/ApiCountResponseSuccessDataInner.md)
+ - [ApiMessageEntry](sdsclient/docs/ApiMessageEntry.md)
+ - [ApiResponse](sdsclient/docs/ApiResponse.md)
+ - [AppApplicationAddFailed](sdsclient/docs/AppApplicationAddFailed.md)
+ - [AppApplicationAddInput](sdsclient/docs/AppApplicationAddInput.md)
+ - [AppApplicationAddSuccess](sdsclient/docs/AppApplicationAddSuccess.md)
+ - [AppApplicationData](sdsclient/docs/AppApplicationData.md)
+ - [AppApplicationDeleteFailed](sdsclient/docs/AppApplicationDeleteFailed.md)
+ - [AppApplicationDeleteSuccess](sdsclient/docs/AppApplicationDeleteSuccess.md)
+ - [AppApplicationEditFailed](sdsclient/docs/AppApplicationEditFailed.md)
+ - [AppApplicationEditInput](sdsclient/docs/AppApplicationEditInput.md)
+ - [AppApplicationEditSuccess](sdsclient/docs/AppApplicationEditSuccess.md)
+ - [AppNodeAddFailed](sdsclient/docs/AppNodeAddFailed.md)
+ - [AppNodeAddInput](sdsclient/docs/AppNodeAddInput.md)
+ - [AppNodeAddSuccess](sdsclient/docs/AppNodeAddSuccess.md)
+ - [AppNodeData](sdsclient/docs/AppNodeData.md)
+ - [AppNodeDeleteFailed](sdsclient/docs/AppNodeDeleteFailed.md)
+ - [AppNodeDeleteSuccess](sdsclient/docs/AppNodeDeleteSuccess.md)
+ - [AppNodeEditFailed](sdsclient/docs/AppNodeEditFailed.md)
+ - [AppNodeEditInput](sdsclient/docs/AppNodeEditInput.md)
+ - [AppNodeEditSuccess](sdsclient/docs/AppNodeEditSuccess.md)
+ - [AppPoolAddFailed](sdsclient/docs/AppPoolAddFailed.md)
+ - [AppPoolAddInput](sdsclient/docs/AppPoolAddInput.md)
+ - [AppPoolAddSuccess](sdsclient/docs/AppPoolAddSuccess.md)
+ - [AppPoolData](sdsclient/docs/AppPoolData.md)
+ - [AppPoolDeleteFailed](sdsclient/docs/AppPoolDeleteFailed.md)
+ - [AppPoolDeleteSuccess](sdsclient/docs/AppPoolDeleteSuccess.md)
+ - [AppPoolEditFailed](sdsclient/docs/AppPoolEditFailed.md)
+ - [AppPoolEditInput](sdsclient/docs/AppPoolEditInput.md)
+ - [AppPoolEditSuccess](sdsclient/docs/AppPoolEditSuccess.md)
+ - [DataInnerAppApplicationAddSuccess](sdsclient/docs/DataInnerAppApplicationAddSuccess.md)
+ - [DataInnerAppApplicationData](sdsclient/docs/DataInnerAppApplicationData.md)
+ - [DataInnerAppApplicationDeleteSuccess](sdsclient/docs/DataInnerAppApplicationDeleteSuccess.md)
+ - [DataInnerAppApplicationEditSuccess](sdsclient/docs/DataInnerAppApplicationEditSuccess.md)
+ - [DataInnerAppNodeAddSuccess](sdsclient/docs/DataInnerAppNodeAddSuccess.md)
+ - [DataInnerAppNodeData](sdsclient/docs/DataInnerAppNodeData.md)
+ - [DataInnerAppNodeDeleteSuccess](sdsclient/docs/DataInnerAppNodeDeleteSuccess.md)
+ - [DataInnerAppNodeEditSuccess](sdsclient/docs/DataInnerAppNodeEditSuccess.md)
+ - [DataInnerAppPoolAddSuccess](sdsclient/docs/DataInnerAppPoolAddSuccess.md)
+ - [DataInnerAppPoolData](sdsclient/docs/DataInnerAppPoolData.md)
+ - [DataInnerAppPoolDeleteSuccess](sdsclient/docs/DataInnerAppPoolDeleteSuccess.md)
+ - [DataInnerAppPoolEditSuccess](sdsclient/docs/DataInnerAppPoolEditSuccess.md)
+ - [DataInnerDeviceDeviceAddSuccess](sdsclient/docs/DataInnerDeviceDeviceAddSuccess.md)
+ - [DataInnerDeviceDeviceData](sdsclient/docs/DataInnerDeviceDeviceData.md)
+ - [DataInnerDeviceDeviceDeleteSuccess](sdsclient/docs/DataInnerDeviceDeviceDeleteSuccess.md)
+ - [DataInnerDeviceDeviceEditSuccess](sdsclient/docs/DataInnerDeviceDeviceEditSuccess.md)
+ - [DataInnerDeviceInterfaceAddSuccess](sdsclient/docs/DataInnerDeviceInterfaceAddSuccess.md)
+ - [DataInnerDeviceInterfaceData](sdsclient/docs/DataInnerDeviceInterfaceData.md)
+ - [DataInnerDeviceInterfaceDeleteSuccess](sdsclient/docs/DataInnerDeviceInterfaceDeleteSuccess.md)
+ - [DataInnerDeviceInterfaceEditSuccess](sdsclient/docs/DataInnerDeviceInterfaceEditSuccess.md)
+ - [DataInnerDeviceLinkAddSuccess](sdsclient/docs/DataInnerDeviceLinkAddSuccess.md)
+ - [DataInnerDeviceLinkData](sdsclient/docs/DataInnerDeviceLinkData.md)
+ - [DataInnerDeviceLinkDeleteSuccess](sdsclient/docs/DataInnerDeviceLinkDeleteSuccess.md)
+ - [DataInnerDeviceLinkEditSuccess](sdsclient/docs/DataInnerDeviceLinkEditSuccess.md)
+ - [DataInnerDhcpAcl6Data](sdsclient/docs/DataInnerDhcpAcl6Data.md)
+ - [DataInnerDhcpAclData](sdsclient/docs/DataInnerDhcpAclData.md)
+ - [DataInnerDhcpAclentry6Data](sdsclient/docs/DataInnerDhcpAclentry6Data.md)
+ - [DataInnerDhcpAclentryData](sdsclient/docs/DataInnerDhcpAclentryData.md)
+ - [DataInnerDhcpFailoverData](sdsclient/docs/DataInnerDhcpFailoverData.md)
+ - [DataInnerDhcpGroup6Data](sdsclient/docs/DataInnerDhcpGroup6Data.md)
+ - [DataInnerDhcpGroupAddSuccess](sdsclient/docs/DataInnerDhcpGroupAddSuccess.md)
+ - [DataInnerDhcpGroupData](sdsclient/docs/DataInnerDhcpGroupData.md)
+ - [DataInnerDhcpGroupDeleteSuccess](sdsclient/docs/DataInnerDhcpGroupDeleteSuccess.md)
+ - [DataInnerDhcpGroupEditSuccess](sdsclient/docs/DataInnerDhcpGroupEditSuccess.md)
+ - [DataInnerDhcpLease6Data](sdsclient/docs/DataInnerDhcpLease6Data.md)
+ - [DataInnerDhcpLeaseData](sdsclient/docs/DataInnerDhcpLeaseData.md)
+ - [DataInnerDhcpRange6AddSuccess](sdsclient/docs/DataInnerDhcpRange6AddSuccess.md)
+ - [DataInnerDhcpRange6Data](sdsclient/docs/DataInnerDhcpRange6Data.md)
+ - [DataInnerDhcpRange6DeleteSuccess](sdsclient/docs/DataInnerDhcpRange6DeleteSuccess.md)
+ - [DataInnerDhcpRange6EditSuccess](sdsclient/docs/DataInnerDhcpRange6EditSuccess.md)
+ - [DataInnerDhcpRangeAddSuccess](sdsclient/docs/DataInnerDhcpRangeAddSuccess.md)
+ - [DataInnerDhcpRangeData](sdsclient/docs/DataInnerDhcpRangeData.md)
+ - [DataInnerDhcpRangeDeleteSuccess](sdsclient/docs/DataInnerDhcpRangeDeleteSuccess.md)
+ - [DataInnerDhcpRangeEditSuccess](sdsclient/docs/DataInnerDhcpRangeEditSuccess.md)
+ - [DataInnerDhcpScope6AddSuccess](sdsclient/docs/DataInnerDhcpScope6AddSuccess.md)
+ - [DataInnerDhcpScope6Data](sdsclient/docs/DataInnerDhcpScope6Data.md)
+ - [DataInnerDhcpScope6DeleteSuccess](sdsclient/docs/DataInnerDhcpScope6DeleteSuccess.md)
+ - [DataInnerDhcpScope6EditSuccess](sdsclient/docs/DataInnerDhcpScope6EditSuccess.md)
+ - [DataInnerDhcpScopeAddSuccess](sdsclient/docs/DataInnerDhcpScopeAddSuccess.md)
+ - [DataInnerDhcpScopeData](sdsclient/docs/DataInnerDhcpScopeData.md)
+ - [DataInnerDhcpScopeDeleteSuccess](sdsclient/docs/DataInnerDhcpScopeDeleteSuccess.md)
+ - [DataInnerDhcpScopeEditSuccess](sdsclient/docs/DataInnerDhcpScopeEditSuccess.md)
+ - [DataInnerDhcpServer6Data](sdsclient/docs/DataInnerDhcpServer6Data.md)
+ - [DataInnerDhcpServerData](sdsclient/docs/DataInnerDhcpServerData.md)
+ - [DataInnerDhcpSharednetwork6AddSuccess](sdsclient/docs/DataInnerDhcpSharednetwork6AddSuccess.md)
+ - [DataInnerDhcpSharednetwork6Data](sdsclient/docs/DataInnerDhcpSharednetwork6Data.md)
+ - [DataInnerDhcpSharednetwork6DeleteSuccess](sdsclient/docs/DataInnerDhcpSharednetwork6DeleteSuccess.md)
+ - [DataInnerDhcpSharednetwork6EditSuccess](sdsclient/docs/DataInnerDhcpSharednetwork6EditSuccess.md)
+ - [DataInnerDhcpSharednetworkAddSuccess](sdsclient/docs/DataInnerDhcpSharednetworkAddSuccess.md)
+ - [DataInnerDhcpSharednetworkData](sdsclient/docs/DataInnerDhcpSharednetworkData.md)
+ - [DataInnerDhcpSharednetworkDeleteSuccess](sdsclient/docs/DataInnerDhcpSharednetworkDeleteSuccess.md)
+ - [DataInnerDhcpSharednetworkEditSuccess](sdsclient/docs/DataInnerDhcpSharednetworkEditSuccess.md)
+ - [DataInnerDhcpStatic6AddSuccess](sdsclient/docs/DataInnerDhcpStatic6AddSuccess.md)
+ - [DataInnerDhcpStatic6Data](sdsclient/docs/DataInnerDhcpStatic6Data.md)
+ - [DataInnerDhcpStatic6DeleteSuccess](sdsclient/docs/DataInnerDhcpStatic6DeleteSuccess.md)
+ - [DataInnerDhcpStatic6EditSuccess](sdsclient/docs/DataInnerDhcpStatic6EditSuccess.md)
+ - [DataInnerDhcpStaticAddSuccess](sdsclient/docs/DataInnerDhcpStaticAddSuccess.md)
+ - [DataInnerDhcpStaticData](sdsclient/docs/DataInnerDhcpStaticData.md)
+ - [DataInnerDhcpStaticDeleteSuccess](sdsclient/docs/DataInnerDhcpStaticDeleteSuccess.md)
+ - [DataInnerDhcpStaticEditSuccess](sdsclient/docs/DataInnerDhcpStaticEditSuccess.md)
+ - [DataInnerDnsAclAddSuccess](sdsclient/docs/DataInnerDnsAclAddSuccess.md)
+ - [DataInnerDnsAclData](sdsclient/docs/DataInnerDnsAclData.md)
+ - [DataInnerDnsAclDeleteSuccess](sdsclient/docs/DataInnerDnsAclDeleteSuccess.md)
+ - [DataInnerDnsAclEditSuccess](sdsclient/docs/DataInnerDnsAclEditSuccess.md)
+ - [DataInnerDnsRrAddSuccess](sdsclient/docs/DataInnerDnsRrAddSuccess.md)
+ - [DataInnerDnsRrData](sdsclient/docs/DataInnerDnsRrData.md)
+ - [DataInnerDnsRrDeleteSuccess](sdsclient/docs/DataInnerDnsRrDeleteSuccess.md)
+ - [DataInnerDnsRrEditSuccess](sdsclient/docs/DataInnerDnsRrEditSuccess.md)
+ - [DataInnerDnsServerData](sdsclient/docs/DataInnerDnsServerData.md)
+ - [DataInnerDnsViewAddSuccess](sdsclient/docs/DataInnerDnsViewAddSuccess.md)
+ - [DataInnerDnsViewData](sdsclient/docs/DataInnerDnsViewData.md)
+ - [DataInnerDnsViewDeleteSuccess](sdsclient/docs/DataInnerDnsViewDeleteSuccess.md)
+ - [DataInnerDnsViewEditSuccess](sdsclient/docs/DataInnerDnsViewEditSuccess.md)
+ - [DataInnerDnsViewparamAddSuccess](sdsclient/docs/DataInnerDnsViewparamAddSuccess.md)
+ - [DataInnerDnsViewparamData](sdsclient/docs/DataInnerDnsViewparamData.md)
+ - [DataInnerDnsViewparamDeleteSuccess](sdsclient/docs/DataInnerDnsViewparamDeleteSuccess.md)
+ - [DataInnerDnsViewparamEditSuccess](sdsclient/docs/DataInnerDnsViewparamEditSuccess.md)
+ - [DataInnerDnsZoneAddSuccess](sdsclient/docs/DataInnerDnsZoneAddSuccess.md)
+ - [DataInnerDnsZoneData](sdsclient/docs/DataInnerDnsZoneData.md)
+ - [DataInnerDnsZoneDeleteSuccess](sdsclient/docs/DataInnerDnsZoneDeleteSuccess.md)
+ - [DataInnerDnsZoneEditSuccess](sdsclient/docs/DataInnerDnsZoneEditSuccess.md)
+ - [DataInnerDnsZoneparamAddSuccess](sdsclient/docs/DataInnerDnsZoneparamAddSuccess.md)
+ - [DataInnerDnsZoneparamData](sdsclient/docs/DataInnerDnsZoneparamData.md)
+ - [DataInnerDnsZoneparamDeleteSuccess](sdsclient/docs/DataInnerDnsZoneparamDeleteSuccess.md)
+ - [DataInnerDnsZoneparamEditSuccess](sdsclient/docs/DataInnerDnsZoneparamEditSuccess.md)
+ - [DataInnerGuardianPolicyAddSuccess](sdsclient/docs/DataInnerGuardianPolicyAddSuccess.md)
+ - [DataInnerGuardianPolicyData](sdsclient/docs/DataInnerGuardianPolicyData.md)
+ - [DataInnerGuardianPolicyDeleteSuccess](sdsclient/docs/DataInnerGuardianPolicyDeleteSuccess.md)
+ - [DataInnerGuardianPolicyEditSuccess](sdsclient/docs/DataInnerGuardianPolicyEditSuccess.md)
+ - [DataInnerIpamAddress6AddSuccess](sdsclient/docs/DataInnerIpamAddress6AddSuccess.md)
+ - [DataInnerIpamAddress6Data](sdsclient/docs/DataInnerIpamAddress6Data.md)
+ - [DataInnerIpamAddress6DeleteSuccess](sdsclient/docs/DataInnerIpamAddress6DeleteSuccess.md)
+ - [DataInnerIpamAddress6EditSuccess](sdsclient/docs/DataInnerIpamAddress6EditSuccess.md)
+ - [DataInnerIpamAddressAddSuccess](sdsclient/docs/DataInnerIpamAddressAddSuccess.md)
+ - [DataInnerIpamAddressData](sdsclient/docs/DataInnerIpamAddressData.md)
+ - [DataInnerIpamAddressDeleteSuccess](sdsclient/docs/DataInnerIpamAddressDeleteSuccess.md)
+ - [DataInnerIpamAddressEditSuccess](sdsclient/docs/DataInnerIpamAddressEditSuccess.md)
+ - [DataInnerIpamAlias6AddSuccess](sdsclient/docs/DataInnerIpamAlias6AddSuccess.md)
+ - [DataInnerIpamAlias6Data](sdsclient/docs/DataInnerIpamAlias6Data.md)
+ - [DataInnerIpamAlias6DeleteSuccess](sdsclient/docs/DataInnerIpamAlias6DeleteSuccess.md)
+ - [DataInnerIpamAlias6EditSuccess](sdsclient/docs/DataInnerIpamAlias6EditSuccess.md)
+ - [DataInnerIpamAliasAddSuccess](sdsclient/docs/DataInnerIpamAliasAddSuccess.md)
+ - [DataInnerIpamAliasData](sdsclient/docs/DataInnerIpamAliasData.md)
+ - [DataInnerIpamAliasDeleteSuccess](sdsclient/docs/DataInnerIpamAliasDeleteSuccess.md)
+ - [DataInnerIpamAliasEditSuccess](sdsclient/docs/DataInnerIpamAliasEditSuccess.md)
+ - [DataInnerIpamNetwork6AddSuccess](sdsclient/docs/DataInnerIpamNetwork6AddSuccess.md)
+ - [DataInnerIpamNetwork6Data](sdsclient/docs/DataInnerIpamNetwork6Data.md)
+ - [DataInnerIpamNetwork6DeleteSuccess](sdsclient/docs/DataInnerIpamNetwork6DeleteSuccess.md)
+ - [DataInnerIpamNetwork6EditSuccess](sdsclient/docs/DataInnerIpamNetwork6EditSuccess.md)
+ - [DataInnerIpamNetworkAddSuccess](sdsclient/docs/DataInnerIpamNetworkAddSuccess.md)
+ - [DataInnerIpamNetworkData](sdsclient/docs/DataInnerIpamNetworkData.md)
+ - [DataInnerIpamNetworkDeleteSuccess](sdsclient/docs/DataInnerIpamNetworkDeleteSuccess.md)
+ - [DataInnerIpamNetworkEditSuccess](sdsclient/docs/DataInnerIpamNetworkEditSuccess.md)
+ - [DataInnerIpamPool6AddSuccess](sdsclient/docs/DataInnerIpamPool6AddSuccess.md)
+ - [DataInnerIpamPool6Data](sdsclient/docs/DataInnerIpamPool6Data.md)
+ - [DataInnerIpamPool6DeleteSuccess](sdsclient/docs/DataInnerIpamPool6DeleteSuccess.md)
+ - [DataInnerIpamPool6EditSuccess](sdsclient/docs/DataInnerIpamPool6EditSuccess.md)
+ - [DataInnerIpamPoolAddSuccess](sdsclient/docs/DataInnerIpamPoolAddSuccess.md)
+ - [DataInnerIpamPoolData](sdsclient/docs/DataInnerIpamPoolData.md)
+ - [DataInnerIpamPoolDeleteSuccess](sdsclient/docs/DataInnerIpamPoolDeleteSuccess.md)
+ - [DataInnerIpamPoolEditSuccess](sdsclient/docs/DataInnerIpamPoolEditSuccess.md)
+ - [DataInnerIpamSpaceAddSuccess](sdsclient/docs/DataInnerIpamSpaceAddSuccess.md)
+ - [DataInnerIpamSpaceData](sdsclient/docs/DataInnerIpamSpaceData.md)
+ - [DataInnerIpamSpaceDeleteSuccess](sdsclient/docs/DataInnerIpamSpaceDeleteSuccess.md)
+ - [DataInnerIpamSpaceEditSuccess](sdsclient/docs/DataInnerIpamSpaceEditSuccess.md)
+ - [DataInnerVlanDomainAddSuccess](sdsclient/docs/DataInnerVlanDomainAddSuccess.md)
+ - [DataInnerVlanDomainData](sdsclient/docs/DataInnerVlanDomainData.md)
+ - [DataInnerVlanDomainDeleteSuccess](sdsclient/docs/DataInnerVlanDomainDeleteSuccess.md)
+ - [DataInnerVlanDomainEditSuccess](sdsclient/docs/DataInnerVlanDomainEditSuccess.md)
+ - [DataInnerVlanRangeAddSuccess](sdsclient/docs/DataInnerVlanRangeAddSuccess.md)
+ - [DataInnerVlanRangeData](sdsclient/docs/DataInnerVlanRangeData.md)
+ - [DataInnerVlanRangeDeleteSuccess](sdsclient/docs/DataInnerVlanRangeDeleteSuccess.md)
+ - [DataInnerVlanRangeEditSuccess](sdsclient/docs/DataInnerVlanRangeEditSuccess.md)
+ - [DataInnerVlanVlanAddSuccess](sdsclient/docs/DataInnerVlanVlanAddSuccess.md)
+ - [DataInnerVlanVlanData](sdsclient/docs/DataInnerVlanVlanData.md)
+ - [DataInnerVlanVlanDeleteSuccess](sdsclient/docs/DataInnerVlanVlanDeleteSuccess.md)
+ - [DataInnerVlanVlanEditSuccess](sdsclient/docs/DataInnerVlanVlanEditSuccess.md)
+ - [DeviceDeviceAddFailed](sdsclient/docs/DeviceDeviceAddFailed.md)
+ - [DeviceDeviceAddInput](sdsclient/docs/DeviceDeviceAddInput.md)
+ - [DeviceDeviceAddSuccess](sdsclient/docs/DeviceDeviceAddSuccess.md)
+ - [DeviceDeviceData](sdsclient/docs/DeviceDeviceData.md)
+ - [DeviceDeviceDeleteFailed](sdsclient/docs/DeviceDeviceDeleteFailed.md)
+ - [DeviceDeviceDeleteSuccess](sdsclient/docs/DeviceDeviceDeleteSuccess.md)
+ - [DeviceDeviceEditFailed](sdsclient/docs/DeviceDeviceEditFailed.md)
+ - [DeviceDeviceEditInput](sdsclient/docs/DeviceDeviceEditInput.md)
+ - [DeviceDeviceEditSuccess](sdsclient/docs/DeviceDeviceEditSuccess.md)
+ - [DeviceInterfaceAddFailed](sdsclient/docs/DeviceInterfaceAddFailed.md)
+ - [DeviceInterfaceAddInput](sdsclient/docs/DeviceInterfaceAddInput.md)
+ - [DeviceInterfaceAddSuccess](sdsclient/docs/DeviceInterfaceAddSuccess.md)
+ - [DeviceInterfaceData](sdsclient/docs/DeviceInterfaceData.md)
+ - [DeviceInterfaceDeleteFailed](sdsclient/docs/DeviceInterfaceDeleteFailed.md)
+ - [DeviceInterfaceDeleteSuccess](sdsclient/docs/DeviceInterfaceDeleteSuccess.md)
+ - [DeviceInterfaceEditFailed](sdsclient/docs/DeviceInterfaceEditFailed.md)
+ - [DeviceInterfaceEditInput](sdsclient/docs/DeviceInterfaceEditInput.md)
+ - [DeviceInterfaceEditSuccess](sdsclient/docs/DeviceInterfaceEditSuccess.md)
+ - [DeviceLinkAddFailed](sdsclient/docs/DeviceLinkAddFailed.md)
+ - [DeviceLinkAddInput](sdsclient/docs/DeviceLinkAddInput.md)
+ - [DeviceLinkAddSuccess](sdsclient/docs/DeviceLinkAddSuccess.md)
+ - [DeviceLinkData](sdsclient/docs/DeviceLinkData.md)
+ - [DeviceLinkDeleteFailed](sdsclient/docs/DeviceLinkDeleteFailed.md)
+ - [DeviceLinkDeleteSuccess](sdsclient/docs/DeviceLinkDeleteSuccess.md)
+ - [DeviceLinkEditFailed](sdsclient/docs/DeviceLinkEditFailed.md)
+ - [DeviceLinkEditInput](sdsclient/docs/DeviceLinkEditInput.md)
+ - [DeviceLinkEditSuccess](sdsclient/docs/DeviceLinkEditSuccess.md)
+ - [DhcpAcl6Data](sdsclient/docs/DhcpAcl6Data.md)
+ - [DhcpAclData](sdsclient/docs/DhcpAclData.md)
+ - [DhcpAclentry6Data](sdsclient/docs/DhcpAclentry6Data.md)
+ - [DhcpAclentryData](sdsclient/docs/DhcpAclentryData.md)
+ - [DhcpFailoverData](sdsclient/docs/DhcpFailoverData.md)
+ - [DhcpGroup6Data](sdsclient/docs/DhcpGroup6Data.md)
+ - [DhcpGroupAddFailed](sdsclient/docs/DhcpGroupAddFailed.md)
+ - [DhcpGroupAddInput](sdsclient/docs/DhcpGroupAddInput.md)
+ - [DhcpGroupAddSuccess](sdsclient/docs/DhcpGroupAddSuccess.md)
+ - [DhcpGroupData](sdsclient/docs/DhcpGroupData.md)
+ - [DhcpGroupDeleteFailed](sdsclient/docs/DhcpGroupDeleteFailed.md)
+ - [DhcpGroupDeleteSuccess](sdsclient/docs/DhcpGroupDeleteSuccess.md)
+ - [DhcpGroupEditFailed](sdsclient/docs/DhcpGroupEditFailed.md)
+ - [DhcpGroupEditInput](sdsclient/docs/DhcpGroupEditInput.md)
+ - [DhcpGroupEditSuccess](sdsclient/docs/DhcpGroupEditSuccess.md)
+ - [DhcpLease6Data](sdsclient/docs/DhcpLease6Data.md)
+ - [DhcpLeaseData](sdsclient/docs/DhcpLeaseData.md)
+ - [DhcpRange6AddFailed](sdsclient/docs/DhcpRange6AddFailed.md)
+ - [DhcpRange6AddInput](sdsclient/docs/DhcpRange6AddInput.md)
+ - [DhcpRange6AddSuccess](sdsclient/docs/DhcpRange6AddSuccess.md)
+ - [DhcpRange6Data](sdsclient/docs/DhcpRange6Data.md)
+ - [DhcpRange6DeleteFailed](sdsclient/docs/DhcpRange6DeleteFailed.md)
+ - [DhcpRange6DeleteSuccess](sdsclient/docs/DhcpRange6DeleteSuccess.md)
+ - [DhcpRange6EditFailed](sdsclient/docs/DhcpRange6EditFailed.md)
+ - [DhcpRange6EditInput](sdsclient/docs/DhcpRange6EditInput.md)
+ - [DhcpRange6EditSuccess](sdsclient/docs/DhcpRange6EditSuccess.md)
+ - [DhcpRangeAddFailed](sdsclient/docs/DhcpRangeAddFailed.md)
+ - [DhcpRangeAddInput](sdsclient/docs/DhcpRangeAddInput.md)
+ - [DhcpRangeAddSuccess](sdsclient/docs/DhcpRangeAddSuccess.md)
+ - [DhcpRangeData](sdsclient/docs/DhcpRangeData.md)
+ - [DhcpRangeDeleteFailed](sdsclient/docs/DhcpRangeDeleteFailed.md)
+ - [DhcpRangeDeleteSuccess](sdsclient/docs/DhcpRangeDeleteSuccess.md)
+ - [DhcpRangeEditFailed](sdsclient/docs/DhcpRangeEditFailed.md)
+ - [DhcpRangeEditInput](sdsclient/docs/DhcpRangeEditInput.md)
+ - [DhcpRangeEditSuccess](sdsclient/docs/DhcpRangeEditSuccess.md)
+ - [DhcpScope6AddFailed](sdsclient/docs/DhcpScope6AddFailed.md)
+ - [DhcpScope6AddInput](sdsclient/docs/DhcpScope6AddInput.md)
+ - [DhcpScope6AddSuccess](sdsclient/docs/DhcpScope6AddSuccess.md)
+ - [DhcpScope6Data](sdsclient/docs/DhcpScope6Data.md)
+ - [DhcpScope6DeleteFailed](sdsclient/docs/DhcpScope6DeleteFailed.md)
+ - [DhcpScope6DeleteSuccess](sdsclient/docs/DhcpScope6DeleteSuccess.md)
+ - [DhcpScope6EditFailed](sdsclient/docs/DhcpScope6EditFailed.md)
+ - [DhcpScope6EditInput](sdsclient/docs/DhcpScope6EditInput.md)
+ - [DhcpScope6EditSuccess](sdsclient/docs/DhcpScope6EditSuccess.md)
+ - [DhcpScopeAddFailed](sdsclient/docs/DhcpScopeAddFailed.md)
+ - [DhcpScopeAddInput](sdsclient/docs/DhcpScopeAddInput.md)
+ - [DhcpScopeAddSuccess](sdsclient/docs/DhcpScopeAddSuccess.md)
+ - [DhcpScopeData](sdsclient/docs/DhcpScopeData.md)
+ - [DhcpScopeDeleteFailed](sdsclient/docs/DhcpScopeDeleteFailed.md)
+ - [DhcpScopeDeleteSuccess](sdsclient/docs/DhcpScopeDeleteSuccess.md)
+ - [DhcpScopeEditFailed](sdsclient/docs/DhcpScopeEditFailed.md)
+ - [DhcpScopeEditInput](sdsclient/docs/DhcpScopeEditInput.md)
+ - [DhcpScopeEditSuccess](sdsclient/docs/DhcpScopeEditSuccess.md)
+ - [DhcpServer6Data](sdsclient/docs/DhcpServer6Data.md)
+ - [DhcpServerData](sdsclient/docs/DhcpServerData.md)
+ - [DhcpSharednetwork6AddFailed](sdsclient/docs/DhcpSharednetwork6AddFailed.md)
+ - [DhcpSharednetwork6AddInput](sdsclient/docs/DhcpSharednetwork6AddInput.md)
+ - [DhcpSharednetwork6AddSuccess](sdsclient/docs/DhcpSharednetwork6AddSuccess.md)
+ - [DhcpSharednetwork6Data](sdsclient/docs/DhcpSharednetwork6Data.md)
+ - [DhcpSharednetwork6DeleteFailed](sdsclient/docs/DhcpSharednetwork6DeleteFailed.md)
+ - [DhcpSharednetwork6DeleteSuccess](sdsclient/docs/DhcpSharednetwork6DeleteSuccess.md)
+ - [DhcpSharednetwork6EditFailed](sdsclient/docs/DhcpSharednetwork6EditFailed.md)
+ - [DhcpSharednetwork6EditInput](sdsclient/docs/DhcpSharednetwork6EditInput.md)
+ - [DhcpSharednetwork6EditSuccess](sdsclient/docs/DhcpSharednetwork6EditSuccess.md)
+ - [DhcpSharednetworkAddFailed](sdsclient/docs/DhcpSharednetworkAddFailed.md)
+ - [DhcpSharednetworkAddInput](sdsclient/docs/DhcpSharednetworkAddInput.md)
+ - [DhcpSharednetworkAddSuccess](sdsclient/docs/DhcpSharednetworkAddSuccess.md)
+ - [DhcpSharednetworkData](sdsclient/docs/DhcpSharednetworkData.md)
+ - [DhcpSharednetworkDeleteFailed](sdsclient/docs/DhcpSharednetworkDeleteFailed.md)
+ - [DhcpSharednetworkDeleteSuccess](sdsclient/docs/DhcpSharednetworkDeleteSuccess.md)
+ - [DhcpSharednetworkEditFailed](sdsclient/docs/DhcpSharednetworkEditFailed.md)
+ - [DhcpSharednetworkEditInput](sdsclient/docs/DhcpSharednetworkEditInput.md)
+ - [DhcpSharednetworkEditSuccess](sdsclient/docs/DhcpSharednetworkEditSuccess.md)
+ - [DhcpStatic6AddFailed](sdsclient/docs/DhcpStatic6AddFailed.md)
+ - [DhcpStatic6AddInput](sdsclient/docs/DhcpStatic6AddInput.md)
+ - [DhcpStatic6AddSuccess](sdsclient/docs/DhcpStatic6AddSuccess.md)
+ - [DhcpStatic6Data](sdsclient/docs/DhcpStatic6Data.md)
+ - [DhcpStatic6DeleteFailed](sdsclient/docs/DhcpStatic6DeleteFailed.md)
+ - [DhcpStatic6DeleteSuccess](sdsclient/docs/DhcpStatic6DeleteSuccess.md)
+ - [DhcpStatic6EditFailed](sdsclient/docs/DhcpStatic6EditFailed.md)
+ - [DhcpStatic6EditInput](sdsclient/docs/DhcpStatic6EditInput.md)
+ - [DhcpStatic6EditSuccess](sdsclient/docs/DhcpStatic6EditSuccess.md)
+ - [DhcpStaticAddFailed](sdsclient/docs/DhcpStaticAddFailed.md)
+ - [DhcpStaticAddInput](sdsclient/docs/DhcpStaticAddInput.md)
+ - [DhcpStaticAddSuccess](sdsclient/docs/DhcpStaticAddSuccess.md)
+ - [DhcpStaticData](sdsclient/docs/DhcpStaticData.md)
+ - [DhcpStaticDeleteFailed](sdsclient/docs/DhcpStaticDeleteFailed.md)
+ - [DhcpStaticDeleteSuccess](sdsclient/docs/DhcpStaticDeleteSuccess.md)
+ - [DhcpStaticEditFailed](sdsclient/docs/DhcpStaticEditFailed.md)
+ - [DhcpStaticEditInput](sdsclient/docs/DhcpStaticEditInput.md)
+ - [DhcpStaticEditSuccess](sdsclient/docs/DhcpStaticEditSuccess.md)
+ - [DnsAclAddFailed](sdsclient/docs/DnsAclAddFailed.md)
+ - [DnsAclAddInput](sdsclient/docs/DnsAclAddInput.md)
+ - [DnsAclAddSuccess](sdsclient/docs/DnsAclAddSuccess.md)
+ - [DnsAclData](sdsclient/docs/DnsAclData.md)
+ - [DnsAclDeleteFailed](sdsclient/docs/DnsAclDeleteFailed.md)
+ - [DnsAclDeleteSuccess](sdsclient/docs/DnsAclDeleteSuccess.md)
+ - [DnsAclEditFailed](sdsclient/docs/DnsAclEditFailed.md)
+ - [DnsAclEditInput](sdsclient/docs/DnsAclEditInput.md)
+ - [DnsAclEditSuccess](sdsclient/docs/DnsAclEditSuccess.md)
+ - [DnsRrAddFailed](sdsclient/docs/DnsRrAddFailed.md)
+ - [DnsRrAddInput](sdsclient/docs/DnsRrAddInput.md)
+ - [DnsRrAddSuccess](sdsclient/docs/DnsRrAddSuccess.md)
+ - [DnsRrData](sdsclient/docs/DnsRrData.md)
+ - [DnsRrDeleteFailed](sdsclient/docs/DnsRrDeleteFailed.md)
+ - [DnsRrDeleteSuccess](sdsclient/docs/DnsRrDeleteSuccess.md)
+ - [DnsRrEditFailed](sdsclient/docs/DnsRrEditFailed.md)
+ - [DnsRrEditInput](sdsclient/docs/DnsRrEditInput.md)
+ - [DnsRrEditSuccess](sdsclient/docs/DnsRrEditSuccess.md)
+ - [DnsServerData](sdsclient/docs/DnsServerData.md)
+ - [DnsViewAddFailed](sdsclient/docs/DnsViewAddFailed.md)
+ - [DnsViewAddInput](sdsclient/docs/DnsViewAddInput.md)
+ - [DnsViewAddSuccess](sdsclient/docs/DnsViewAddSuccess.md)
+ - [DnsViewData](sdsclient/docs/DnsViewData.md)
+ - [DnsViewDeleteFailed](sdsclient/docs/DnsViewDeleteFailed.md)
+ - [DnsViewDeleteSuccess](sdsclient/docs/DnsViewDeleteSuccess.md)
+ - [DnsViewEditFailed](sdsclient/docs/DnsViewEditFailed.md)
+ - [DnsViewEditInput](sdsclient/docs/DnsViewEditInput.md)
+ - [DnsViewEditSuccess](sdsclient/docs/DnsViewEditSuccess.md)
+ - [DnsViewparamAddFailed](sdsclient/docs/DnsViewparamAddFailed.md)
+ - [DnsViewparamAddInput](sdsclient/docs/DnsViewparamAddInput.md)
+ - [DnsViewparamAddSuccess](sdsclient/docs/DnsViewparamAddSuccess.md)
+ - [DnsViewparamData](sdsclient/docs/DnsViewparamData.md)
+ - [DnsViewparamDeleteFailed](sdsclient/docs/DnsViewparamDeleteFailed.md)
+ - [DnsViewparamDeleteSuccess](sdsclient/docs/DnsViewparamDeleteSuccess.md)
+ - [DnsViewparamEditFailed](sdsclient/docs/DnsViewparamEditFailed.md)
+ - [DnsViewparamEditInput](sdsclient/docs/DnsViewparamEditInput.md)
+ - [DnsViewparamEditSuccess](sdsclient/docs/DnsViewparamEditSuccess.md)
+ - [DnsZoneAddFailed](sdsclient/docs/DnsZoneAddFailed.md)
+ - [DnsZoneAddInput](sdsclient/docs/DnsZoneAddInput.md)
+ - [DnsZoneAddSuccess](sdsclient/docs/DnsZoneAddSuccess.md)
+ - [DnsZoneData](sdsclient/docs/DnsZoneData.md)
+ - [DnsZoneDeleteFailed](sdsclient/docs/DnsZoneDeleteFailed.md)
+ - [DnsZoneDeleteSuccess](sdsclient/docs/DnsZoneDeleteSuccess.md)
+ - [DnsZoneEditFailed](sdsclient/docs/DnsZoneEditFailed.md)
+ - [DnsZoneEditInput](sdsclient/docs/DnsZoneEditInput.md)
+ - [DnsZoneEditSuccess](sdsclient/docs/DnsZoneEditSuccess.md)
+ - [DnsZoneparamAddFailed](sdsclient/docs/DnsZoneparamAddFailed.md)
+ - [DnsZoneparamAddInput](sdsclient/docs/DnsZoneparamAddInput.md)
+ - [DnsZoneparamAddSuccess](sdsclient/docs/DnsZoneparamAddSuccess.md)
+ - [DnsZoneparamData](sdsclient/docs/DnsZoneparamData.md)
+ - [DnsZoneparamDeleteFailed](sdsclient/docs/DnsZoneparamDeleteFailed.md)
+ - [DnsZoneparamDeleteSuccess](sdsclient/docs/DnsZoneparamDeleteSuccess.md)
+ - [DnsZoneparamEditFailed](sdsclient/docs/DnsZoneparamEditFailed.md)
+ - [DnsZoneparamEditInput](sdsclient/docs/DnsZoneparamEditInput.md)
+ - [DnsZoneparamEditSuccess](sdsclient/docs/DnsZoneparamEditSuccess.md)
+ - [GuardianPolicyAddFailed](sdsclient/docs/GuardianPolicyAddFailed.md)
+ - [GuardianPolicyAddInput](sdsclient/docs/GuardianPolicyAddInput.md)
+ - [GuardianPolicyAddSuccess](sdsclient/docs/GuardianPolicyAddSuccess.md)
+ - [GuardianPolicyData](sdsclient/docs/GuardianPolicyData.md)
+ - [GuardianPolicyDeleteFailed](sdsclient/docs/GuardianPolicyDeleteFailed.md)
+ - [GuardianPolicyDeleteSuccess](sdsclient/docs/GuardianPolicyDeleteSuccess.md)
+ - [GuardianPolicyEditFailed](sdsclient/docs/GuardianPolicyEditFailed.md)
+ - [GuardianPolicyEditInput](sdsclient/docs/GuardianPolicyEditInput.md)
+ - [GuardianPolicyEditSuccess](sdsclient/docs/GuardianPolicyEditSuccess.md)
+ - [IpamAddress6AddFailed](sdsclient/docs/IpamAddress6AddFailed.md)
+ - [IpamAddress6AddInput](sdsclient/docs/IpamAddress6AddInput.md)
+ - [IpamAddress6AddSuccess](sdsclient/docs/IpamAddress6AddSuccess.md)
+ - [IpamAddress6Data](sdsclient/docs/IpamAddress6Data.md)
+ - [IpamAddress6DeleteFailed](sdsclient/docs/IpamAddress6DeleteFailed.md)
+ - [IpamAddress6DeleteSuccess](sdsclient/docs/IpamAddress6DeleteSuccess.md)
+ - [IpamAddress6EditFailed](sdsclient/docs/IpamAddress6EditFailed.md)
+ - [IpamAddress6EditInput](sdsclient/docs/IpamAddress6EditInput.md)
+ - [IpamAddress6EditSuccess](sdsclient/docs/IpamAddress6EditSuccess.md)
+ - [IpamAddressAddFailed](sdsclient/docs/IpamAddressAddFailed.md)
+ - [IpamAddressAddInput](sdsclient/docs/IpamAddressAddInput.md)
+ - [IpamAddressAddSuccess](sdsclient/docs/IpamAddressAddSuccess.md)
+ - [IpamAddressData](sdsclient/docs/IpamAddressData.md)
+ - [IpamAddressDeleteFailed](sdsclient/docs/IpamAddressDeleteFailed.md)
+ - [IpamAddressDeleteSuccess](sdsclient/docs/IpamAddressDeleteSuccess.md)
+ - [IpamAddressEditFailed](sdsclient/docs/IpamAddressEditFailed.md)
+ - [IpamAddressEditInput](sdsclient/docs/IpamAddressEditInput.md)
+ - [IpamAddressEditSuccess](sdsclient/docs/IpamAddressEditSuccess.md)
+ - [IpamAlias6AddFailed](sdsclient/docs/IpamAlias6AddFailed.md)
+ - [IpamAlias6AddInput](sdsclient/docs/IpamAlias6AddInput.md)
+ - [IpamAlias6AddSuccess](sdsclient/docs/IpamAlias6AddSuccess.md)
+ - [IpamAlias6Data](sdsclient/docs/IpamAlias6Data.md)
+ - [IpamAlias6DeleteFailed](sdsclient/docs/IpamAlias6DeleteFailed.md)
+ - [IpamAlias6DeleteSuccess](sdsclient/docs/IpamAlias6DeleteSuccess.md)
+ - [IpamAlias6EditFailed](sdsclient/docs/IpamAlias6EditFailed.md)
+ - [IpamAlias6EditInput](sdsclient/docs/IpamAlias6EditInput.md)
+ - [IpamAlias6EditSuccess](sdsclient/docs/IpamAlias6EditSuccess.md)
+ - [IpamAliasAddFailed](sdsclient/docs/IpamAliasAddFailed.md)
+ - [IpamAliasAddInput](sdsclient/docs/IpamAliasAddInput.md)
+ - [IpamAliasAddSuccess](sdsclient/docs/IpamAliasAddSuccess.md)
+ - [IpamAliasData](sdsclient/docs/IpamAliasData.md)
+ - [IpamAliasDeleteFailed](sdsclient/docs/IpamAliasDeleteFailed.md)
+ - [IpamAliasDeleteSuccess](sdsclient/docs/IpamAliasDeleteSuccess.md)
+ - [IpamAliasEditFailed](sdsclient/docs/IpamAliasEditFailed.md)
+ - [IpamAliasEditInput](sdsclient/docs/IpamAliasEditInput.md)
+ - [IpamAliasEditSuccess](sdsclient/docs/IpamAliasEditSuccess.md)
+ - [IpamNetwork6AddFailed](sdsclient/docs/IpamNetwork6AddFailed.md)
+ - [IpamNetwork6AddInput](sdsclient/docs/IpamNetwork6AddInput.md)
+ - [IpamNetwork6AddSuccess](sdsclient/docs/IpamNetwork6AddSuccess.md)
+ - [IpamNetwork6Data](sdsclient/docs/IpamNetwork6Data.md)
+ - [IpamNetwork6DeleteFailed](sdsclient/docs/IpamNetwork6DeleteFailed.md)
+ - [IpamNetwork6DeleteSuccess](sdsclient/docs/IpamNetwork6DeleteSuccess.md)
+ - [IpamNetwork6EditFailed](sdsclient/docs/IpamNetwork6EditFailed.md)
+ - [IpamNetwork6EditInput](sdsclient/docs/IpamNetwork6EditInput.md)
+ - [IpamNetwork6EditSuccess](sdsclient/docs/IpamNetwork6EditSuccess.md)
+ - [IpamNetworkAddFailed](sdsclient/docs/IpamNetworkAddFailed.md)
+ - [IpamNetworkAddInput](sdsclient/docs/IpamNetworkAddInput.md)
+ - [IpamNetworkAddSuccess](sdsclient/docs/IpamNetworkAddSuccess.md)
+ - [IpamNetworkData](sdsclient/docs/IpamNetworkData.md)
+ - [IpamNetworkDeleteFailed](sdsclient/docs/IpamNetworkDeleteFailed.md)
+ - [IpamNetworkDeleteSuccess](sdsclient/docs/IpamNetworkDeleteSuccess.md)
+ - [IpamNetworkEditFailed](sdsclient/docs/IpamNetworkEditFailed.md)
+ - [IpamNetworkEditInput](sdsclient/docs/IpamNetworkEditInput.md)
+ - [IpamNetworkEditSuccess](sdsclient/docs/IpamNetworkEditSuccess.md)
+ - [IpamPool6AddFailed](sdsclient/docs/IpamPool6AddFailed.md)
+ - [IpamPool6AddInput](sdsclient/docs/IpamPool6AddInput.md)
+ - [IpamPool6AddSuccess](sdsclient/docs/IpamPool6AddSuccess.md)
+ - [IpamPool6Data](sdsclient/docs/IpamPool6Data.md)
+ - [IpamPool6DeleteFailed](sdsclient/docs/IpamPool6DeleteFailed.md)
+ - [IpamPool6DeleteSuccess](sdsclient/docs/IpamPool6DeleteSuccess.md)
+ - [IpamPool6EditFailed](sdsclient/docs/IpamPool6EditFailed.md)
+ - [IpamPool6EditInput](sdsclient/docs/IpamPool6EditInput.md)
+ - [IpamPool6EditSuccess](sdsclient/docs/IpamPool6EditSuccess.md)
+ - [IpamPoolAddFailed](sdsclient/docs/IpamPoolAddFailed.md)
+ - [IpamPoolAddInput](sdsclient/docs/IpamPoolAddInput.md)
+ - [IpamPoolAddSuccess](sdsclient/docs/IpamPoolAddSuccess.md)
+ - [IpamPoolData](sdsclient/docs/IpamPoolData.md)
+ - [IpamPoolDeleteFailed](sdsclient/docs/IpamPoolDeleteFailed.md)
+ - [IpamPoolDeleteSuccess](sdsclient/docs/IpamPoolDeleteSuccess.md)
+ - [IpamPoolEditFailed](sdsclient/docs/IpamPoolEditFailed.md)
+ - [IpamPoolEditInput](sdsclient/docs/IpamPoolEditInput.md)
+ - [IpamPoolEditSuccess](sdsclient/docs/IpamPoolEditSuccess.md)
+ - [IpamSpaceAddFailed](sdsclient/docs/IpamSpaceAddFailed.md)
+ - [IpamSpaceAddInput](sdsclient/docs/IpamSpaceAddInput.md)
+ - [IpamSpaceAddSuccess](sdsclient/docs/IpamSpaceAddSuccess.md)
+ - [IpamSpaceData](sdsclient/docs/IpamSpaceData.md)
+ - [IpamSpaceDeleteFailed](sdsclient/docs/IpamSpaceDeleteFailed.md)
+ - [IpamSpaceDeleteSuccess](sdsclient/docs/IpamSpaceDeleteSuccess.md)
+ - [IpamSpaceEditFailed](sdsclient/docs/IpamSpaceEditFailed.md)
+ - [IpamSpaceEditInput](sdsclient/docs/IpamSpaceEditInput.md)
+ - [IpamSpaceEditSuccess](sdsclient/docs/IpamSpaceEditSuccess.md)
+ - [VlanDomainAddFailed](sdsclient/docs/VlanDomainAddFailed.md)
+ - [VlanDomainAddInput](sdsclient/docs/VlanDomainAddInput.md)
+ - [VlanDomainAddSuccess](sdsclient/docs/VlanDomainAddSuccess.md)
+ - [VlanDomainData](sdsclient/docs/VlanDomainData.md)
+ - [VlanDomainDeleteFailed](sdsclient/docs/VlanDomainDeleteFailed.md)
+ - [VlanDomainDeleteSuccess](sdsclient/docs/VlanDomainDeleteSuccess.md)
+ - [VlanDomainEditFailed](sdsclient/docs/VlanDomainEditFailed.md)
+ - [VlanDomainEditInput](sdsclient/docs/VlanDomainEditInput.md)
+ - [VlanDomainEditSuccess](sdsclient/docs/VlanDomainEditSuccess.md)
+ - [VlanRangeAddFailed](sdsclient/docs/VlanRangeAddFailed.md)
+ - [VlanRangeAddInput](sdsclient/docs/VlanRangeAddInput.md)
+ - [VlanRangeAddSuccess](sdsclient/docs/VlanRangeAddSuccess.md)
+ - [VlanRangeData](sdsclient/docs/VlanRangeData.md)
+ - [VlanRangeDeleteFailed](sdsclient/docs/VlanRangeDeleteFailed.md)
+ - [VlanRangeDeleteSuccess](sdsclient/docs/VlanRangeDeleteSuccess.md)
+ - [VlanRangeEditFailed](sdsclient/docs/VlanRangeEditFailed.md)
+ - [VlanRangeEditInput](sdsclient/docs/VlanRangeEditInput.md)
+ - [VlanRangeEditSuccess](sdsclient/docs/VlanRangeEditSuccess.md)
+ - [VlanVlanAddFailed](sdsclient/docs/VlanVlanAddFailed.md)
+ - [VlanVlanAddInput](sdsclient/docs/VlanVlanAddInput.md)
+ - [VlanVlanAddSuccess](sdsclient/docs/VlanVlanAddSuccess.md)
+ - [VlanVlanData](sdsclient/docs/VlanVlanData.md)
+ - [VlanVlanDeleteFailed](sdsclient/docs/VlanVlanDeleteFailed.md)
+ - [VlanVlanDeleteSuccess](sdsclient/docs/VlanVlanDeleteSuccess.md)
+ - [VlanVlanEditFailed](sdsclient/docs/VlanVlanEditFailed.md)
+ - [VlanVlanEditInput](sdsclient/docs/VlanVlanEditInput.md)
+ - [VlanVlanEditSuccess](sdsclient/docs/VlanVlanEditSuccess.md)
 
 
 ## Documentation For Authorization
