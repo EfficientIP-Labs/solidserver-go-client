@@ -244,7 +244,7 @@ func (c *Configuration) ServerURLWithContext(ctx context.Context, endpoint strin
 }
 
 func (c *EipApiTokenAuth) GenerateSignature(r *http.Request, ts int64) [32]byte {
-	url := r.URL.Scheme + "://" + r.URL.Host + r.URL.Path
+	url := r.URL.String()
 	s := fmt.Sprintf("%s\n%d\n%s\n%s", c.Secret, ts, r.Method, url)
 	buf := []byte(s)
 	return sha3.Sum256(buf)
